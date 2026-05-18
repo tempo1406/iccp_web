@@ -1,0 +1,250 @@
+{
+  "common": {
+    "documents": "Documents",
+    "documentManager": "Document manager",
+    "permissionRequired": "Permission required",
+    "locked": "Document library is locked for this account.",
+    "upload": "Upload",
+    "gridView": "Grid view",
+    "listView": "List view",
+    "searchPlaceholder": "Search folders and documents...",
+    "dropToUpload": "Drop files to upload",
+    "loading": "Loading...",
+    "active": "Active",
+    "recovery": "Recovery",
+    "folder": "Folder",
+    "file": "File",
+    "openFolder": "Open folder",
+    "renameFolder": "Rename folder",
+    "manageAccess": "Manage access",
+    "restoreFolder": "Restore folder",
+    "deletePermanently": "Delete permanently",
+    "moveToRecovery": "Move to recovery",
+    "viewDetail": "View detail",
+    "editMetadata": "Edit metadata",
+    "restoreDocument": "Restore document",
+    "organization": "Organization",
+    "project": "Project",
+    "projectLibrary": "Project library",
+    "role": "Role",
+    "specificUsers": "Specific users",
+    "system": "System",
+    "uncategorized": "Uncategorized",
+    "unknownCategory": "Unknown category",
+    "unknownSize": "Unknown size",
+    "unknownDate": "Unknown date"
+  },
+  "panel": {
+    "recoveryContents": "{name} recovery contents",
+    "categoryFallback": "Category",
+    "folderFallback": "Folder"
+  },
+  "confirm": {
+    "moveDocument": {
+      "title": "Move document to recovery?",
+      "description": "The document will leave the active library and appear in Recovery until it is restored or deleted permanently.",
+      "confirmLabel": "Move to recovery"
+    },
+    "deleteDocumentPermanent": {
+      "title": "Delete document permanently?",
+      "description": "This action cannot be undone. The document will be removed from Recovery and the active library.",
+      "confirmLabel": "Delete permanently"
+    },
+    "moveFolder": {
+      "title": "Move folder to recovery?",
+      "description": "The folder and its current contents will move under Recovery. You can restore them later.",
+      "confirmLabel": "Move folder"
+    },
+    "deleteFolderPermanent": {
+      "title": "Delete folder permanently?",
+      "description": "This action cannot be undone. The folder, all subfolders, and contained documents will be deleted permanently.",
+      "confirmLabel": "Delete permanently"
+    },
+    "deleteCategory": {
+      "title": "Delete category?",
+      "description": "Documents remain available, but this category label will be detached from them.",
+      "confirmLabel": "Delete category"
+    }
+  },
+  "toasts": {
+    "documentMovedToRecovery": "Document moved to recovery.",
+    "documentRestored": "Document restored.",
+    "documentDeletedPermanently": "Document deleted permanently.",
+    "folderMovedToRecovery": "Folder moved to recovery.",
+    "folderRestored": "Folder restored.",
+    "folderDeletedPermanently": "Folder deleted permanently.",
+    "categoryDeleted": "Category deleted.",
+    "folderIntoDescendant": "A folder cannot be moved into its own descendant.",
+    "folderMoved": "Moved folder \"{name}\".",
+    "documentMoved": "Moved document \"{name}\".",
+    "noSupportedFiles": "No supported files were found in the dropped selection.",
+    "fileLoaded": "File loaded into upload form.",
+    "filesLoaded": "{count} files loaded into the upload form."
+  },
+  "status": {
+    "notIndexed": "Not indexed",
+    "pending": "Pending",
+    "processing": "Processing",
+    "indexed": "Indexed",
+    "failed": "Failed",
+    "unknown": "Unknown"
+  },
+  "page": {
+    "badge": "Documents",
+    "title": "Document manager"
+  },
+  "empty": {
+    "title": "No items in this view",
+    "description": "Open another folder, switch category, or drop files here to preload the upload form."
+  },
+  "table": {
+    "headers": {
+      "name": "Name",
+      "type": "Type",
+      "details": "Details",
+      "status": "Status",
+      "size": "Size",
+      "updated": "Updated"
+    },
+    "folderSummary": {
+      "children": "{count, plural, one {# folder} other {# folders}}",
+      "documents": "{count, plural, one {# doc} other {# docs}}",
+      "empty": "Empty folder"
+    },
+    "itemsCount": "{count} items",
+    "doubleClickToOpen": "Double-click to open"
+  },
+  "grid": {
+    "size": "Size",
+    "updated": "Updated"
+  },
+  "sidebar": {
+    "title": "Document library",
+    "folderMode": "Folder mode",
+    "categoryMode": "Category mode",
+    "newFolder": "New folder",
+    "newCategory": "New category",
+    "rootLibrary": "Root library",
+    "allDocuments": "All documents",
+    "createSubfolder": "Create subfolder",
+    "uploadDocument": "Upload document",
+    "openCategory": "Open category",
+    "uploadIntoCategory": "Upload into category",
+    "editCategory": "Edit category",
+    "deleteCategory": "Delete category"
+  },
+  "upload": {
+    "title": "Upload document",
+    "description": "Select files and set metadata before uploading.",
+    "chooseFiles": "Choose files",
+    "dragDrop": "or drag and drop here",
+    "browseFiles": "Browse files",
+    "selectedSingle": "Single file",
+    "selectedMultiple": "{count} selected",
+    "metadata": "Metadata",
+    "titleLabel": "Title",
+    "descriptionLabel": "Description",
+    "folderLabel": "Folder",
+    "categoryLabel": "Category",
+    "accessScopeLabel": "Access scope",
+    "documentTitlePlaceholder": "Document title",
+    "descriptionPlaceholder": "Optional description",
+    "rootLibrary": "Root library",
+    "uncategorized": "Uncategorized",
+    "organization": "Organization",
+    "project": "Project",
+    "role": "Role",
+    "specificUsers": "Specific users",
+    "accessRules": "Access rules",
+    "optional": "optional",
+    "permissionLabel": "Permission",
+    "searchUsers": "Search by email or name...",
+    "searchRoles": "Search by role name...",
+    "searchProjects": "Search by project name...",
+    "projectMembers": "Project members",
+    "users": "Users",
+    "projectRoles": "Project roles",
+    "roles": "Roles",
+    "projects": "Projects",
+    "noResults": "No results",
+    "noneAvailable": "None available",
+    "pending": "Pending ({count})",
+    "pendingEmpty": "Tick items above to queue them here",
+    "cancel": "Cancel",
+    "uploadAction": "Upload",
+    "uploading": "Uploading...",
+    "permission": {
+      "view": {
+        "label": "View",
+        "description": "Read-only access"
+      },
+      "download": {
+        "label": "Download",
+        "description": "View and download files"
+      },
+      "upload": {
+        "label": "Upload",
+        "description": "Upload new versions"
+      },
+      "edit": {
+        "label": "Edit",
+        "description": "Edit metadata and content"
+      },
+      "manage": {
+        "label": "Manage",
+        "description": "Full control"
+      }
+    },
+    "toasts": {
+      "selectFile": "Select a file to upload.",
+      "titleRequired": "Document title is required.",
+      "selectFolderInProject": "Select a folder inside this project before uploading.",
+      "uploadedRemaining": "Uploaded {name}. {count} file(s) remain.",
+      "uploaded": "Document uploaded."
+    }
+  },
+  "approval": {
+    "title": "Document Queue",
+    "description": "Manage and review documents submitted for the RAG knowledge base.",
+    "breadcrumbs": {
+      "dashboard": "Dashboard",
+      "documents": "Documents",
+      "queue": "Queue"
+    },
+    "refresh": "Refresh",
+    "filters": "Filters",
+    "tabs": {
+      "all": "All",
+      "processing": "Processing",
+      "indexed": "Indexed",
+      "failed": "Failed"
+    },
+    "searchPlaceholder": "Search by name...",
+    "sortBy": "Sort by:",
+    "sortNewest": "Date Uploaded (Newest)",
+    "sortName": "Name (A-Z)",
+    "loading": "Loading documents...",
+    "showing": "{count, plural, one {Showing # document} other {Showing # documents}}",
+    "stats": {
+      "totalDocuments": "Total Documents",
+      "totalChange": "{count} total",
+      "indexed": "Indexed",
+      "indexedChange": "ready",
+      "processing": "Processing",
+      "processingChange": "in progress",
+      "failed": "Failed",
+      "failedChange": "needs review"
+    },
+    "table": {
+      "documentName": "Document Name",
+      "type": "Type",
+      "status": "Status",
+      "size": "Size",
+      "version": "Version",
+      "uploaded": "Uploaded",
+      "actions": "Actions",
+      "empty": "No documents found.",
+      "review": "Review"
+    }
+  }
+}

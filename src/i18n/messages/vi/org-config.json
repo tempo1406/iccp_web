@@ -1,0 +1,506 @@
+{
+  "organizationProfile": {
+    "toasts": {
+      "generalUpdated": "Đã cập nhật thông tin chung thành công.",
+      "generalUpdateFailed": "Không thể cập nhật thông tin chung.",
+      "brandingUpdated": "Đã cập nhật nhận diện thành công.",
+      "brandingUpdateFailed": "Không thể cập nhật nhận diện."
+    },
+    "page": {
+      "loadFailed": "Không thể tải hồ sơ tổ chức.",
+      "tabs": {
+        "general": "Thông tin chung",
+        "branding": "Nhận diện"
+      },
+      "generalCard": {
+        "title": "Thông tin chung",
+        "badge": "Định danh workspace",
+        "description": "Quản lý tên tổ chức, mô tả, logo, website và thông tin liên hệ."
+      },
+      "brandingCard": {
+        "title": "Nhận diện thương hiệu",
+        "badge": "Trải nghiệm trợ lý",
+        "description": "Tùy chỉnh màu chủ đạo và danh tính trợ lý hiển thị cho thành viên."
+      }
+    },
+    "header": {
+      "badge": "Hồ sơ tổ chức",
+      "activeWorkspace": "Workspace đang hoạt động",
+      "inactiveWorkspace": "Workspace tạm dừng",
+      "fallbackDescription": "Định nghĩa cách tổ chức của bạn hiển thị trên điều hướng workspace, các điểm hỗ trợ và trải nghiệm dành cho thành viên.",
+      "notAvailable": "Chưa có thông tin",
+      "notConfigured": "Chưa cấu hình",
+      "notCategorized": "Chưa phân loại",
+      "team": "nhân sự",
+      "summary": {
+        "title": "Tóm tắt doanh nghiệp",
+        "description": "Giữ hồ sơ này luôn cập nhật để điều hướng nội bộ, lời mời và các điểm hỗ trợ nhất quán trong workspace.",
+        "created": "Đã tạo",
+        "updated": "Đã cập nhật"
+      },
+      "facts": {
+        "website": "Website",
+        "contact": "Liên hệ",
+        "category": "Danh mục"
+      }
+    },
+    "generalForm": {
+      "toasts": {
+        "logoUpdated": "Đã cập nhật logo tổ chức thành công.",
+        "logoRemoved": "Đã xóa logo tổ chức thành công."
+      },
+      "logo": {
+        "title": "Logo tổ chức",
+        "description": "Hiển thị trong điều hướng workspace, màn hình chọn tổ chức và các khu vực nhận diện trên dashboard.",
+        "badge": "Cập nhật tức thì"
+      },
+      "identity": {
+        "title": "Thông tin định danh",
+        "description": "Giữ tên chính thức và mô tả gọn gàng, rõ ràng, phù hợp với cách tổ chức được nhắc đến nội bộ."
+      },
+      "contact": {
+        "title": "Liên hệ và khu vực",
+        "description": "Những thông tin này hỗ trợ quản trị, điều phối hỗ trợ và liên lạc cấp tổ chức."
+      },
+      "fields": {
+        "name": "Tên tổ chức",
+        "description": "Mô tả",
+        "website": "Website",
+        "contactEmail": "Email liên hệ"
+      },
+      "placeholders": {
+        "name": "Acme Corp",
+        "description": "Tóm tắt tổ chức của bạn làm gì và các nhóm sử dụng workspace này như thế nào.",
+        "website": "https://example.com",
+        "contactEmail": "contact@example.com"
+      },
+      "footerNote": "Các thay đổi ở đây ảnh hưởng đến cách workspace hiển thị trong điều hướng nội bộ, trang dành cho thành viên và các điểm hỗ trợ.",
+      "save": "Lưu thay đổi"
+    },
+    "logoUploader": {
+      "alt": "Logo tổ chức",
+      "uploadLogo": "Tải logo lên",
+      "changeLogo": "Đổi logo",
+      "removeLogo": "Xóa logo",
+      "uploadHint": "Bấm vào logo để tải lên",
+      "replaceHint": "Bấm vào logo để thay thế",
+      "requirements": "PNG, JPG hoặc WebP. Tối đa 2 MB.",
+      "deleteHint": "Di chuột lên ảnh để xóa.",
+      "toasts": {
+        "fileTooLarge": "Logo phải nhỏ hơn hoặc bằng 2 MB.",
+        "uploadFailed": "Không thể tải logo lên. Vui lòng thử lại.",
+        "removeFailed": "Không thể xóa logo. Vui lòng thử lại.",
+        "storageDeleteFailed": "Logo đã được xóa khỏi workspace, nhưng file lưu trữ chưa thể xóa."
+      },
+      "removeDialog": {
+        "title": "Xóa logo tổ chức?",
+        "description": "Thao tác này sẽ xóa logo hiện tại khỏi hồ sơ workspace.",
+        "confirmNative": "Xóa logo tổ chức? Thao tác này sẽ xóa logo hiện tại khỏi hồ sơ workspace.",
+        "cancel": "Hủy",
+        "deleting": "Đang xóa...",
+        "delete": "Xóa"
+      }
+    },
+    "brandingForm": {
+      "color": {
+        "title": "Màu chủ đạo",
+        "description": "Được dùng cho header trợ lý, điểm nhấn sidebar và các khu vực hành động."
+      },
+      "assistant": {
+        "title": "Định danh trợ lý",
+        "description": "Đặt tên hiển thị mà người dùng sẽ thấy khi tương tác với widget."
+      },
+      "persona": {
+        "title": "Phong cách hội thoại",
+        "description": "Chọn giọng điệu phù hợp với cách tổ chức giao tiếp với các nhóm và thành viên.",
+        "options": {
+          "friendly": {
+            "label": "Thân thiện",
+            "description": "Phản hồi ấm áp, dễ tiếp cận cho hỗ trợ nhân viên và onboarding."
+          },
+          "professional": {
+            "label": "Chuyên nghiệp",
+            "description": "Giao tiếp rõ ràng, trang trọng, phù hợp với vận hành doanh nghiệp."
+          },
+          "concise": {
+            "label": "Ngắn gọn",
+            "description": "Phản hồi ngắn và hiệu quả cho các quy trình nội bộ cần tốc độ."
+          }
+        }
+      },
+      "fields": {
+        "botName": "Tên bot"
+      },
+      "placeholders": {
+        "botName": "Trợ lý"
+      },
+      "footerNote": "Thay đổi nhận diện sẽ ảnh hưởng đến giao diện widget trợ lý ngay sau khi lưu.",
+      "save": "Lưu nhận diện"
+    },
+    "brandingPreview": {
+      "title": "Xem trước trực tiếp",
+      "description": "Xem trước cách trợ lý hiển thị với người dùng trong widget hỗ trợ nội bộ.",
+      "badge": "Thời gian thực",
+      "assistantFallback": "Trợ lý",
+      "primaryColor": "Màu chủ đạo",
+      "conversationTone": "Giọng điệu hội thoại",
+      "widget": {
+        "subtitle": "Trợ lý workspace",
+        "userMessage": "Tôi cần hỗ trợ tìm đúng quy trình cho một yêu cầu mới.",
+        "placeholder": "Nhập tin nhắn...",
+        "messages": {
+          "friendly": "Xin chào. Tôi có thể hỗ trợ onboarding, yêu cầu và hướng dẫn nhanh trong workspace.",
+          "professional": "Xin chào. Tôi có thể hỗ trợ chính sách, yêu cầu và vận hành nội bộ.",
+          "concise": "Chào bạn. Hãy hỏi về yêu cầu, chính sách hoặc hỗ trợ workspace."
+        }
+      },
+      "personaLabels": {
+        "friendly": "Thân thiện và dễ tiếp cận",
+        "professional": "Chuyên nghiệp và trang trọng",
+        "concise": "Ngắn gọn và hiệu quả"
+      }
+    },
+    "validation": {
+      "nameMax": "Tên không được vượt quá 255 ký tự",
+      "websiteMax": "Website không được vượt quá 500 ký tự",
+      "websiteUrl": "Website phải là URL hợp lệ",
+      "emailMax": "Email không được vượt quá 255 ký tự",
+      "emailFormat": "Email liên hệ phải là địa chỉ email hợp lệ",
+      "brandColorHex": "Màu thương hiệu phải là mã hex hợp lệ (ví dụ #3B82F6)",
+      "botNameMax": "Tên bot không được vượt quá 100 ký tự"
+    }
+  },
+  "workingTimePage": {
+    "title": "Thời gian làm việc",
+    "description": "Cấu hình số giờ làm việc chuẩn theo từng ngày trong tuần và quản lý ngày nghỉ hoặc ngày đặc biệt."
+  },
+  "organizationSettingsPage": {
+    "title": "Cài đặt tổ chức",
+    "description": "Cấu hình quy tắc KPI, lịch gửi tóm tắt và tự động hóa báo cáo định kỳ cho tổ chức.",
+    "tabs": {
+      "kpiRules": "Quy tắc KPI",
+      "periodicReports": "Báo cáo định kỳ"
+    },
+    "kpiRules": {
+      "title": "Quy tắc KPI",
+      "description": "Quản lý trọng số hiệu suất KPI, hệ số tăng ca và quy tắc điểm thưởng cho tổ chức."
+    },
+    "periodicReports": {
+      "title": "Tự động hóa báo cáo định kỳ",
+      "description": "Cấu hình lịch báo cáo tháng, quý, năm, người nhận và phạm vi xuất dữ liệu cho tổ chức."
+    }
+  },
+  "orgSettingsForm": {
+    "toasts": {
+      "saved": "Đã lưu cài đặt KPI thành công."
+    },
+    "status": {
+      "enabled": "Bật",
+      "disabled": "Tắt"
+    },
+    "actions": {
+      "editingNotice": "Đang chỉnh sửa - thay đổi chưa được lưu cho đến khi bạn nhấn Lưu.",
+      "viewOnlyNotice": "Đang ở chế độ xem. Nhấn Chỉnh sửa để thay đổi.",
+      "cancel": "Hủy",
+      "saveChanges": "Lưu thay đổi",
+      "editSettings": "Chỉnh sửa cài đặt"
+    },
+    "weights": {
+      "title": "Trọng số hiệu suất KPI",
+      "description": "Quy định cách tính điểm hiệu suất (0-100) cho từng thành viên. Ba trọng số phải có tổng chính xác bằng 1.0.",
+      "sum": "Tổng",
+      "sumError": "Ba trọng số phải cộng lại bằng 1.0. Tổng hiện tại: {sum}",
+      "pointCompletion": "Hoàn thành điểm",
+      "pointCompletionHint": "Trọng số cho tỷ lệ điểm công việc đã hoàn thành so với tổng điểm được giao.",
+      "onTimeRate": "Tỷ lệ đúng hạn",
+      "onTimeRateHint": "Trọng số cho tỷ lệ công việc hoàn thành trước hoặc đúng hạn.",
+      "otContribution": "Đóng góp OT",
+      "otContributionHint": "Trọng số cho giờ tăng ca (OT hiệu dụng / giờ làm việc kỳ vọng). Đặt 0 để không tính OT."
+    },
+    "ot": {
+      "title": "Hệ số tăng ca",
+      "description": "Giờ OT hiệu dụng = giờ thực tế x hệ số. Hệ số cao hơn vào cuối tuần và ngày lễ sẽ làm các giờ này đóng góp nhiều hơn vào điểm KPI phần OT.",
+      "weekday": "Ngày thường (Thứ Hai-Thứ Sáu)",
+      "weekdayHint": "Hệ số chuẩn cho tăng ca vào ngày làm việc thông thường.",
+      "saturdayHint": "Hệ số áp dụng cho giờ tăng ca vào Thứ Bảy.",
+      "sundayHint": "Hệ số áp dụng cho giờ tăng ca vào Chủ Nhật.",
+      "publicHoliday": "Ngày lễ",
+      "publicHolidayHint": "Hệ số cho tăng ca vào ngày lễ hoặc ngày nghỉ bù được chỉ định."
+    },
+    "digest": {
+      "title": "Lịch gửi tóm tắt KPI",
+      "description": "Cấu hình bản tóm tắt KPI hằng tuần. Thời gian theo múi giờ của tổ chức (Asia/Saigon).",
+      "enable": "Bật gửi tóm tắt",
+      "enableHint": "Khi bật, bản tóm tắt KPI hằng tuần sẽ được gửi tự động theo ngày và giờ đã cấu hình.",
+      "lastSent": "Gửi lần cuối: {value}",
+      "neverSent": "Chưa từng gửi",
+      "day": "Ngày gửi",
+      "dayHint": "Ngày trong tuần để gửi bản tóm tắt (1=Thứ Hai, 7=Chủ Nhật).",
+      "time": "Giờ gửi",
+      "timeHint": "Thời gian gửi bản tóm tắt (HH:MM, múi giờ Asia/Saigon).",
+      "recipientGroups": "Người nhận",
+      "recipientGroupsHint": "Các nhóm sẽ nhận báo cáo tóm tắt.",
+      "deliveryChannels": "Kênh gửi",
+      "deliveryChannelsHint": "Cách bản tóm tắt được gửi đi.",
+      "noRecipients": "Chưa chọn người nhận.",
+      "noChannels": "Chưa chọn kênh gửi.",
+      "recipients": {
+        "orgAdmin": "Quản trị viên tổ chức",
+        "projectOwner": "Chủ dự án",
+        "projectManager": "Quản lý dự án",
+        "contactEmail": "Email liên hệ"
+      },
+      "channels": {
+        "email": "Email",
+        "inApp": "Thông báo trong ứng dụng"
+      }
+    },
+    "bonus": {
+      "title": "Quy tắc điểm thưởng",
+      "description": "Điểm thưởng tùy chọn được cộng thêm vào điểm hiệu suất cơ bản. Được giới hạn bởi <strong>mức thưởng tối đa</strong>. Điểm cuối cùng luôn không vượt quá 100.",
+      "enable": "Bật hệ thống điểm thưởng",
+      "enableHint": "Khi tắt, hệ thống không cộng điểm thưởng và bỏ qua toàn bộ trường điểm thưởng bên dưới.",
+      "onTimeTask": "Thưởng công việc đúng hạn",
+      "onTimeTaskHint": "Điểm cộng cho mỗi công việc hoàn thành trước hoặc đúng hạn.",
+      "earlyThreshold": "Ngưỡng hoàn thành sớm",
+      "earlyThresholdHint": "Công việc phải hoàn thành sớm hơn hạn chót số giờ này để được tính thưởng hoàn thành sớm.",
+      "earlyTask": "Thưởng hoàn thành sớm",
+      "earlyTaskHint": "Điểm cộng cho mỗi công việc hoàn thành sớm ít nhất bằng ngưỡng đã cấu hình.",
+      "zeroOverdue": "Thưởng không quá hạn",
+      "zeroOverdueHint": "Điểm thưởng khi thành viên không có công việc quá hạn trong kỳ.",
+      "maxCap": "Mức thưởng tối đa",
+      "maxCapHint": "Tổng điểm thưởng tối đa có thể cộng vào điểm cơ bản.",
+      "otPerEffectiveHour": "Thưởng OT theo giờ hiệu dụng",
+      "otPerEffectiveHourHint": "Điểm cộng cho mỗi giờ tăng ca hiệu dụng.",
+      "pointsPerTask": "điểm/công việc",
+      "hoursEarly": "giờ sớm",
+      "points": "điểm",
+      "pointsPerHour": "điểm/giờ"
+    }
+  },
+  "periodicReportSettings": {
+    "toasts": {
+      "saved": "Đã lưu cài đặt báo cáo định kỳ thành công."
+    },
+    "status": {
+      "on": "Bật",
+      "off": "Tắt",
+      "enabled": "Đã bật",
+      "disabled": "Đã tắt"
+    },
+    "actions": {
+      "saveChanges": "Lưu thay đổi",
+      "cancel": "Hủy",
+      "editSettings": "Chỉnh sửa cài đặt"
+    },
+    "header": {
+      "title": "Tự động hóa báo cáo định kỳ",
+      "editingNotice": "Đang chỉnh sửa. Lưu để cập nhật tự động hóa báo cáo định kỳ cho tổ chức này.",
+      "reviewNotice": "Xem lịch báo cáo tháng, quý và năm của tổ chức này.",
+      "viewOnlyNotice": "Đang ở chế độ xem. Bạn cần quyền quản lý để cập nhật cài đặt báo cáo định kỳ.",
+      "enabledCount": "{enabled} / {total} đã bật"
+    },
+    "schedules": {
+      "title": "Lịch báo cáo định kỳ",
+      "description": "Cấu hình lịch gửi báo cáo tháng, quý và năm tự động, người nhận, kênh gửi và phạm vi xuất dữ liệu. Thời gian dựa trên múi giờ của tổ chức.",
+      "scheduleTitle": "Lịch {frequency}",
+      "enableReport": "Bật báo cáo {frequency}",
+      "enableReportDescription": "Bật hoặc tắt lịch {frequency} tự động cho tổ chức này.",
+      "sendDelay": "Gửi sau khi kết thúc kỳ (ngày)",
+      "sendTime": "Giờ gửi"
+    },
+    "summary": {
+      "title": "Tóm tắt hiệu lực hiện tại",
+      "automaticDispatch": "Gửi tự động",
+      "delayAfterPeriodEnd": "Độ trễ sau khi kết thúc kỳ",
+      "days": "{count} ngày",
+      "dispatchTime": "Thời gian gửi"
+    },
+    "sections": {
+      "recipientGroups": "Nhóm người nhận",
+      "deliveryChannels": "Kênh gửi",
+      "reportScopes": "Phạm vi báo cáo",
+      "customEmails": "Email người nhận tùy chỉnh"
+    },
+    "empty": {
+      "recipientGroups": "Chưa chọn nhóm người nhận.",
+      "channels": "Chưa chọn kênh gửi.",
+      "scopes": "Chưa chọn phạm vi báo cáo.",
+      "customEmails": "Chưa cấu hình email tùy chỉnh."
+    },
+    "customEmails": {
+      "placeholder": "Nhập email rồi nhấn Enter",
+      "add": "Thêm",
+      "hint": "Nhấn Enter hoặc dấu phẩy để thêm nhiều email tùy chỉnh.",
+      "invalid": "Vui lòng nhập email hợp lệ trước khi thêm.",
+      "duplicate": "Email này đã có trong danh sách.",
+      "invalidList": "Một hoặc nhiều email tùy chỉnh không hợp lệ."
+    },
+    "frequencies": {
+      "monthly": {
+        "label": "hằng tháng",
+        "description": "Gửi báo cáo sau mỗi tháng đã đóng."
+      },
+      "quarterly": {
+        "label": "hằng quý",
+        "description": "Gửi báo cáo sau mỗi quý đã đóng."
+      },
+      "yearly": {
+        "label": "hằng năm",
+        "description": "Gửi báo cáo sau mỗi năm đã đóng."
+      }
+    },
+    "recipientGroups": {
+      "org_admin": {
+        "label": "Quản trị viên tổ chức",
+        "description": "Gửi cho quản trị viên tổ chức có quyền truy cập báo cáo."
+      },
+      "project_manager": {
+        "label": "Quản lý dự án",
+        "description": "Gửi cho các quản lý dự án trong toàn tổ chức."
+      },
+      "project_owner": {
+        "label": "Chủ dự án",
+        "description": "Gửi cho chủ dự án hiện tại."
+      },
+      "contact_email": {
+        "label": "Email liên hệ",
+        "description": "Bao gồm email liên hệ của tổ chức được cấu hình cho workspace này."
+      }
+    },
+    "scopes": {
+      "org_summary": {
+        "label": "Tóm tắt tổ chức",
+        "description": "Tóm tắt cấp tổ chức được xuất dưới dạng CSV."
+      },
+      "project_summary": {
+        "label": "Tóm tắt dự án",
+        "description": "Các dòng tóm tắt và chỉ số theo từng dự án."
+      },
+      "member_kpi": {
+        "label": "KPI thành viên",
+        "description": "Chi tiết KPI của thành viên trong kỳ báo cáo đã chọn."
+      }
+    },
+    "channels": {
+      "email": {
+        "label": "Email",
+        "description": "Gửi báo cáo tới địa chỉ email của người nhận."
+      },
+      "in_app": {
+        "label": "Thông báo trong ứng dụng",
+        "description": "Tạo thông báo trong ứng dụng cho người nhận đã liên kết với người dùng hệ thống."
+      }
+    }
+  },
+  "workingTimeForm": {
+    "toasts": {
+      "saved": "Đã lưu giờ làm việc thành công."
+    },
+    "validation": {
+      "number": "Vui lòng nhập số hợp lệ.",
+      "range": "Số giờ phải nằm trong khoảng từ 0 đến 24."
+    },
+    "actions": {
+      "editingNotice": "Đang chỉnh sửa. Thay đổi chỉ được lưu khi bạn nhấn Lưu.",
+      "viewOnlyNotice": "Đang ở chế độ xem. Nhấn Chỉnh sửa để thay đổi.",
+      "cancel": "Hủy",
+      "saveChanges": "Lưu thay đổi",
+      "editSettings": "Chỉnh sửa cài đặt"
+    },
+    "card": {
+      "title": "Giờ làm việc chuẩn mỗi ngày",
+      "description": "Cấu hình số giờ mỗi ngày trong tuần được tính là một ngày làm việc chuẩn. Các giá trị này được dùng để tính số giờ kỳ vọng cho KPI và xác định thời điểm bắt đầu tăng ca. Đặt ngày cuối tuần là 0 nếu tổ chức không làm việc vào những ngày đó.",
+      "totalWeek": "{hours}h / tuần",
+      "totalWeekTooltip": "Tổng số giờ chuẩn của cả 7 ngày.",
+      "weekend": "Cuối tuần",
+      "hoursUnit": "h"
+    }
+  },
+  "days": {
+    "monday": {
+      "label": "Thứ Hai",
+      "short": "T2"
+    },
+    "tuesday": {
+      "label": "Thứ Ba",
+      "short": "T3"
+    },
+    "wednesday": {
+      "label": "Thứ Tư",
+      "short": "T4"
+    },
+    "thursday": {
+      "label": "Thứ Năm",
+      "short": "T5"
+    },
+    "friday": {
+      "label": "Thứ Sáu",
+      "short": "T6"
+    },
+    "saturday": {
+      "label": "Thứ Bảy",
+      "short": "T7"
+    },
+    "sunday": {
+      "label": "Chủ Nhật",
+      "short": "CN"
+    }
+  },
+  "holidays": {
+    "toasts": {
+      "added": "Đã thêm ngày nghỉ thành công.",
+      "removed": "Đã xóa ngày nghỉ."
+    },
+    "validation": {
+      "selectMonth": "Vui lòng chọn tháng.",
+      "selectDay": "Vui lòng chọn ngày.",
+      "enterName": "Vui lòng nhập tên.",
+      "nameMax": "Tên không được vượt quá 255 ký tự.",
+      "workingHoursRange": "Số giờ làm việc phải nằm trong khoảng từ 0 đến 24."
+    },
+    "card": {
+      "title": "Ngày nghỉ & ngày đặc biệt",
+      "tooltip": "Ngày nghỉ sẽ ghi đè số giờ làm việc chuẩn của ngày đó khi tính số giờ kỳ vọng và hệ số OT cho KPI.",
+      "description": "Các ngày cụ thể sẽ ghi đè lịch làm việc chuẩn theo tuần. Giá trị số giờ làm việc bằng 0 nghĩa là nghỉ cả ngày.",
+      "addHoliday": "Thêm ngày nghỉ"
+    },
+    "dialog": {
+      "addTitle": "Thêm ngày nghỉ hoặc ngày đặc biệt",
+      "date": "Ngày",
+      "selectMonth": "Chọn tháng",
+      "selectDay": "Chọn ngày",
+      "dayOption": "Ngày {day}",
+      "yearHint": "Ngày nghỉ sẽ được lưu cho năm {year}. Bạn chỉ cần chọn tháng và ngày.",
+      "name": "Tên",
+      "namePlaceholder": "ví dụ: Tết Dương lịch, Nghỉ Tết...",
+      "type": "Loại",
+      "workingHours": "Số giờ làm việc",
+      "workingHoursTooltip": "Đặt là 0 nếu nghỉ cả ngày. Dùng 4 cho nửa ngày. Giá trị này sẽ ghi đè lịch chuẩn cho ngày cụ thể đó.",
+      "hoursHint": "giờ (0 = nghỉ cả ngày)",
+      "cancel": "Hủy",
+      "adding": "Đang thêm...",
+      "confirmAdd": "Thêm ngày nghỉ"
+    },
+    "deleteDialog": {
+      "title": "Xóa ngày nghỉ?",
+      "description": "Ngày này sẽ quay lại dùng lịch làm việc chuẩn theo tuần khi tính KPI.",
+      "cancel": "Hủy",
+      "removing": "Đang xóa...",
+      "confirmRemove": "Xóa"
+    },
+    "table": {
+      "date": "Ngày",
+      "name": "Tên",
+      "type": "Loại",
+      "workingHours": "Số giờ làm việc",
+      "fullDayOff": "Nghỉ cả ngày",
+      "empty": "Chưa có ngày nghỉ nào. Nhấn Thêm ngày nghỉ để bắt đầu."
+    },
+    "types": {
+      "nationalHoliday": "Ngày nghỉ lễ",
+      "companyHoliday": "Ngày nghỉ công ty",
+      "specialDay": "Ngày đặc biệt"
+    }
+  }
+}

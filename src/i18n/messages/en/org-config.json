@@ -1,0 +1,485 @@
+{
+  "organizationProfile": {
+    "toasts": {
+      "generalUpdated": "General info updated successfully.",
+      "generalUpdateFailed": "Failed to update general info.",
+      "brandingUpdated": "Branding updated successfully.",
+      "brandingUpdateFailed": "Failed to update branding."
+    },
+    "page": {
+      "loadFailed": "Failed to load organization profile.",
+      "tabs": {
+        "general": "General",
+        "branding": "Branding"
+      },
+      "generalCard": {
+        "title": "General Information",
+        "badge": "Workspace identity",
+        "description": "Manage the organization's name, description, logo, website, and contact information."
+      },
+      "brandingCard": {
+        "title": "Branding",
+        "badge": "Assistant experience",
+        "description": "Customize the workspace brand color and assistant identity shown to members."
+      }
+    },
+    "header": {
+      "badge": "Organization Profile",
+      "activeWorkspace": "Active workspace",
+      "inactiveWorkspace": "Inactive workspace",
+      "fallbackDescription": "Define how your organization is represented across workspace navigation, support surfaces, and member-facing experiences.",
+      "notAvailable": "Not available",
+      "notConfigured": "Not configured",
+      "notCategorized": "Not categorized",
+      "team": "team",
+      "summary": {
+        "title": "Business Summary",
+        "description": "Keep this profile current so internal navigation, invitations, and support touchpoints remain consistent across the workspace.",
+        "created": "Created",
+        "updated": "Updated"
+      },
+      "facts": {
+        "website": "Website",
+        "contact": "Contact",
+        "category": "Category"
+      }
+    },
+    "generalForm": {
+      "toasts": {
+        "logoUpdated": "Organization logo updated successfully.",
+        "logoRemoved": "Organization logo removed successfully."
+      },
+      "logo": {
+        "title": "Organization logo",
+        "description": "Shown in workspace navigation, org selection, and identity surfaces across the dashboard.",
+        "badge": "Updates instantly"
+      },
+      "identity": {
+        "title": "Identity details",
+        "description": "Keep the official name and description clean, clear, and aligned with how the organization is referenced internally."
+      },
+      "contact": {
+        "title": "Contact and locale",
+        "description": "These details support administration, support routing, and organization-level communication."
+      },
+      "fields": {
+        "name": "Organization Name",
+        "description": "Description",
+        "website": "Website",
+        "contactEmail": "Contact Email"
+      },
+      "placeholders": {
+        "name": "Acme Corp",
+        "description": "Summarize what your organization does and how teams use this workspace.",
+        "website": "https://example.com",
+        "contactEmail": "contact@example.com"
+      },
+      "footerNote": "Changes here affect how the workspace is presented in internal navigation, member-facing pages, and support touchpoints.",
+      "save": "Save Changes"
+    },
+    "logoUploader": {
+      "alt": "Organization logo",
+      "uploadLogo": "Upload Logo",
+      "changeLogo": "Change Logo",
+      "removeLogo": "Remove logo",
+      "uploadHint": "Click the logo to upload one",
+      "replaceHint": "Click the logo to replace it",
+      "requirements": "PNG, JPG or WebP. Max 2 MB.",
+      "deleteHint": "Hover the image to delete it.",
+      "toasts": {
+        "fileTooLarge": "Logo must be 2 MB or smaller.",
+        "uploadFailed": "Failed to upload logo. Please try again.",
+        "removeFailed": "Failed to remove logo. Please try again.",
+        "storageDeleteFailed": "Logo removed from the workspace, but the storage file could not be deleted."
+      },
+      "removeDialog": {
+        "title": "Delete organization logo?",
+        "description": "This will remove the current logo from your workspace profile.",
+        "confirmNative": "Delete organization logo? This will remove the current logo from your workspace profile.",
+        "cancel": "Cancel",
+        "deleting": "Deleting...",
+        "delete": "Delete"
+      }
+    },
+    "brandingForm": {
+      "color": {
+        "title": "Primary color",
+        "description": "Used for the assistant header, sidebar accents, and action surfaces."
+      },
+      "assistant": {
+        "title": "Assistant identity",
+        "description": "Set the display name users see when they interact with the widget."
+      },
+      "persona": {
+        "title": "Conversation style",
+        "description": "Choose the tone that best matches how your organization communicates with teams and members.",
+        "options": {
+          "friendly": {
+            "label": "Friendly",
+            "description": "Warm, approachable replies for employee support and onboarding."
+          },
+          "professional": {
+            "label": "Professional",
+            "description": "Clear, formal communication suited for business operations."
+          },
+          "concise": {
+            "label": "Concise",
+            "description": "Short, efficient responses for fast internal workflows."
+          }
+        }
+      },
+      "fields": {
+        "botName": "Bot Name"
+      },
+      "placeholders": {
+        "botName": "Assistant"
+      },
+      "footerNote": "Branding changes affect the assistant widget appearance immediately after save.",
+      "save": "Save Branding"
+    },
+    "brandingPreview": {
+      "title": "Live Preview",
+      "description": "Preview how the assistant will appear to users in a business-style support widget.",
+      "badge": "Real-time",
+      "assistantFallback": "Assistant",
+      "primaryColor": "Primary color",
+      "conversationTone": "Conversation tone",
+      "widget": {
+        "subtitle": "Workspace assistant",
+        "userMessage": "I need help finding the right workflow for a new request.",
+        "placeholder": "Type a message...",
+        "messages": {
+          "friendly": "Hello. I can help with onboarding, requests, and quick workspace guidance.",
+          "professional": "Welcome. I can assist with policies, requests, and operational support.",
+          "concise": "Hi. Ask about requests, policies, or workspace support."
+        }
+      },
+      "personaLabels": {
+        "friendly": "Friendly and approachable",
+        "professional": "Professional and formal",
+        "concise": "Concise and efficient"
+      }
+    },
+    "validation": {
+      "nameMax": "Name must be at most 255 characters",
+      "websiteMax": "Website must be at most 500 characters",
+      "websiteUrl": "Website must be a valid URL",
+      "emailMax": "Email must be at most 255 characters",
+      "emailFormat": "Contact email must be a valid email address",
+      "brandColorHex": "Brand color must be a valid hex color (e.g. #3B82F6)",
+      "botNameMax": "Bot name must be at most 100 characters"
+    }
+  },
+  "workingTimePage": {
+    "title": "Working Time",
+    "description": "Configure standard working hours per weekday and manage holidays or special days."
+  },
+  "organizationSettingsPage": {
+    "title": "Organization Settings",
+    "description": "Configure KPI rules, digest settings, and periodic reporting automation for the organization.",
+    "tabs": {
+      "kpiRules": "KPI Rules",
+      "periodicReports": "Periodic Reports"
+    },
+    "kpiRules": {
+      "title": "KPI Rules",
+      "description": "Manage KPI performance weights, overtime multipliers, and bonus rules for the organization."
+    },
+    "periodicReports": {
+      "title": "Periodic Report Automation",
+      "description": "Configure monthly, quarterly, and yearly report schedules, recipients, and exported scopes for the organization."
+    }
+  },
+  "orgSettingsForm": {
+    "toasts": {
+      "saved": "KPI settings saved successfully."
+    },
+    "status": {
+      "enabled": "Enabled",
+      "disabled": "Disabled"
+    },
+    "actions": {
+      "editingNotice": "Editing - changes are not saved until you click Save.",
+      "viewOnlyNotice": "View-only mode. Click Edit to make changes.",
+      "cancel": "Cancel",
+      "saveChanges": "Save Changes",
+      "editSettings": "Edit Settings"
+    },
+    "weights": {
+      "title": "KPI Performance Weights",
+      "description": "Controls how the performance score (0-100) is calculated for each team member. The three weights must sum to exactly 1.0.",
+      "sum": "Sum",
+      "sumError": "The three weights must add up to 1.0. Current sum: {sum}",
+      "pointCompletion": "Point Completion",
+      "pointCompletionHint": "Weight for the ratio of story points completed vs. total assigned.",
+      "onTimeRate": "On-Time Rate",
+      "onTimeRateHint": "Weight for the percentage of completed tasks finished on or before their deadline.",
+      "otContribution": "OT Contribution",
+      "otContributionHint": "Weight for overtime hours (effective OT / expected working hours). Set to 0 to exclude OT."
+    },
+    "ot": {
+      "title": "Overtime Multipliers",
+      "description": "Effective OT hours = actual hours x multiplier. Higher multipliers on weekends and holidays make those hours count more toward the KPI OT contribution score.",
+      "weekday": "Weekday (Mon-Fri)",
+      "weekdayHint": "Standard rate for overtime on regular working days.",
+      "saturdayHint": "Multiplier applied to overtime hours worked on Saturdays.",
+      "sundayHint": "Multiplier applied to overtime hours worked on Sundays.",
+      "publicHoliday": "Public Holiday",
+      "publicHolidayHint": "Multiplier for overtime on designated holidays or compensation days."
+    },
+    "digest": {
+      "title": "KPI Digest Schedule",
+      "description": "Configure the weekly KPI digest. Time is in your organization's timezone (Asia/Saigon).",
+      "enable": "Enable Digest",
+      "enableHint": "When enabled, a weekly KPI digest will be sent automatically on the configured day and time.",
+      "lastSent": "Last sent: {value}",
+      "neverSent": "Never sent",
+      "day": "Digest Day",
+      "dayHint": "Day of the week to send the digest (1=Monday, 7=Sunday).",
+      "time": "Digest Time",
+      "timeHint": "Time to send the digest (HH:MM, Asia/Saigon timezone).",
+      "recipientGroups": "Recipients",
+      "recipientGroupsHint": "Groups that will receive the digest report.",
+      "deliveryChannels": "Channels",
+      "deliveryChannelsHint": "How the digest will be delivered.",
+      "noRecipients": "No recipients selected.",
+      "noChannels": "No channels selected.",
+      "recipients": {
+        "orgAdmin": "Organization Admins",
+        "projectOwner": "Project Owner",
+        "projectManager": "Project Managers",
+        "contactEmail": "Contact Email"
+      },
+      "channels": {
+        "email": "Email",
+        "inApp": "In-App Notification"
+      }
+    },
+    "bonus": {
+      "title": "Bonus Rules",
+      "description": "Optional bonus points added on top of the base performance score. Capped by <strong>Max Bonus Cap</strong>. Final score is always capped at 100.",
+      "enable": "Enable Bonus System",
+      "enableHint": "When disabled, no bonus points are added and all bonus fields below are ignored.",
+      "onTimeTask": "On-Time Task Bonus",
+      "onTimeTaskHint": "Points added for each task completed on or before its deadline.",
+      "earlyThreshold": "Early Completion Threshold",
+      "earlyThresholdHint": "A task must be finished this many hours before the deadline to qualify for the early bonus.",
+      "earlyTask": "Early Task Bonus",
+      "earlyTaskHint": "Points added for each task completed at least the threshold hours before the deadline.",
+      "zeroOverdue": "Zero Overdue Bonus",
+      "zeroOverdueHint": "Bonus points awarded when a member has zero overdue tasks in the period.",
+      "maxCap": "Max Bonus Cap",
+      "maxCapHint": "Maximum total bonus points that can be added to the base score.",
+      "otPerEffectiveHour": "OT Bonus per Effective Hour",
+      "otPerEffectiveHourHint": "Points added for each effective overtime hour contributed.",
+      "pointsPerTask": "pts per task",
+      "hoursEarly": "hours early",
+      "points": "pts",
+      "pointsPerHour": "pts/hr"
+    }
+  },
+  "periodicReportSettings": {
+    "toasts": {
+      "saved": "Periodic report settings saved successfully."
+    },
+    "status": {
+      "on": "On",
+      "off": "Off",
+      "enabled": "Enabled",
+      "disabled": "Disabled"
+    },
+    "actions": {
+      "saveChanges": "Save Changes",
+      "cancel": "Cancel",
+      "editSettings": "Edit Settings"
+    },
+    "header": {
+      "title": "Periodic Report Automation",
+      "editingNotice": "Editing mode. Save to update periodic report automation for this organization.",
+      "reviewNotice": "Review monthly, quarterly, and yearly report schedules for this organization.",
+      "viewOnlyNotice": "View-only mode. You need manage permission to update periodic report settings.",
+      "enabledCount": "{enabled} / {total} enabled"
+    },
+    "schedules": {
+      "title": "Periodic Report Schedules",
+      "description": "Configure the automatic monthly, quarterly, and yearly report schedule, recipients, channels, and exported scopes. Time is based on your organization timezone.",
+      "scheduleTitle": "{frequency} Schedule",
+      "enableReport": "Enable {frequency} report",
+      "enableReportDescription": "Turn automatic {frequency} scheduling on or off for this organization.",
+      "sendDelay": "Send after period end (days)",
+      "sendTime": "Send time"
+    },
+    "summary": {
+      "title": "Current effective summary",
+      "automaticDispatch": "Automatic dispatch",
+      "delayAfterPeriodEnd": "Delay after period end",
+      "days": "{count} day(s)",
+      "dispatchTime": "Dispatch time"
+    },
+    "sections": {
+      "recipientGroups": "Recipient groups",
+      "deliveryChannels": "Delivery channels",
+      "reportScopes": "Report scopes",
+      "customEmails": "Custom email recipients"
+    },
+    "empty": {
+      "recipientGroups": "No recipient groups selected.",
+      "channels": "No channels selected.",
+      "scopes": "No report scopes selected.",
+      "customEmails": "No custom emails configured."
+    },
+    "customEmails": {
+      "placeholder": "Type email and press Enter",
+      "add": "Add",
+      "hint": "Press Enter or comma to add multiple custom email recipients.",
+      "invalid": "Enter a valid email address before adding it.",
+      "duplicate": "This email is already included.",
+      "invalidList": "One or more custom email addresses are invalid."
+    },
+    "frequencies": {
+      "monthly": {
+        "label": "Monthly",
+        "description": "Send a report after each closed month."
+      },
+      "quarterly": {
+        "label": "Quarterly",
+        "description": "Send a report after each closed quarter."
+      },
+      "yearly": {
+        "label": "Yearly",
+        "description": "Send a report after each closed year."
+      }
+    },
+    "recipientGroups": {
+      "org_admin": {
+        "label": "Organization Admins",
+        "description": "Send to organization admins with access to reports."
+      },
+      "project_manager": {
+        "label": "Project Managers",
+        "description": "Send to project managers across the organization."
+      },
+      "project_owner": {
+        "label": "Project Owner",
+        "description": "Send to the current project owner."
+      },
+      "contact_email": {
+        "label": "Contact Email",
+        "description": "Include the organization contact email recipients configured for this workspace."
+      }
+    },
+    "scopes": {
+      "org_summary": {
+        "label": "Organization Summary",
+        "description": "High-level organization summary exported as CSV."
+      },
+      "project_summary": {
+        "label": "Project Summary",
+        "description": "Per-project summary rows and metrics."
+      },
+      "member_kpi": {
+        "label": "Member KPI",
+        "description": "Member KPI breakdown for the selected reporting period."
+      }
+    },
+    "channels": {
+      "email": {
+        "label": "Email",
+        "description": "Send reports to recipient email addresses."
+      },
+      "in_app": {
+        "label": "In-App Notification",
+        "description": "Create in-app notifications for recipients mapped to system users."
+      }
+    }
+  },
+  "workingTimeForm": {
+    "toasts": {
+      "saved": "Working hours saved successfully."
+    },
+    "validation": {
+      "number": "Enter a valid number.",
+      "range": "Hours must be between 0 and 24."
+    },
+    "actions": {
+      "editingNotice": "Editing. Changes are not saved until you click Save.",
+      "viewOnlyNotice": "View-only mode. Click Edit to make changes.",
+      "cancel": "Cancel",
+      "saveChanges": "Save Changes",
+      "editSettings": "Edit Settings"
+    },
+    "card": {
+      "title": "Standard Working Hours per Day",
+      "description": "Configure how many hours each weekday counts as a standard working day. These values are used to calculate expected hours for KPI and to determine when overtime starts. Set weekend days to 0 if the organization does not work those days.",
+      "totalWeek": "{hours}h / week",
+      "totalWeekTooltip": "Total standard hours across all 7 days.",
+      "weekend": "Weekend",
+      "hoursUnit": "h"
+    }
+  },
+  "days": {
+    "monday": { "label": "Monday", "short": "Mon" },
+    "tuesday": { "label": "Tuesday", "short": "Tue" },
+    "wednesday": { "label": "Wednesday", "short": "Wed" },
+    "thursday": { "label": "Thursday", "short": "Thu" },
+    "friday": { "label": "Friday", "short": "Fri" },
+    "saturday": { "label": "Saturday", "short": "Sat" },
+    "sunday": { "label": "Sunday", "short": "Sun" }
+  },
+  "holidays": {
+    "toasts": {
+      "added": "Holiday added successfully.",
+      "removed": "Holiday removed."
+    },
+    "validation": {
+      "selectMonth": "Please select a month.",
+      "selectDay": "Please select a day.",
+      "enterName": "Please enter a name.",
+      "nameMax": "Name must be 255 characters or fewer.",
+      "workingHoursRange": "Working hours must be between 0 and 24."
+    },
+    "card": {
+      "title": "Holidays & Special Days",
+      "tooltip": "Holidays override the standard working hours for that date when calculating expected hours and OT multipliers for KPI.",
+      "description": "Specific dates that override the standard weekly schedule. A working hours value of 0 means a full day off.",
+      "addHoliday": "Add Holiday"
+    },
+    "dialog": {
+      "addTitle": "Add Holiday or Special Day",
+      "date": "Date",
+      "selectMonth": "Select month",
+      "selectDay": "Select day",
+      "dayOption": "Day {day}",
+      "yearHint": "Holiday will be saved for {year}. You only need to choose month and day.",
+      "name": "Name",
+      "namePlaceholder": "e.g. New Year's Day, Tet Holiday...",
+      "type": "Type",
+      "workingHours": "Working Hours",
+      "workingHoursTooltip": "Set to 0 for a full day off. Use 4 for a half-day. This overrides the standard schedule for this specific date.",
+      "hoursHint": "hours (0 = full day off)",
+      "cancel": "Cancel",
+      "adding": "Adding...",
+      "confirmAdd": "Add Holiday"
+    },
+    "deleteDialog": {
+      "title": "Remove Holiday?",
+      "description": "This date will revert to the standard weekly schedule for KPI calculations.",
+      "cancel": "Cancel",
+      "removing": "Removing...",
+      "confirmRemove": "Remove"
+    },
+    "table": {
+      "date": "Date",
+      "name": "Name",
+      "type": "Type",
+      "workingHours": "Working Hours",
+      "fullDayOff": "Full day off",
+      "empty": "No holidays configured. Click Add Holiday to get started."
+    },
+    "types": {
+      "nationalHoliday": "National Holiday",
+      "companyHoliday": "Company Holiday",
+      "specialDay": "Special Day"
+    }
+  }
+}

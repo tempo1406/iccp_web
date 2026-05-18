@@ -1,0 +1,340 @@
+{
+  "common": {
+    "dashboard": "Dashboard",
+    "organizationManagement": "Organization Management",
+    "unknownUser": "Unknown user",
+    "unknownOrganization": "Unknown organization",
+    "unknownError": "Unknown error.",
+    "notAvailable": "-",
+    "active": "Active",
+    "inactive": "Inactive",
+    "protected": "Protected",
+    "custom": "Custom",
+    "yes": "Yes",
+    "no": "No",
+    "cancel": "Cancel",
+    "close": "Close",
+    "remove": "Remove",
+    "add": "Add",
+    "status": "Status"
+  },
+  "inviteMembers": {
+    "status": {
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "expired": "Expired",
+      "cancelled": "Cancelled"
+    },
+    "page": {
+      "title": "Invite Members",
+      "description": "Send invitations and manage invitation lifecycle with live backend data.",
+      "accessDeniedTitle": "You do not have permission to access this page.",
+      "accessDeniedDescription": "Required permission: {permission}",
+      "remindPendingInPage": "Remind Pending In Page ({count})"
+    },
+    "stats": {
+      "totalInvitations": "Total Invitations",
+      "pendingAcceptance": "Pending Acceptance",
+      "acceptedInvitations": "Accepted Invitations",
+      "needsAttention": "Needs Attention"
+    },
+    "form": {
+      "title": "Send New Invitations",
+      "description": "Enter multiple emails separated by comma, space, or new line. Backend accepts maximum 50 emails per request.",
+      "addEmail": "Add Email",
+      "emailPlaceholder": "name@example.com",
+      "emailList": "Email List",
+      "emptyEmails": "Added emails will appear here as tags.",
+      "removeEmail": "Remove {email}",
+      "invitationNote": "Invitation Note",
+      "notePlaceholder": "Dear team, welcome to our workspace...",
+      "noteHint": "Optional. This note is included in the invitation email and kept for future resends. {count}/2000 text characters",
+      "footerHint": "Role assignment is handled after member joins organization.",
+      "sendInvitation": "Send Invitation"
+    },
+    "registry": {
+      "title": "Invitation Registry",
+      "description": "Track invitation status and perform resend/cancel actions.",
+      "searchPlaceholder": "Search by email, inviter, invite ID...",
+      "allStatus": "All status",
+      "loadFailed": "Failed to load invitations",
+      "summary": "Total {total} invitations • Page {page} / {totalPages}",
+      "perPage": "{count} / page"
+    },
+    "table": {
+      "headers": {
+        "email": "Email",
+        "status": "Status",
+        "invitedBy": "Invited By",
+        "createdAt": "Created At",
+        "expiresAt": "Expires At",
+        "acceptedAt": "Accepted At"
+      },
+      "empty": "No invitations found with current filters.",
+      "viewDetails": "View Details",
+      "resendInvitation": "Resend Invitation",
+      "cancelInvitation": "Cancel Invitation"
+    },
+    "details": {
+      "title": "Invitation Details",
+      "description": "Review invitation metadata and run supported actions.",
+      "unavailable": "Invitation details are not available.",
+      "organization": "Organization",
+      "invitedBy": "Invited By",
+      "invitationNote": "Invitation Note",
+      "createdAt": "Created At",
+      "expiresAt": "Expires At",
+      "acceptedAt": "Accepted At",
+      "isExpired": "Is Expired",
+      "resendInvitation": "Resend Invitation",
+      "cancelInvitation": "Cancel Invitation"
+    },
+    "errors": {
+      "noResendPermission": "You do not have permission to resend invitations.",
+      "noCancelPermission": "You do not have permission to cancel invitations.",
+      "noCreatePermission": "You do not have permission to create invitations.",
+      "enterAtLeastOneEmail": "Please enter at least one valid email address.",
+      "maxEmailsPerRequest": "You can invite at most 50 email addresses per request.",
+      "invalidEmails": "Invalid email(s): {preview}",
+      "noteTooLong": "Invitation note must be 2000 text characters or fewer.",
+      "markupTooLong": "Invitation note markup is too long. Please simplify the formatting.",
+      "failedToSend": "Failed to send invitations.",
+      "enterEmailBeforeAdding": "Please enter at least one valid email address before adding.",
+      "allEmailsAlreadyAdded": "All valid email addresses in this input are already added.",
+      "maxEmailsForTags": "You can add at most 50 email addresses per request.",
+      "someEmailsSkipped": "Some entries were skipped because they are invalid: {preview}",
+      "noPendingInPage": "No pending invitations to resend on this page.",
+      "failedToResendPending": "Failed to resend pending invitations."
+    },
+    "toasts": {
+      "sentCount": "Sent {count} invitation(s).",
+      "resentSuccess": "Invitation resent successfully.",
+      "cancelled": "Invitation cancelled.",
+      "failedToResend": "Failed to resend invitation.",
+      "failedToCancel": "Failed to cancel invitation.",
+      "resentPendingAll": "Resent {count} invitation(s).",
+      "resentPendingPartial": "Resent {successCount}, failed {failedCount}."
+    }
+  },
+  "members": {
+    "page": {
+      "title": "Organization Members",
+      "description": "Manage organization members and inspect membership details.",
+      "accessDeniedTitle": "You do not have permission to access this page.",
+      "accessDeniedDescription": "Required permission: {permission}"
+    },
+    "filters": {
+      "searchPlaceholder": "Search by name, email, user ID...",
+      "allStatus": "All status",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "content": {
+      "loadFailed": "Failed to load organization members"
+    },
+    "table": {
+      "headers": {
+        "member": "Member",
+        "status": "Status",
+        "joinedAt": "Joined At",
+        "invitationAccepted": "Invitation Accepted",
+        "invitedBy": "Invited By"
+      },
+      "empty": "No members found with current filters.",
+      "unknown": "Unknown",
+      "viewDetails": "View Details",
+      "setInactive": "Set Inactive",
+      "setActive": "Set Active",
+      "removeMember": "Remove Member"
+    },
+    "details": {
+      "title": "Member Details",
+      "loadFailed": "Failed to load member details.",
+      "owner": "Owner",
+      "tabs": {
+        "overview": "Overview",
+        "rolesPermissions": "Roles & Permissions"
+      },
+      "contactInformation": "Contact Information",
+      "emailAddress": "Email Address",
+      "phoneNumber": "Phone Number",
+      "dateOfBirth": "Date of Birth",
+      "address": "Address",
+      "organizationContext": "Organization Context",
+      "memberStatus": "Member Status",
+      "invitedBy": "Invited By",
+      "joinDate": "Join Date",
+      "acceptedInvite": "Accepted Invite",
+      "leftAt": "Left At",
+      "assign": "Assign",
+      "role": "Role",
+      "description": "Description",
+      "noRolesAssigned": "No roles assigned."
+    },
+    "removeDialog": {
+      "title": "Remove Member",
+      "description": "This action will remove {target} from the organization and revoke organization-scoped roles.",
+      "fallbackTarget": "this user",
+      "removing": "Removing...",
+      "confirm": "Remove Member"
+    },
+    "toasts": {
+      "memberRemoved": "Member removed from organization.",
+      "memberActivated": "Member activated successfully.",
+      "memberDeactivated": "Member deactivated successfully.",
+      "failedToRemove": "Failed to remove member from organization.",
+      "failedToUpdateStatus": "Failed to update member status."
+    }
+  },
+  "rolesPermissions": {
+    "page": {
+      "title": "Roles & Permissions",
+      "description": "Create custom roles, manage role permissions, and assign roles to organization members.",
+      "accessDeniedTitle": "You do not have permission to access this page.",
+      "accessDeniedDescription": "Required permission: {permission}"
+    },
+    "stats": {
+      "totalRoles": "Total Roles",
+      "customRoles": "Custom Roles",
+      "protectedRoles": "Protected Roles"
+    },
+    "registry": {
+      "title": "Role Registry",
+      "description": "Create custom roles and manage existing ones. Click a role to view details and permissions.",
+      "createNewRole": "Create New Role",
+      "roleName": "Role Name",
+      "roleNamePlaceholder": "e.g. project_manager",
+      "roleDescription": "Description",
+      "roleDescriptionPlaceholder": "Brief description of the role",
+      "createRole": "Create Role",
+      "loadFailed": "Failed to load roles",
+      "empty": "No roles found. Create your first role above.",
+      "headers": {
+        "role": "Role",
+        "type": "Type",
+        "created": "Created",
+        "lastUpdated": "Last Updated",
+        "actions": "Actions"
+      }
+    },
+    "memberAssignment": {
+      "title": "Member Role Assignment",
+      "description": "Assign or revoke roles for organization members. Protected roles are not assignable from this UI.",
+      "member": "Member",
+      "memberPlaceholder": "Select member...",
+      "roles": "Roles",
+      "assignRoles": "Assign Roles",
+      "noMembersFound": "No members found.",
+      "loadFailed": "Failed to load member roles",
+      "viewRestrictedTitle": "Member role view is restricted",
+      "viewRestrictedDescription": "Required permission: {permission}",
+      "headers": {
+        "role": "Role",
+        "type": "Type",
+        "scope": "Scope",
+        "assignedAt": "Assigned At",
+        "action": "Action"
+      },
+      "empty": "This member has no assigned roles.",
+      "scopeProject": "Project: {name}",
+      "scopeProjectFallback": "Project",
+      "scopeOrganization": "Organization"
+    },
+    "typeBadge": {
+      "protected": "Protected",
+      "custom": "Custom"
+    },
+    "dialogs": {
+      "view": {
+        "title": "Role Details",
+        "description": "View role metadata and assigned permissions.",
+        "loadFailed": "Failed to load role details",
+        "roleInfo": "Role Info",
+        "roleName": "Role Name",
+        "roleDescription": "Description",
+        "createdAt": "Created At",
+        "updatedAt": "Updated At",
+        "assignedPermissions": "Assigned Permissions",
+        "filterPermissions": "Filter permissions...",
+        "noPermissionsFound": "No permissions found."
+      },
+      "edit": {
+        "titleUpdateSystemRole": "Update System Role",
+        "titleUpdateRole": "Update Role",
+        "description": "Edit role metadata and permission codes.",
+        "loadFailed": "Failed to load role details",
+        "roleInfo": "Role Info",
+        "protectedTitle": "Protected Role",
+        "protectedDescription": "This role is protected by organization policy. Editing and permission changes are disabled.",
+        "roleName": "Role Name",
+        "roleDescription": "Description",
+        "selectedPermissions": "Selected Permissions",
+        "noPermissionsSelected": "No permissions selected.",
+        "permissionCodes": "Permission Codes",
+        "items": "{count} items",
+        "filterPermissions": "Filter permissions...",
+        "noPermissionsFound": "No permissions found for current filter.",
+        "updateRole": "Update Role"
+      },
+      "delete": {
+        "title": "Delete Role",
+        "description": "This action will permanently delete role {roleName} and revoke all related assignments.",
+        "fallbackRole": "-"
+      }
+    },
+    "roleAssignment": {
+      "selectRoles": "Select roles to assign",
+      "noRolesFound": "No roles found."
+    },
+    "toasts": {
+      "roleCreated": "Role created successfully.",
+      "failedToCreateRole": "Failed to create role.",
+      "roleUpdated": "Role updated successfully.",
+      "failedToUpdateRole": "Failed to update role.",
+      "roleDeleted": "Role deleted successfully.",
+      "failedToDeleteRole": "Failed to delete role.",
+      "permissionsAssigned": "Permissions assigned successfully.",
+      "failedToAssignPermissions": "Failed to assign permissions.",
+      "permissionsRevoked": "Permissions revoked successfully.",
+      "failedToRevokePermissions": "Failed to revoke permissions.",
+      "memberRoleAssigned": "Role assigned to member successfully.",
+      "failedToAssignMemberRole": "Failed to assign role to member.",
+      "memberRoleRevoked": "Role revoked from member successfully.",
+      "failedToRevokeMemberRole": "Failed to revoke role from member."
+    }
+  },
+  "invitationAccept": {
+    "errors": {
+      "missingToken": "Invitation token is missing.",
+      "invalidOrExpired": "Invitation token is invalid or has expired.",
+      "expired": "This invitation token has expired. Ask an admin to resend a new invitation.",
+      "invalid": "This invitation token is invalid. Please check the invitation link again.",
+      "unknown": "Unknown error"
+    },
+    "toasts": {
+      "accepted": "Invitation accepted successfully.",
+      "acceptFailed": "Failed to accept invitation.",
+      "alreadyAccepted": "Invitation was already accepted."
+    },
+    "success": {
+      "title": "Organization invitation accepted",
+      "description": "Redirecting you to your dashboard...",
+      "badge": "Redirecting"
+    },
+    "card": {
+      "processingTitle": "Accepting invitation",
+      "processingDescription": "We are validating your token and adding you to the organization.",
+      "errorTitle": "Unable to accept invitation",
+      "errorDescription": "Please verify the invitation link or ask an admin to send a new invitation."
+    },
+    "alerts": {
+      "processingTitle": "Processing invitation",
+      "processingDescription": "Please wait a moment. You will be redirected automatically after the invitation is accepted.",
+      "failedTitle": "Invitation failed"
+    },
+    "actions": {
+      "retry": "Retry",
+      "signInAnother": "Sign in with another account"
+    }
+  }
+}

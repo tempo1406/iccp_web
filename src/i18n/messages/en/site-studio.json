@@ -1,0 +1,253 @@
+{
+  "builder": {
+    "title": "Site Studio",
+    "description": "Design and publish your organization's public landing page.",
+    "permissionDenied": "You do not have permission to access Site Studio.",
+    "active": "Active",
+    "activePage": "Active Page",
+    "emptyPage": "Empty page",
+    "viewLive": "View Live",
+    "newPage": "New Page",
+    "pageLibrary": "Page Library",
+    "starterTemplates": "Starter Templates",
+    "pickTemplate": "Pick a template to start editing faster",
+    "startNowTitle": "Start now",
+    "startNowDescription": "Create a blank page or choose one of the starter templates above.",
+    "createBlankPage": "Create Blank Page",
+    "loadMore": "Load more",
+    "publishedUrl": "Published URL",
+    "publicUrl": "Public URL",
+    "publicUrlDescription": "Share this link so anyone can view your landing page without signing in.",
+    "openInNewTab": "Open in new tab",
+    "copy": "Copy",
+    "copied": "Copied",
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "useTemplate": "Use template",
+      "setAsActive": "Set as Active"
+    },
+    "toasts": {
+      "activeSetSuccess": "\"{name}\" has been set as the active page.",
+      "publishFailed": "Unable to publish this page.",
+      "pageDeleted": "Page deleted.",
+      "deleteFailed": "Unable to delete this page.",
+      "templateAdded": "Template \"{name}\" has been added to your library.",
+      "createFromTemplateFailed": "Unable to create a page from this template.",
+      "activeRemoved": "Active page removed."
+    },
+    "starterTemplatesList": {
+      "businessflow": {
+        "name": "BusinessFlow",
+        "description": "Modern business landing page with hero, services, stats, and CTA sections."
+      },
+      "teampulse": {
+        "name": "TeamPulse",
+        "description": "Project and team management template with a minimal layout and bold teal accents."
+      },
+      "analytix": {
+        "name": "Analytix",
+        "description": "Data analytics landing page with dashboards, KPI cards, and conversion-focused sections."
+      },
+      "crmpro": {
+        "name": "CRMPro",
+        "description": "CRM and sales workflow template focused on pipeline visibility and lead conversion."
+      },
+      "hrhub": {
+        "name": "HRHub",
+        "description": "HR operations template for recruitment, payroll, attendance, and employee self-service."
+      },
+      "financeops": {
+        "name": "FinanceOps",
+        "description": "Business finance template for invoicing, budgeting, and reporting workflows."
+      }
+    }
+  },
+  "blocksPanel": {
+    "regular": "Regular",
+    "symbols": "Symbols",
+    "searchPlaceholder": "Search...",
+    "empty": "No saved symbols yet."
+  },
+  "media": {
+    "title": "Media",
+    "upload": "Upload",
+    "empty": "Click to upload image or video",
+    "labels": {
+      "image": "Image",
+      "video": "Video"
+    },
+    "toasts": {
+      "unsupportedFileType": "Unsupported file type: {name}",
+      "videoTooLarge": "{name} must be 100 MB or smaller.",
+      "imageTooLarge": "{name} must be 10 MB or smaller.",
+      "uploadedOne": "Media uploaded.",
+      "uploadedMany": "{count} media files uploaded.",
+      "uploadFailed": "Upload failed. Please try again.",
+      "inserted": "Media inserted."
+    }
+  },
+  "globalStyles": {
+    "sections": {
+      "colors": "Colors",
+      "body": "Body",
+      "heading": "Heading",
+      "subheading": "Subheading",
+      "buttons": "Buttons",
+      "links": "Links",
+      "borders": "Borders"
+    },
+    "labels": {
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "accent": "Accent",
+      "success": "Success",
+      "warning": "Warning",
+      "error": "Error",
+      "background": "Background",
+      "color": "Color",
+      "fontSize": "Font Size",
+      "lineHeight": "Line Height",
+      "fontFamily": "Font Family",
+      "borderRadius": "Border Radius",
+      "borderColor": "Border Color",
+      "decoration": "Decoration"
+    },
+    "options": {
+      "inherit": "Inherit",
+      "none": "None",
+      "underline": "Underline",
+      "lineThrough": "Line-through",
+      "overline": "Overline",
+      "systemUi": "System UI"
+    }
+  },
+  "editor": {
+    "defaultTemplateName": "Untitled Page",
+    "activePage": "Active Page",
+    "aiPlaceholder": "How can I help you build your project?",
+    "leftPanels": {
+      "blocks": "Blocks",
+      "layers": "Pages & Layers",
+      "globalStyles": "Global Styles",
+      "assets": "Assets",
+      "ai": "AI Assistant"
+    },
+    "rightTabs": {
+      "styles": "Styles",
+      "properties": "Properties"
+    },
+    "topbar": {
+      "back": "Back",
+      "code": "Code",
+      "renameHint": "Double click to rename",
+      "desktop": "Desktop",
+      "tablet": "Tablet",
+      "mobile": "Mobile",
+      "outlines": "Outlines",
+      "preview": "Preview",
+      "fullscreen": "Fullscreen",
+      "undo": "Undo",
+      "redo": "Redo",
+      "save": "Save",
+      "publish": "Publish",
+      "publishing": "Publishing..."
+    },
+    "saveDialog": {
+      "title": "Name Your Page",
+      "description": "Choose a page name up to 30 characters.",
+      "saving": "Saving..."
+    },
+    "pagesPanel": {
+      "title": "Pages",
+      "addPage": "Add page",
+      "removePage": "Remove page",
+      "untitledPage": "Untitled Page",
+      "generatedName": "Page {number}"
+    },
+    "layers": {
+      "title": "Layers",
+      "empty": "No components yet.",
+      "hide": "Hide",
+      "show": "Show"
+    },
+    "codeEditor": {
+      "title": "Code Editor",
+      "switchToSplitView": "Switch to HTML + CSS split view",
+      "switchToFullView": "Switch to full HTML document view (paste full page here)",
+      "splitView": "Split View",
+      "fullHtml": "Full HTML",
+      "applyChanges": "Apply Changes",
+      "fullHtmlLabel": "Full HTML (paste complete page here)",
+      "html": "HTML",
+      "css": "CSS"
+    },
+    "ai": {
+      "emptyTitle": "AI Assistant",
+      "emptyDescription": "Choose a quick prompt below or type directly in the input.",
+      "quickPrompts": {
+        "hero": "Create a hero section with a bold headline",
+        "features": "Add a features grid with 4 cards",
+        "contact": "Create a contact form section",
+        "testimonials": "Add a testimonials section"
+      },
+      "labels": {
+        "you": "You",
+        "assistant": "AI Assistant",
+        "thinking": "Thinking"
+      },
+      "actions": {
+        "applyToCanvas": "Apply to canvas",
+        "openPanel": "Open AI panel",
+        "voiceInput": "Voice input",
+        "stopGeneration": "Stop generation",
+        "send": "Send"
+      },
+      "apiKeyPlaceholder": "Your Gemini API key (optional)",
+      "toggleApiKey": {
+        "show": "Use your Gemini API key",
+        "hide": "Hide API key"
+      },
+      "dataSourcesSoon": "Data Sources coming soon.",
+      "messages": {
+        "multiBlockSameParent": "Multi-block AI edits currently work only when the selected blocks share the same parent.",
+        "selectionMissing": "The selected block is no longer available on the canvas.",
+        "modelStopped": "The AI model appears to have stopped unexpectedly before returning a usable draft. Please try again.",
+        "generationStoppedInvalid": "Generation stopped before the AI produced a valid draft.",
+        "missingRenderablePage": "AI draft did not contain renderable page content.",
+        "missingRenderableBlock": "AI draft did not contain renderable block content.",
+        "multiBlockUpdateSameParent": "AI multi-block updates currently require selected blocks to share the same parent.",
+        "completion": {
+          "targetPartial": "Stopped early. The partial draft for {label} is ready. Click Apply to canvas if you want to use it.",
+          "targetDone": "The updated draft for {label} is ready. Click Apply to canvas when you want to use it.",
+          "modifyPartial": "Stopped early. The partial redesign draft is ready. Click Apply to canvas if you want to use it.",
+          "modifyDone": "The redesigned landing page draft is ready. Click Apply to canvas when you want to use it.",
+          "generatePartial": "Stopped early. The partial landing page draft is ready. Click Apply to canvas if you want to use it.",
+          "generateDone": "The new landing page draft is ready. Click Apply to canvas when you want to use it."
+        },
+        "applied": {
+          "targetPartial": "Stopped early and applied the partial AI update to {label}.",
+          "targetDone": "Applied the AI update to {label}.",
+          "modifyPartial": "Stopped early and applied the partial redesign to the canvas.",
+          "modifyDone": "Applied the redesigned landing page to the canvas.",
+          "generatePartial": "Stopped early and applied the partial landing page to the canvas.",
+          "generateDone": "Applied the new landing page to the canvas."
+        }
+      }
+    },
+    "toasts": {
+      "draftTooLarge": "Landing page draft is too large to autosave right now. I skipped the request to avoid freezing the editor.",
+      "saveTooLarge": "This landing page is too large to save right now. Reduce duplicated content or large embedded assets first.",
+      "publishTooLarge": "This landing page is too large to publish right now. Reduce duplicated content or large embedded assets first.",
+      "saved": "Saved!",
+      "saveFailed": "Save failed.",
+      "newPageCreated": "New page created!",
+      "createPageFailed": "Failed to create page.",
+      "renameSuccess": "Page name updated!",
+      "renameFailed": "Failed to update the page name.",
+      "publishSuccess": "Page published!",
+      "publishFailed": "Publish failed.",
+      "codeApplied": "Code applied."
+    }
+  }
+}

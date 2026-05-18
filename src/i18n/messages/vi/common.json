@@ -1,0 +1,46 @@
+{
+  "loading": {
+    "data": "Đang tải dữ liệu",
+    "generic": "Đang tải..."
+  },
+  "language": {
+    "label": "Ngôn ngữ",
+    "ariaLabel": "Chọn ngôn ngữ",
+    "syncFailedTitle": "Không thể đồng bộ ngôn ngữ",
+    "syncFailedDescription": "Ngôn ngữ đã đổi trên thiết bị này nhưng chưa lưu được vào tài khoản của bạn.",
+    "options": {
+      "en": "Tiếng Anh",
+      "vi": "Tiếng Việt"
+    }
+  },
+  "header": {
+    "searchPlaceholder": "Tìm tài liệu, người dùng, truy vấn...",
+    "toggleTheme": "Đổi giao diện"
+  },
+  "userMenu": {
+    "unknownUser": "Người dùng chưa xác định",
+    "profile": "Hồ sơ & Tùy chọn",
+    "dashboard": "Bảng điều khiển",
+    "help": "Trợ giúp & Hỗ trợ",
+    "logout": "Đăng xuất"
+  },
+  "httpStatus": {
+    "checkingAccess": "Đang kiểm tra quyền truy cập...",
+    "forbidden": {
+      "badge": "Từ chối truy cập",
+      "title": "Bạn không có quyền xem trang này.",
+      "description": "Vai trò hiện tại của bạn không có quyền truy cập tài nguyên này. Hãy yêu cầu cấp thêm quyền nếu bạn cần thực hiện thao tác này.",
+      "hint": "Nếu cần truy cập gấp, hãy liên hệ quản trị viên tổ chức của bạn.",
+      "backHome": "Về trang chủ",
+      "signInAnother": "Đăng nhập bằng tài khoản khác"
+    },
+    "notFound": {
+      "badge": "Không tìm thấy",
+      "title": "Trang bạn đang tìm không tồn tại.",
+      "description": "Liên kết có thể đã cũ, đã bị chuyển đi hoặc được nhập chưa chính xác. Hãy thử quay lại từ trang chủ.",
+      "hint": "Nếu tình trạng này tiếp tục xảy ra, vui lòng kiểm tra lại nguồn liên kết hoặc liên hệ quản trị viên nơi làm việc của bạn.",
+      "backHome": "Về trang chủ",
+      "goToLogin": "Đi tới đăng nhập"
+    }
+  }
+}

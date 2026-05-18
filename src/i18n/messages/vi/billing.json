@@ -1,0 +1,99 @@
+{
+  "header": {
+    "title": "Thanh toán & Gói dịch vụ",
+    "description": "Quản lý gói thuê bao và thông tin thanh toán của bạn.",
+    "dashboardCrumb": "Dashboard",
+    "billingCrumb": "Thanh toán"
+  },
+  "paymentCancel": {
+    "loading": "Đang hủy thanh toán...",
+    "title": "Đã hủy thanh toán",
+    "description": "Bạn đã hủy giao dịch thanh toán. Không có khoản phí nào được ghi nhận.",
+    "backToBilling": "Quay lại trang thanh toán"
+  },
+  "paymentSuccess": {
+    "loading": "Đang xác nhận thanh toán...",
+    "paidTitle": "Thanh toán thành công!",
+    "pendingTitle": "Đang xử lý...",
+    "failedTitle": "Thanh toán thất bại",
+    "paidDescription": "Gói dịch vụ của bạn đã được kích hoạt. Cảm ơn bạn đã sử dụng dịch vụ.",
+    "pendingDescription": "Giao dịch của bạn đang được xử lý. Vui lòng chờ trong giây lát và kiểm tra lại trang thanh toán.",
+    "failedDescription": "Giao dịch đã bị hủy hoặc hết hạn. Vui lòng thử lại.",
+    "backToBilling": "Quay lại trang thanh toán"
+  },
+  "plans": {
+    "title": "Các gói hiện có",
+    "monthly": "Theo tháng",
+    "yearly": "Theo năm",
+    "save20": "Tiết kiệm 20%",
+    "loading": "Đang tải gói...",
+    "loadFailed": "Không thể tải danh sách gói. Vui lòng làm mới trang.",
+    "free": "Miễn phí",
+    "currentPlan": "Gói hiện tại",
+    "changePlan": "Đổi gói",
+    "upgrade": "Nâng cấp",
+    "current": "Hiện tại",
+    "trialBadge": "Dùng thử {days} ngày",
+    "tryDaysFree": "Dùng thử miễn phí {days} ngày",
+    "monthShort": "th",
+    "yearShort": "năm",
+    "users": "{count} người dùng",
+    "documents": "{count} tài liệu",
+    "storage": "{count} GB lưu trữ",
+    "projects": "{count} dự án"
+  },
+  "currentPlan": {
+    "title": "Gói hiện tại",
+    "noPlan": "Chưa có gói",
+    "loading": "Đang tải...",
+    "loadFailed": "Không thể tải thông tin thuê bao",
+    "empty": "Bạn chưa có gói nào. Hãy chọn một gói bên dưới để bắt đầu.",
+    "monthShort": "th",
+    "yearShort": "năm",
+    "pendingPaymentTitle": "Đang chờ thanh toán",
+    "pendingPaymentDescription": "Thuê bao của bạn đã được tạo nhưng chưa hoàn tất thanh toán. Vui lòng thanh toán để kích hoạt.",
+    "trialRemaining": "Còn {days} ngày dùng thử",
+    "trialEndsOn": "Thời gian dùng thử kết thúc vào {date}. Hãy nâng cấp để tiếp tục sử dụng dịch vụ sau khi hết hạn.",
+    "users": "{count} người dùng",
+    "documents": "{count} tài liệu",
+    "storage": "{count} GB lưu trữ",
+    "projects": "{count} dự án",
+    "start": "Bắt đầu: {date}",
+    "expires": "Hết hạn: {date}",
+    "cancelSubscription": "Hủy thuê bao",
+    "planDetails": "Chi tiết gói",
+    "planDescription": "{name} - {description}",
+    "selectPlanHint": "Hãy chọn một gói để xem chi tiết.",
+    "usersLabel": "Người dùng",
+    "documentsLabel": "Tài liệu",
+    "storageLabel": "Lưu trữ",
+    "projectsLabel": "Dự án",
+    "noInfo": "Chưa có thông tin.",
+    "status": {
+      "active": "Đang hoạt động",
+      "freeTrial": "Dùng thử miễn phí",
+      "pendingPayment": "Chờ thanh toán",
+      "expired": "Hết hạn",
+      "cancelled": "Đã hủy"
+    }
+  },
+  "history": {
+    "title": "Lịch sử thanh toán",
+    "invoiceCount": "{count} hóa đơn",
+    "loading": "Đang tải hóa đơn...",
+    "loadFailed": "Không thể tải hóa đơn.",
+    "empty": "Chưa có hóa đơn nào.",
+    "invoice": "Hóa đơn",
+    "date": "Ngày",
+    "amount": "Số tiền",
+    "status": "Trạng thái",
+    "action": "Thao tác",
+    "payNow": "Thanh toán ngay",
+    "statusLabel": {
+      "paid": "Đã thanh toán",
+      "pending": "Chờ thanh toán",
+      "overdue": "Quá hạn",
+      "cancelled": "Đã hủy"
+    }
+  }
+}

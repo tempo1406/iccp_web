@@ -1,0 +1,1069 @@
+{
+  "common": {
+    "dashboard": "Bảng điều khiển",
+    "projects": "Dự án",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "saveChanges": "Lưu thay đổi",
+    "close": "Đóng",
+    "delete": "Xóa",
+    "actions": "Thao tác",
+    "search": "Tìm kiếm",
+    "clear": "Xóa",
+    "refresh": "Làm mới",
+    "loading": "Đang tải...",
+    "notAvailable": "Không có",
+    "page": "Trang",
+    "selected": "Đã chọn {count}",
+    "yes": "Có",
+    "no": "Không",
+    "showMore": "Xem thêm",
+    "showLess": "Thu gọn"
+  },
+  "tabs": {
+    "dashboard": "Bảng điều khiển",
+    "board": "Bảng công việc",
+    "teamProgress": "Tiến độ nhóm",
+    "members": "Thành viên",
+    "roles": "Vai trò",
+    "documents": "Tài liệu",
+    "kpi": "KPI",
+    "reports": "Xem báo cáo"
+  },
+  "kpiPage": {
+    "title": "KPI dự án",
+    "description": "Xem hiệu suất của dự án và các thành viên.",
+    "breadcrumbs": {
+      "kpi": "KPI"
+    }
+  },
+  "listPage": {
+    "title": "Dự án",
+    "description": "Quản lý và theo dõi tất cả dự án cùng tiến độ nhóm.",
+    "createProject": "Tạo dự án",
+    "createProjectHint": "Tạo dự án mới",
+    "createProjectNoPermission": "Bạn không có quyền tạo dự án.",
+    "loadFailed": "Không thể tải danh sách dự án.",
+    "loading": "Đang tải dự án...",
+    "checkingAccess": "Đang kiểm tra quyền truy cập dự án...",
+    "empty": "Không tìm thấy dự án phù hợp với bộ lọc hiện tại.",
+    "noDescription": "Chưa có mô tả."
+  },
+  "stats": {
+    "totalProjects": "Tổng dự án",
+    "active": "Đang hoạt động",
+    "completed": "Hoàn thành",
+    "onHold": "Tạm dừng",
+    "archived": "Lưu trữ"
+  },
+  "toolbar": {
+    "searchPlaceholder": "Tìm dự án...",
+    "allStatus": "Tất cả trạng thái",
+    "gridView": "Dạng lưới",
+    "listView": "Dạng danh sách"
+  },
+  "grid": {
+    "progress": "Tiến độ",
+    "tasksCompleted": "Hoàn thành {completed}/{total} công việc"
+  },
+  "table": {
+    "project": "Dự án",
+    "status": "Trạng thái",
+    "progress": "Tiến độ",
+    "team": "Nhóm",
+    "dueDate": "Hạn",
+    "viewDetails": "Xem chi tiết",
+    "viewBoard": "Xem bảng việc",
+    "editProject": "Sửa dự án",
+    "delete": "Xóa"
+  },
+  "dashboard": {
+    "overallProgress": "Tiến độ tổng thể",
+    "started": "Bắt đầu",
+    "due": "Hạn",
+    "chartOverview": "Tổng quan biểu đồ",
+    "chartPeriod": "Khoảng thời gian biểu đồ:",
+    "from": "Từ",
+    "to": "Đến",
+    "summary": {
+      "totalMembers": {
+        "label": "Tổng thành viên",
+        "sublabel": "Nhóm dự án"
+      },
+      "completedLast7Days": {
+        "label": "Đã hoàn thành",
+        "sublabel": "7 ngày gần đây"
+      },
+      "updatedLast7Days": {
+        "label": "Đã cập nhật",
+        "sublabel": "7 ngày gần đây"
+      },
+      "createdLast7Days": {
+        "label": "Đã tạo",
+        "sublabel": "7 ngày gần đây"
+      },
+      "dueSoonCount": {
+        "label": "Sắp đến hạn",
+        "sublabel": "24 giờ tới"
+      }
+    },
+    "statusChart": {
+      "title": "Công việc theo trạng thái",
+      "empty": "Không có công việc"
+    },
+    "activeTasks": {
+      "title": "Công việc đang hoạt động",
+      "recent": "(5 mục gần nhất)",
+      "empty": "Không có công việc đang hoạt động"
+    },
+    "priorityChart": {
+      "title": "Công việc theo mức ưu tiên",
+      "empty": "Không có công việc",
+      "tasksCount": "{count} công việc"
+    },
+    "typeChart": {
+      "title": "Loại công việc",
+      "empty": "Không có công việc",
+      "taskSingular": "Công việc",
+      "taskPlural": "Công việc",
+      "subtaskSingular": "Công việc con",
+      "subtaskPlural": "Công việc con"
+    },
+    "workload": {
+      "title": "Khối lượng công việc của nhóm",
+      "unassigned": "{count} chưa phân công",
+      "empty": "Không có thành viên",
+      "taskCount": "{count} công việc",
+      "taskCountPlural": "{count} công việc",
+      "statusFallback": {
+        "assigned": "Đã giao",
+        "done": "Hoàn thành",
+        "open": "Đang mở"
+      }
+    },
+    "priority": {
+      "urgent": "Khẩn cấp",
+      "high": "Cao",
+      "medium": "Trung bình",
+      "low": "Thấp"
+    },
+    "dueState": {
+      "overdue": "Quá hạn",
+      "late": "Trễ",
+      "upcoming": "Sắp đến hạn",
+      "on_time": "Đúng hạn",
+      "no_due_date": "Không có hạn"
+    }
+  },
+  "members": {
+    "permissionDenied": "Bạn không có quyền xem mục này.",
+    "title": "Thành viên dự án",
+    "searchPlaceholder": "Tìm thành viên...",
+    "loading": "Đang tải thành viên...",
+    "table": {
+      "member": "Thành viên",
+      "projectRole": "Vai trò dự án",
+      "roleAssignments": "Phân công vai trò",
+      "allocatedHoursPerDay": "Giờ phân bổ/ngày",
+      "joined": "Ngày tham gia",
+      "actions": "Thao tác"
+    },
+    "empty": "Không tìm thấy thành viên.",
+    "noRole": "Không có vai trò",
+    "manageRoles": "Quản lý vai trò",
+    "editAllocatedHoursTitle": "Sửa giờ phân bổ mỗi ngày",
+    "cannotRemoveSelf": "Bạn không thể tự xóa chính mình",
+    "pagination": {
+      "summary": "Hiển thị {shown}/{pageItemCount} thành viên trong trang này - Trang {page}",
+      "perPage": "{count} / trang"
+    },
+    "manageRolesDialog": {
+      "title": "Quản lý vai trò thành viên",
+      "description": "Gán hoặc thu hồi vai trò dự án cho {member}.",
+      "descriptionFallback": "Gán hoặc thu hồi vai trò dự án cho thành viên đã chọn.",
+      "loading": "Đang tải dữ liệu vai trò...",
+      "empty": "Không có vai trò dự án nào."
+    },
+    "allocatedHoursDialog": {
+      "title": "Sửa giờ phân bổ / ngày",
+      "description": "Cập nhật phân bổ mỗi ngày cho {member}.",
+      "descriptionFallback": "Cập nhật phân bổ cho thành viên đã chọn.",
+      "label": "Giờ phân bổ / ngày",
+      "placeholder": "ví dụ: 8",
+      "hint": "Số giờ làm việc dự kiến mỗi ngày của thành viên này trong dự án."
+    },
+    "toasts": {
+      "loadFailed": "Không thể tải thành viên dự án."
+    }
+  },
+  "roles": {
+    "permissionDenied": "Bạn không có quyền xem mục này.",
+    "createTitle": "Tạo vai trò dự án",
+    "name": "Tên vai trò",
+    "description": "Mô tả",
+    "namePlaceholder": "ví dụ: qa_lead",
+    "descriptionPlaceholder": "Mô tả vai trò",
+    "permissionsOptional": "Quyền hạn (không bắt buộc)",
+    "createAction": "Tạo vai trò",
+    "title": "Vai trò dự án",
+    "searchPlaceholder": "Tìm vai trò...",
+    "loading": "Đang tải vai trò...",
+    "table": {
+      "role": "Vai trò",
+      "updated": "Cập nhật",
+      "actions": "Thao tác"
+    },
+    "empty": "Không tìm thấy vai trò.",
+    "detailTitle": "Chi tiết vai trò",
+    "detailDescription": "Cập nhật thông tin vai trò và phân quyền.",
+    "detailLoading": "Đang tải chi tiết vai trò...",
+    "detailMissing": "Vai trò đã chọn không tồn tại.",
+    "saveMetadata": "Lưu thông tin",
+    "permissions": "Quyền hạn",
+    "savePermissions": "Lưu quyền hạn",
+    "toasts": {
+      "loadFailed": "Không thể tải vai trò dự án.",
+      "roleMissing": "Vai trò đã chọn không tồn tại."
+    }
+  },
+  "permissionTree": {
+    "empty": "Không tìm thấy quyền nào.",
+    "searchPlaceholder": "Tìm quyền...",
+    "loading": "Đang tải quyền...",
+    "permissionsCount": "{count} quyền"
+  },
+  "detail": {
+    "noManagersSelected": "Chưa chọn quản lý nào",
+    "selectedCount": "Đã chọn {count}",
+    "toasts": {
+      "projectIdMissing": "Thiếu ID dự án.",
+      "updateFailed": "Không thể cập nhật dự án.",
+      "updated": "Cập nhật dự án thành công.",
+      "deleteFailed": "Không thể xóa dự án.",
+      "deleted": "Đã xóa dự án thành công.",
+      "loadMembersFailed": "Không thể tải thành viên dự án."
+    },
+    "deleteDialog": {
+      "title": "Xóa dự án",
+      "description": "Xóa dự án \"{name}\"? Hành động này không thể hoàn tác."
+    },
+    "breadcrumbs": {
+      "projectCurrent": "{name}"
+    },
+    "actions": {
+      "inviteMember": "Mời thành viên",
+      "projectSettings": "Cài đặt dự án",
+      "editProject": "Sửa dự án",
+      "deleteProject": "Xóa dự án"
+    },
+    "editDialog": {
+      "title": "Sửa dự án",
+      "description": "Cập nhật thông tin và thiết lập dự án.",
+      "name": "Tên *",
+      "descriptionLabel": "Mô tả",
+      "status": "Trạng thái",
+      "priority": "Ưu tiên",
+      "startDate": "Ngày bắt đầu",
+      "endDate": "Ngày kết thúc",
+      "budgetCurrency": "Loại tiền ngân sách",
+      "estimatedBudget": "Ngân sách ước tính",
+      "actualBudget": "Ngân sách thực tế",
+      "projectManagers": "Quản lý dự án",
+      "loadingMembers": "Đang tải thành viên dự án...",
+      "noMembers": "Không tìm thấy thành viên dự án.",
+      "clearAll": "Bỏ chọn tất cả ({count})"
+    },
+    "validation": {
+      "nameRequired": "Tên dự án là bắt buộc.",
+      "endDateAfterStart": "Ngày kết thúc phải sau ngày bắt đầu.",
+      "estimatedBudgetPositive": "Ngân sách ước tính phải là số dương.",
+      "actualBudgetPositive": "Ngân sách thực tế phải là số dương."
+    },
+    "status": {
+      "planning": "Lập kế hoạch",
+      "active": "Đang hoạt động",
+      "on_hold": "Tạm dừng",
+      "completed": "Hoàn thành",
+      "cancelled": "Đã hủy"
+    },
+    "priority": {
+      "low": "Thấp",
+      "medium": "Trung bình",
+      "high": "Cao",
+      "critical": "Quan trọng"
+    }
+  },
+  "statusBadge": {
+    "active": "Đang hoạt động",
+    "on-hold": "Tạm dừng",
+    "completed": "Hoàn thành",
+    "planning": "Lập kế hoạch"
+  },
+  "priorityBadge": {
+    "low": "Thấp",
+    "medium": "Trung bình",
+    "high": "Cao",
+    "critical": "Quan trọng"
+  },
+  "createDialog": {
+    "title": "Tạo dự án mới",
+    "description": "Nhập thông tin dự án và gửi để tạo dự án qua API.",
+    "unknownMember": "Thành viên không xác định",
+    "selectedManagers": {
+      "none": "Chưa chọn quản lý nào",
+      "fallback": "Đã chọn {count}"
+    },
+    "fields": {
+      "name": "Tên dự án *",
+      "description": "Mô tả",
+      "status": "Trạng thái",
+      "priority": "Ưu tiên",
+      "startDate": "Ngày bắt đầu",
+      "endDate": "Ngày kết thúc",
+      "budgetCurrency": "Loại tiền ngân sách",
+      "estimatedBudget": "Ngân sách ước tính",
+      "actualBudget": "Ngân sách thực tế",
+      "projectManagers": "Quản lý dự án"
+    },
+    "placeholders": {
+      "name": "ICCP Core Platform",
+      "description": "Mô tả dự án này...",
+      "status": "Chọn trạng thái",
+      "priority": "Chọn ưu tiên",
+      "startDate": "Chọn ngày bắt đầu",
+      "endDate": "Chọn ngày kết thúc",
+      "budgetCurrency": "Chọn loại tiền",
+      "estimatedBudget": "15000",
+      "actualBudget": "14500"
+    },
+    "members": {
+      "loading": "Đang tải thành viên tổ chức...",
+      "empty": "Không tìm thấy thành viên tổ chức.",
+      "clearAll": "Bỏ chọn tất cả ({count})"
+    },
+    "validation": {
+      "currencyInvalid": "Loại tiền phải là USD hoặc VND."
+    },
+    "toasts": {
+      "createFailed": "Không thể tạo dự án.",
+      "created": "Tạo dự án thành công."
+    },
+    "submit": "Tạo dự án"
+  },
+  "quickCreateDialog": {
+    "title": "Tạo dự án",
+    "description": "Tạo dự án thực để dùng trong phạm vi Dự án của toàn hệ thống, bao gồm cả Team Chat.",
+    "fields": {
+      "name": "Tên dự án",
+      "description": "Mô tả",
+      "status": "Trạng thái"
+    },
+    "placeholders": {
+      "name": "Làm mới website",
+      "description": "Mô tả ngắn gọn mục đích của dự án này."
+    },
+    "submit": "Tạo dự án",
+    "submitting": "Đang tạo..."
+  },
+  "inviteMemberDialog": {
+    "title": "Mời thành viên",
+    "description": "Chọn một hoặc nhiều thành viên từ tổ chức hiện tại để mời vào dự án này.",
+    "fields": {
+      "organizationMembers": "Thành viên tổ chức *"
+    },
+    "states": {
+      "loading": "Đang tải thành viên tổ chức...",
+      "allAdded": "Tất cả thành viên tổ chức đã có trong dự án này.",
+      "selectedCount": "Đã chọn {count} thành viên."
+    },
+    "validation": {
+      "required": "Vui lòng chọn ít nhất một thành viên để mời.",
+      "loadFailed": "Không thể tải danh sách thành viên.",
+      "projectIdMissing": "Thiếu ID dự án."
+    },
+    "toasts": {
+      "sendFailed": "Không thể gửi lời mời vào dự án.",
+      "sent": "Đã gửi {count} lời mời vào dự án."
+    },
+    "submit": "Gửi lời mời"
+  },
+  "dashboardMemberStats": {
+    "title": "Thành viên",
+    "totalMembers": "Tổng thành viên",
+    "empty": "Không có dữ liệu vai trò"
+  },
+  "detailHeader": {
+    "breadcrumbs": {
+      "dashboard": "Bảng điều khiển",
+      "projects": "Dự án"
+    },
+    "aria": {
+      "projectActions": "Thao tác dự án"
+    },
+    "actions": {
+      "roleManagement": "Quản lý vai trò",
+      "projectSettings": "Cài đặt dự án",
+      "editProject": "Sửa dự án",
+      "deleteProject": "Xóa dự án",
+      "inviteMember": "Mời thành viên"
+    },
+    "summary": {
+      "overallProgress": "Tiến độ tổng thể",
+      "started": "Bắt đầu",
+      "due": "Hạn",
+      "todo": "Cần làm",
+      "inProgress": "Đang làm",
+      "completed": "Hoàn thành"
+    },
+    "viewMode": {
+      "board": "Bảng",
+      "list": "Danh sách"
+    },
+    "filters": {
+      "button": "Lọc",
+      "title": "Bộ lọc",
+      "clearGroup": "Xóa {label}",
+      "searchTasks": "Tìm công việc...",
+      "assignee": {
+        "label": "Người phụ trách",
+        "searchPlaceholder": "Tìm người phụ trách"
+      },
+      "tags": {
+        "label": "Nhãn",
+        "searchPlaceholder": "Tìm nhãn"
+      },
+      "status": {
+        "label": "Trạng thái",
+        "searchPlaceholder": "Tìm trạng thái"
+      },
+      "priority": {
+        "label": "Ưu tiên",
+        "searchPlaceholder": "Tìm ưu tiên"
+      },
+      "empty": "Không có lựa chọn phù hợp."
+    }
+  },
+  "teamProgress": {
+    "title": "Tiến độ nhóm",
+    "description": "Xem tiến độ công việc của từng thành viên. Dùng nút Lọc của từng người để lọc theo khoảng hạn, trạng thái và ưu tiên.",
+    "searchPlaceholder": "Tìm thành viên...",
+    "empty": "Không tìm thấy dữ liệu tiến độ nhóm.",
+    "noRole": "Không có vai trò",
+    "headers": {
+      "member": "Thành viên",
+      "role": "Vai trò",
+      "assigned": "Đã giao",
+      "done": "Đã xong",
+      "open": "Đang mở",
+      "completion": "Tiến độ",
+      "onTime": "Đúng hạn",
+      "score": "Điểm"
+    },
+    "completionSummary": "Hoàn thành {rate}%",
+    "filterFields": {
+      "dueDate": "Hạn",
+      "priority": "Ưu tiên",
+      "status": "Trạng thái"
+    },
+    "priorityOptions": {
+      "all": "Tất cả ưu tiên",
+      "low": "Thấp",
+      "medium": "Trung bình",
+      "high": "Cao",
+      "urgent": "Khẩn cấp"
+    },
+    "dueDateRange": {
+      "default": "Khoảng hạn",
+      "range": "{from} - {to}",
+      "from": "Từ {date}",
+      "until": "Đến {date}"
+    },
+    "filter": {
+      "button": "Lọc",
+      "searchMore": "Tìm thêm bộ lọc",
+      "clearSelection": "Xóa lựa chọn",
+      "allStatuses": "Tất cả trạng thái"
+    },
+    "stats": {
+      "dueSoon": "Sắp đến hạn",
+      "overdue": "Quá hạn",
+      "performance": "Hiệu suất",
+      "score": "Điểm {score}",
+      "completionRate": "Tỷ lệ hoàn thành",
+      "onTimeRate": "Tỷ lệ đúng hạn",
+      "doneOnTime": "Xong đúng hạn",
+      "doneLate": "Xong trễ hạn",
+      "taskDistribution": "Phân bố công việc",
+      "segments": {
+        "done": "Đã xong",
+        "onTrack": "Đúng tiến độ",
+        "dueSoon": "Sắp đến hạn",
+        "overdue": "Quá hạn"
+      }
+    },
+    "custom": "Tùy chỉnh"
+  },
+  "kanban": {
+    "actions": {
+      "moveColumnLeft": "Di chuyển cột sang trái",
+      "moveColumnRight": "Di chuyển cột sang phải",
+      "create": "Tạo",
+      "addColumn": "Thêm cột",
+      "add": "Thêm",
+      "automatic": "Tự động"
+    },
+    "fields": {
+      "taskTitlePlaceholder": "Cần làm gì?",
+      "dueDate": "Hạn",
+      "columnName": "Tên cột",
+      "tags": "Nhãn"
+    },
+    "labels": {
+      "unassigned": "Chưa phân công",
+      "priority": "Ưu tiên: {value}",
+      "subtasks": "{count} công việc con",
+      "dropToMove": "Thả vào đây để chuyển sang {column}",
+      "createTask": "Tạo công việc ({assignee})",
+      "updatingTask": "Đang cập nhật công việc...",
+      "movingTask": "Đang di chuyển công việc..."
+    },
+    "tagDialog": {
+      "title": "Thêm nhãn cho {task}",
+      "taskFallback": "công việc",
+      "description": "Bắt đầu gõ để tìm và tạo nhãn.",
+      "empty": "Chưa chọn nhãn nào.",
+      "noMatch": "Không có nhãn phù hợp.",
+      "selected": "Đã chọn"
+    },
+    "confirmDeleteColumn": {
+      "title": "Xóa cột",
+      "description": "Xóa cột \"{column}\"? Các công việc trong cột này sẽ được chuyển tự động."
+    }
+  },
+  "taskCreateDialog": {
+    "title": "Tạo công việc mới",
+    "description": "Tạo một công việc và gán nó vào một cột trạng thái.",
+    "fields": {
+      "title": "Tiêu đề công việc *",
+      "description": "Mô tả",
+      "status": "Trạng thái *",
+      "priority": "Mức ưu tiên",
+      "assignedTo": "Người được giao (User ID)",
+      "parentTaskId": "ID công việc cha",
+      "dueDate": "Hạn chót",
+      "storyPoints": "Điểm story",
+      "estimatedHours": "Giờ ước tính"
+    },
+    "placeholders": {
+      "title": "Thiết kế API contract",
+      "description": "Chi tiết công việc...",
+      "status": "Chọn trạng thái",
+      "priority": "Chọn mức ưu tiên",
+      "assignedTo": "user-uuid",
+      "parentTaskId": "parent-task-uuid",
+      "dueDate": "Chọn hạn chót",
+      "storyPoints": "ví dụ: 3",
+      "estimatedHours": "ví dụ: 4.5"
+    },
+    "emptyStatus": "Không tìm thấy cột trạng thái nào. Hãy tạo cột trước.",
+    "validation": {
+      "titleRequired": "Tiêu đề công việc là bắt buộc.",
+      "statusRequired": "Trạng thái công việc là bắt buộc.",
+      "dueDateInvalid": "Hạn chót không hợp lệ."
+    },
+    "toasts": {
+      "projectIdMissing": "Thiếu ID dự án.",
+      "createFailed": "Không thể tạo công việc.",
+      "created": "Tạo công việc thành công."
+    },
+    "submit": "Tạo công việc"
+  },
+  "taskWorklog": {
+    "title": "Worklog",
+    "totalLogged": "Tổng thời gian đã ghi: {value}",
+    "filters": {
+      "allMembers": "Tất cả thành viên"
+    },
+    "alerts": {
+      "submitted": {
+        "title": "Worklog này đã được gửi rồi.",
+        "description": "Backend vẫn cho phép chỉnh sửa, nhưng mục này đã được liên kết với một báo cáo hằng ngày."
+      }
+    },
+    "editor": {
+      "editTitle": "Chỉnh sửa worklog",
+      "addTitle": "Thêm worklog",
+      "cancelEdit": "Hủy chỉnh sửa"
+    },
+    "fields": {
+      "workDate": "Ngày làm việc",
+      "member": "Thành viên",
+      "selectMember": "Chọn thành viên",
+      "currentUser": "Người dùng hiện tại",
+      "mode": {
+        "duration": "Thời lượng",
+        "timeRange": "Giờ bắt đầu và kết thúc"
+      },
+      "durationMinutes": "Thời lượng (phút)",
+      "startTime": "Giờ bắt đầu",
+      "endTime": "Giờ kết thúc",
+      "progressPercent": "Phần trăm tiến độ",
+      "markAsBlocker": "Đánh dấu là blocker",
+      "description": "Mô tả"
+    },
+    "placeholders": {
+      "filterByDate": "Lọc theo ngày",
+      "selectWorkDate": "Chọn ngày làm việc",
+      "durationMinutes": "ví dụ: 90",
+      "progressPercent": "0 - 100",
+      "description": "Mô tả những gì đã làm trong buổi làm việc này..."
+    },
+    "actions": {
+      "saveChanges": "Lưu thay đổi",
+      "addWorklog": "Thêm worklog"
+    },
+    "list": {
+      "title": "Các mục đã ghi",
+      "loading": "Đang tải worklog...",
+      "loadFailed": "Không thể tải worklog.",
+      "empty": "Chưa có worklog nào khớp với bộ lọc đã chọn.",
+      "submitted": "Đã gửi",
+      "blocker": "Blocker",
+      "progress": "{value}% tiến độ",
+      "noDescription": "Chưa có mô tả."
+    },
+    "confirmDelete": {
+      "title": "Xóa worklog",
+      "description": "Xóa worklog {minutes} vào ngày {date}?"
+    },
+    "validation": {
+      "workDateRequired": "Ngày làm việc là bắt buộc.",
+      "progressPercent": "Phần trăm tiến độ phải nằm trong khoảng từ 0 đến 100.",
+      "durationMinutes": "Thời lượng phải nằm trong khoảng từ 1 đến 1440 phút.",
+      "timeRequired": "Giờ bắt đầu và giờ kết thúc là bắt buộc.",
+      "invalidTimeRange": "Khoảng thời gian đã chọn không hợp lệ.",
+      "endTimeAfterStart": "Giờ kết thúc phải sau giờ bắt đầu."
+    },
+    "toasts": {
+      "deleteFailed": "Không thể xóa worklog.",
+      "deleted": "Xóa worklog thành công.",
+      "saveFailed": "Không thể lưu worklog.",
+      "updated": "Cập nhật worklog thành công.",
+      "added": "Thêm worklog thành công."
+    }
+  },
+  "boardPage": {
+    "toasts": {
+      "updateTaskStatusFailed": "Không thể cập nhật trạng thái công việc.",
+      "createTaskFailed": "Không thể tạo công việc.",
+      "taskCreatedButUnassignFailed": "Đã tạo công việc nhưng không thể đưa người phụ trách về trạng thái chưa gán.",
+      "assignTaskFailed": "Không thể gán công việc.",
+      "renameTaskFailed": "Không thể đổi tên công việc.",
+      "deleteTaskFailed": "Không thể xóa công việc.",
+      "duplicateTaskFailed": "Không thể nhân bản công việc.",
+      "taskDuplicatedButClearAssigneeFailed": "Đã nhân bản công việc nhưng không thể xóa người phụ trách.",
+      "addTagFailed": "Không thể thêm thẻ.",
+      "createStatusFailed": "Không thể tạo trạng thái.",
+      "renameStatusFailed": "Không thể đổi tên trạng thái.",
+      "deleteStatusFailed": "Không thể xóa trạng thái.",
+      "updateTaskFailed": "Không thể cập nhật công việc."
+    }
+  },
+  "taskDetailDialog": {
+    "titleFallback": "Công việc",
+    "deleteComment": {
+      "title": "Xóa bình luận",
+      "description": "Bạn có muốn xóa bình luận này không?"
+    },
+    "toasts": {
+      "addCommentFailed": "Không thể thêm bình luận.",
+      "commentContentRequired": "Nội dung bình luận là bắt buộc.",
+      "updateCommentFailed": "Không thể cập nhật bình luận.",
+      "deleteCommentFailed": "Không thể xóa bình luận.",
+      "toggleThumbsUpFailed": "Không thể cập nhật lượt thích.",
+      "updateReactionFailed": "Không thể cập nhật cảm xúc.",
+      "addTagFailed": "Không thể thêm thẻ.",
+      "removeTagFailed": "Không thể xóa thẻ.",
+      "taskTitleRequired": "Tiêu đề công việc là bắt buộc."
+    }
+  },
+  "reportView": {
+    "title": "Xem báo cáo",
+    "description": "Xem và quản lý báo cáo hằng ngày cho {project}.",
+    "thisProject": "dự án này",
+    "filters": {
+      "selectDate": "Chọn ngày báo cáo",
+      "allMembers": "Tất cả thành viên",
+      "allStatuses": "Tất cả trạng thái",
+      "searchPlaceholder": "Tìm thành viên hoặc nội dung"
+    },
+    "tabs": {
+      "myReport": "Báo cáo của tôi",
+      "teamReports": "Báo cáo nhóm"
+    },
+    "statuses": {
+      "draft": "Bản nháp",
+      "submitted": "Đã gửi",
+      "locked": "Đã khóa"
+    },
+    "loading": {
+      "myReport": "Đang tải báo cáo hằng ngày...",
+      "teamReports": "Đang tải báo cáo hằng ngày của nhóm...",
+      "comments": "Đang tải bình luận..."
+    },
+    "errors": {
+      "loadMyReport": "Không thể tải báo cáo hằng ngày",
+      "loadTeamReports": "Không thể tải báo cáo hằng ngày của nhóm",
+      "unknown": "Lỗi không xác định.",
+      "addComment": "Không thể thêm bình luận.",
+      "markSeen": "Không thể đánh dấu đã xem báo cáo."
+    },
+    "toasts": {
+      "commentAdded": "Đã thêm bình luận vào báo cáo hằng ngày.",
+      "markedSeen": "Đã đánh dấu báo cáo hằng ngày là đã xem.",
+      "saveDraftFailed": "Không thể lưu bản nháp báo cáo hằng ngày.",
+      "draftSaved": "Đã lưu bản nháp báo cáo hằng ngày thành công.",
+      "saveBeforeSubmitFailed": "Không thể lưu bản nháp trước khi gửi.",
+      "submitFailed": "Không thể gửi báo cáo hằng ngày.",
+      "submitted": "Đã gửi báo cáo hằng ngày thành công."
+    },
+    "empty": {
+      "day": "Không có báo cáo cho ngày đã chọn.",
+      "filteredReports": "Không có báo cáo nào phù hợp với bộ lọc hiện tại.",
+      "noEmail": "Không có email",
+      "noSummary": "Chưa có tóm tắt.",
+      "noBlockers": "Không có vướng mắc.",
+      "noPlan": "Chưa có kế hoạch.",
+      "notFilledYet": "Chưa điền.",
+      "comments": "Chưa có bình luận đánh giá.",
+      "commentsAfterSubmit": "Chưa có bình luận đánh giá. Chúng sẽ xuất hiện sau khi bạn gửi báo cáo."
+    },
+    "myReport": {
+      "label": "Báo cáo của tôi",
+      "unknownProject": "Dự án không xác định",
+      "reportDateSummary": "Ngày báo cáo {date} với {count} mục đã ghi nhận.",
+      "mode": "Chế độ",
+      "draftMode": "Chế độ bản nháp. Cập nhật phần tường thuật, lưu khi cần, rồi gửi khi sẵn sàng.",
+      "readonlyMode": "Chế độ chỉ đọc. Báo cáo đã gửi sẽ giữ nguyên nội dung cuối cùng tại thời điểm gửi."
+    },
+    "overview": {
+      "totalLogged": "Tổng thời gian",
+      "items": "Mục",
+      "itemsCount": "{count} mục",
+      "submittedAt": "Thời gian gửi",
+      "lastUpdated": "Cập nhật lần cuối",
+      "loggedTime": "Thời gian ghi nhận",
+      "status": "Trạng thái"
+    },
+    "narrative": {
+      "title": "Tóm tắt hằng ngày",
+      "submittedDescription": "Báo cáo đã gửi sẽ giữ lại bản tường thuật cuối cùng của ngày được gửi.",
+      "draftDescription": "Các mục báo cáo được đồng bộ tự động khi worklog của dự án thay đổi.",
+      "summary": "Tóm tắt",
+      "blockers": "Vướng mắc",
+      "planTomorrow": "Kế hoạch ngày mai",
+      "saveDraft": "Lưu nháp",
+      "submit": "Gửi báo cáo",
+      "summaryPlaceholder": "Hôm nay bạn đã hoàn thành những gì?",
+      "blockersPlaceholder": "Có điều gì đang làm bạn chậm lại không?",
+      "planTomorrowPlaceholder": "Tiếp theo bạn sẽ tập trung vào việc gì?"
+    },
+    "review": {
+      "title": "Đánh giá",
+      "descriptionDraft": "Hoạt động đánh giá sẽ xuất hiện ở đây sau khi bạn gửi báo cáo.",
+      "descriptionSubmitted": "Theo dõi trạng thái đánh giá và bình luận của PM cho báo cáo này.",
+      "statusTitle": "Trạng thái đánh giá",
+      "commentsTitle": "Bình luận",
+      "commentsDescription": "Bình luận từ PM và người đánh giá sẽ gắn với báo cáo này.",
+      "submitFirst": "Hãy gửi báo cáo trước để bắt đầu quy trình đánh giá.",
+      "notSeenYet": "Báo cáo này vẫn chưa được đánh dấu là đã xem.",
+      "seenBy": "Đã được {reviewer} xem lúc {time}",
+      "reviewerFallback": "người đánh giá"
+    },
+    "items": {
+      "title": "Các mục báo cáo",
+      "description": "Các mục được tạo từ worklog của dự án trong ngày đã chọn và hiển thị dưới dạng bảng để dễ theo dõi hơn.",
+      "detailDescription": "Worklog và các mục nhập tay có trong báo cáo này."
+    },
+    "team": {
+      "title": "Báo cáo nhóm",
+      "description": "Quét nhanh các vướng mắc, phát hiện bản nháp còn thiếu và mở bất kỳ báo cáo nào để xem chi tiết.",
+      "matchingReports": "{count} báo cáo phù hợp",
+      "drafts": "Bản nháp",
+      "submittedLocked": "Đã gửi / Đã khóa",
+      "reportsWithBlockers": "Báo cáo có vướng mắc",
+      "member": "Thành viên",
+      "status": "Trạng thái",
+      "logged": "Thời gian",
+      "summary": "Tóm tắt",
+      "blockers": "Vướng mắc",
+      "lastActivity": "Hoạt động gần nhất",
+      "lastActivitySubmitted": "Đã gửi",
+      "lastActivityUpdated": "Đã cập nhật",
+      "action": "Thao tác",
+      "planLabel": "Kế hoạch",
+      "view": "Xem",
+      "itemsCount": "{count} mục",
+      "showing": "Hiển thị {start}-{end} trên tổng {total} báo cáo của {members} thành viên.",
+      "perPage": "{count} / trang",
+      "detailSummary": "{date} - {logged} - {count} mục"
+    },
+    "teamDetail": {
+      "reviewStatus": "Trạng thái đánh giá",
+      "noReviewerSeen": "Chưa có người đánh giá nào đánh dấu đã xem báo cáo này.",
+      "reviewActionsHint": "Thao tác đánh giá của PM chỉ khả dụng với báo cáo đã gửi hoặc đã khóa của thành viên khác.",
+      "seen": "Đã xem",
+      "markAsSeen": "Đánh dấu đã xem",
+      "reviewComments": "Bình luận đánh giá",
+      "reviewCommentsDescription": "Bình luận của PM sẽ đi kèm báo cáo để tiện theo dõi tiếp theo.",
+      "addComment": "Thêm bình luận",
+      "addCommentPlaceholder": "Chia sẻ phản hồi hoặc nội dung cần theo dõi cho báo cáo này.",
+      "addCommentAction": "Thêm bình luận"
+    },
+    "common": {
+      "notAvailable": "Chưa có thông tin"
+    },
+    "actions": {
+      "refreshFromWorklogs": "Làm mới từ worklog"
+    }
+  },
+  "settingsDialog": {
+    "title": "Cài đặt dự án",
+    "description": "Cấu hình nhắc báo cáo hằng ngày, KPI và thưởng cho dự án này.",
+    "sections": {
+      "dailyReportReminder": "Nhắc báo cáo hằng ngày",
+      "kpiWeights": "Trọng số KPI",
+      "pointScale": "Thang điểm",
+      "bonusSettings": "Cài đặt thưởng"
+    },
+    "states": {
+      "enabled": "Đang bật",
+      "disabled": "Đang tắt",
+      "notScheduled": "Chưa lên lịch",
+      "noDaysSelected": "Chưa chọn ngày",
+      "organizationOverride": "Ghi đè theo tổ chức",
+      "unlimited": "Không giới hạn"
+    },
+    "dailyReport": {
+      "description": "Hệ thống sẽ gửi nhắc theo giờ Việt Nam đã cấu hình cho các thành viên có log công việc trong ngày nhưng chưa nộp báo cáo hằng ngày.",
+      "enable": "Bật nhắc báo cáo hằng ngày",
+      "reminderTime": "Giờ nhắc",
+      "reminderDays": "Ngày nhắc",
+      "reminderTimeHelp": "Nhắc vào thời điểm này ({timezone})."
+    },
+    "kpi": {
+      "description": "Các trọng số dùng để tính điểm KPI cho dự án này.",
+      "pointCompletion": "Hoàn thành điểm",
+      "onTimeRate": "Tỷ lệ đúng hạn",
+      "otContribution": "Đóng góp OT",
+      "totalWeight": "Tổng trọng số",
+      "totalWeightHint": "Tổng trọng số nên bằng 1 (100%)."
+    },
+    "pointScale": {
+      "maxPointsPerTask": "Điểm tối đa mỗi công việc",
+      "unlimitedPlaceholder": "∞"
+    },
+    "bonus": {
+      "enable": "Bật thưởng",
+      "onTimeTaskBonus": "Thưởng công việc đúng hạn",
+      "earlyCompletionThreshold": "Ngưỡng hoàn thành sớm",
+      "earlyTaskBonus": "Thưởng hoàn thành sớm",
+      "zeroOverdueBonus": "Thưởng không quá hạn",
+      "maxBonusCap": "Trần thưởng tối đa",
+      "otBonusPerEffectiveHour": "Thưởng OT / giờ hiệu quả"
+    },
+    "days": {
+      "monShort": "T2",
+      "tueShort": "T3",
+      "wedShort": "T4",
+      "thuShort": "T5",
+      "friShort": "T6",
+      "satShort": "T7",
+      "sunShort": "CN"
+    },
+    "actions": {
+      "edit": "Chỉnh sửa",
+      "reset": "Đặt lại theo cài đặt tổ chức",
+      "cancel": "Hủy",
+      "save": "Lưu",
+      "saving": "Đang lưu..."
+    },
+    "errors": {
+      "loadFailed": "Không thể tải cài đặt.",
+      "dailyTimeRequired": "Cần chọn giờ nhắc khi đã bật nhắc báo cáo hằng ngày.",
+      "dailyDaysRequired": "Hãy chọn ít nhất một ngày để gửi nhắc báo cáo hằng ngày."
+    },
+    "toasts": {
+      "saved": "Đã lưu cài đặt dự án.",
+      "reset": "Đã đặt lại theo cài đặt tổ chức."
+    },
+    "footer": {
+      "editHint": "Nhấn <strong>Chỉnh sửa</strong> để cập nhật các cài đặt này."
+    },
+    "units": {
+      "hoursShort": "{value}g"
+    }
+  },
+  "kpiWorkspace": {
+    "common": {
+      "priority": {
+        "urgent": "Khẩn cấp",
+        "high": "Cao",
+        "medium": "Trung bình",
+        "low": "Thấp"
+      },
+      "period": "Kỳ",
+      "type": "Loại",
+      "targetMetrics": "Chỉ số mục tiêu",
+      "target": "Mục tiêu",
+      "actual": "Thực tế",
+      "noTarget": "Không có mục tiêu đang áp dụng.",
+      "recentTasks": "Công việc gần đây",
+      "byPriority": "Theo ưu tiên",
+      "task": "Công việc",
+      "status": "Trạng thái",
+      "priorityLabel": "Ưu tiên",
+      "points": "Điểm",
+      "pointsValue": "{count} điểm",
+      "dueDate": "Hạn",
+      "dueState": "Tình trạng hạn",
+      "noRecentTasks": "Không có công việc gần đây",
+      "tasksByPriority": "Công việc theo ưu tiên",
+      "pointsByPriority": "Điểm theo ưu tiên"
+    },
+    "myDetail": {
+      "title": "KPI dự án của tôi",
+      "loadFailed": "Không thể tải KPI dự án của bạn.",
+      "stats": {
+        "performanceScore": "Điểm hiệu suất thực tế",
+        "taskCompletion": "Tỷ lệ hoàn thành công việc thực tế",
+        "onTimeRate": "Tỷ lệ đúng hạn thực tế",
+        "pointKpi": "KPI điểm thực tế",
+        "tasks": "{count} công việc",
+        "points": "{actual} / {estimated} điểm"
+      },
+      "currentTarget": "Mục tiêu hiện tại",
+      "targetDescription": "Đây là các mục tiêu hiện đang được dùng để đánh giá KPI dự án của bạn."
+    },
+    "memberDetail": {
+      "back": "Quay lại KPI dự án",
+      "loadFailed": "Không thể tải dữ liệu.",
+      "stats": {
+        "performanceScore": "Điểm hiệu suất thực tế",
+        "taskCompletion": "Tỷ lệ hoàn thành công việc thực tế",
+        "onTimeRate": "Tỷ lệ đúng hạn thực tế",
+        "pointKpi": "KPI điểm thực tế",
+        "tasks": "{count} công việc",
+        "points": "{actual} / {estimated} điểm"
+      },
+      "currentTarget": "Mục tiêu hiện tại",
+      "targetDescription": "Đây là các mục tiêu hiện đang được dùng để đánh giá KPI dự án của thành viên này.",
+      "ot": "Làm thêm giờ",
+      "totalOtHours": "Tổng giờ OT",
+      "effectiveHours": "Giờ hiệu quả",
+      "approvedTickets": "Phiếu đã duyệt"
+    },
+    "membersTable": {
+      "title": "Thành viên",
+      "count": "{count} thành viên",
+      "loadFailed": "Không thể tải dữ liệu.",
+      "headers": {
+        "member": "Thành viên",
+        "actualAssigned": "Được giao thực tế",
+        "actualCompletion": "Hoàn thành thực tế",
+        "actualOnTime": "Đúng hạn thực tế",
+        "actualPoint": "Điểm thực tế",
+        "actualScore": "Điểm thực tế",
+        "target": "Mục tiêu",
+        "targetAchievement": "Mức đạt mục tiêu",
+        "otHours": "Giờ OT",
+        "allocatedPerDay": "Phân bổ/ngày"
+      },
+      "noTarget": "Không có mục tiêu",
+      "details": "Chi tiết"
+    },
+    "overviewCards": {
+      "loadFailed": "Không thể tải dữ liệu.",
+      "progress": "Tiến độ",
+      "completionRate": "Tỷ lệ hoàn thành",
+      "onTimeRate": "Tỷ lệ đúng hạn",
+      "pointProgress": "Tiến độ điểm",
+      "overdueTasks": "Công việc quá hạn",
+      "remaining": "Còn lại",
+      "members": "Thành viên",
+      "tasksCompleted": "Hoàn thành {completed}/{total} công việc",
+      "tasks": "{completed}/{total} công việc",
+      "dueSoon": "{count} sắp đến hạn",
+      "points": "{actual} / {estimated} điểm",
+      "overdueRate": "{rate}% số công việc",
+      "noTasks": "Không có công việc",
+      "days": "{count} ngày",
+      "activeMembers": "{count} thành viên hoạt động",
+      "active": "{count} đang hoạt động"
+    },
+    "targetAchievement": {
+      "title": "Mức đạt mục tiêu",
+      "noTargetData": "Không có dữ liệu mục tiêu",
+      "noTargetDataDescription": "Chưa có dữ liệu mức đạt mục tiêu.",
+      "exceeded": "Vượt mục tiêu KPI",
+      "achieved": "Đạt mục tiêu KPI",
+      "notMet": "Chưa đạt mục tiêu KPI",
+      "exceededDescription": "Cao hơn mục tiêu {value} dựa trên các chỉ số đang theo dõi.",
+      "achievedDescription": "Tất cả chỉ số đang theo dõi đã đạt mục tiêu hiện tại.",
+      "notMetDescription": "Còn thiếu {value} để đạt mục tiêu hiện tại.",
+      "noAchievementData": "Chưa có dữ liệu mức đạt.",
+      "labels": {
+        "score": "Điểm",
+        "pointCompletion": "Hoàn thành điểm",
+        "onTime": "Đúng hạn",
+        "otHours": "Giờ OT",
+        "completedTasks": "Công việc hoàn thành",
+        "maxOverdue": "Tối đa quá hạn",
+        "overdueRule": "Quy tắc quá hạn",
+        "requireZero": "Yêu cầu bằng 0"
+      }
+    }
+  },
+  "inviteAccept": {
+    "errors": {
+      "invalidOrExpired": "Lời mời này không hợp lệ hoặc đã hết hạn.",
+      "expired": "Lời mời này đã hết hạn.",
+      "invalid": "Liên kết lời mời này không hợp lệ.",
+      "signInRequired": "Vui lòng đăng nhập để chấp nhận lời mời này.",
+      "missingToken": "Thiếu mã lời mời.",
+      "acceptFailed": "Không thể chấp nhận lời mời vào dự án.",
+      "status404": "Không tìm thấy lời mời hoặc lời mời không còn khả dụng.",
+      "status403": "Bạn không có quyền chấp nhận lời mời này.",
+      "status400": "Lời mời này không hợp lệ hoặc đã hết hạn.",
+      "status401": "Vui lòng đăng nhập để chấp nhận lời mời này."
+    },
+    "toasts": {
+      "accepted": "Đã chấp nhận lời mời vào dự án thành công.",
+      "alreadyAccepted": "Lời mời vào dự án này đã được chấp nhận trước đó."
+    },
+    "success": {
+      "title": "Đã chấp nhận lời mời",
+      "description": "Bạn đã tham gia dự án. Hệ thống đang chuyển hướng.",
+      "badge": "Đang chuyển đến dự án"
+    },
+    "card": {
+      "signInTitle": "Đăng nhập để chấp nhận lời mời",
+      "signInDescription": "Bạn cần đăng nhập trước khi tham gia dự án này.",
+      "errorTitle": "Không thể chấp nhận lời mời",
+      "errorDescription": "Hệ thống không thể hoàn tất lời mời vào dự án này.",
+      "processingTitle": "Đang chấp nhận lời mời",
+      "processingDescription": "Vui lòng chờ trong khi hệ thống thêm bạn vào dự án."
+    },
+    "alerts": {
+      "redirectTitle": "Đang chuyển đến trang đăng nhập",
+      "redirectDescription": "Sau khi đăng nhập, bạn sẽ quay lại đây để chấp nhận lời mời.",
+      "processingTitle": "Đang xử lý lời mời",
+      "processingDescription": "Hệ thống đang xác thực lời mời và cập nhật quyền truy cập dự án.",
+      "failedTitle": "Chấp nhận lời mời thất bại"
+    },
+    "actions": {
+      "retry": "Thử lại",
+      "signInAnother": "Đăng nhập"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "header": {
+    "nav": {
+      "capabilities": "Capabilities",
+      "ragEngine": "RAG Engine",
+      "liveDemo": "Live Demo",
+      "billing": "Billing"
+    },
+    "dashboard": "Go to Dashboard",
+    "login": "Log in",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "ICCP v2.0 Live Context Engine",
+    "titleBefore": "Intelligence at the",
+    "titleHighlight": "Center",
+    "titleAfter": "of Your Data.",
+    "description": "Experience the first AI that does not just answer - it cites. ICCP ingests, analyzes, and connects every document in your ecosystem with a verifiable trail of truth.",
+    "primaryCta": "Start Free Trial",
+    "secondaryCta": "Watch Demo",
+    "trustedByPrefix": "Trusted by",
+    "trustedByValue": "2,000+",
+    "trustedBySuffix": "data teams",
+    "floatingCards": {
+      "hrHub": "HR HUB",
+      "finance": "FINANCE",
+      "itOps": "IT OPS",
+      "legalAi": "LEGAL AI"
+    }
+  },
+  "features": {
+    "eyebrow": "Capabilities",
+    "title": "The operating layer for trusted enterprise knowledge.",
+    "description": "Every answer, file, and workflow stays connected so business teams can move faster without losing governance.",
+    "cards": {
+      "instantIngestion": {
+        "title": "Instant Ingestion",
+        "description": "Drag and drop PDFs, Word docs, and spreadsheets. Our engine vectorizes content in milliseconds, ready for immediate querying."
+      },
+      "contextualAwareness": {
+        "title": "Contextual Awareness",
+        "description": "ICCP understands semantic relationships. It does not just keyword match; it understands intent behind complex queries."
+      },
+      "verifiableCitations": {
+        "title": "Verifiable Citations",
+        "description": "Every claim generated is backed by a clickable source link that takes teams directly to the supporting paragraph."
+      }
+    }
+  },
+  "rag": {
+    "badge": "Live Processing Engine",
+    "titleBefore": "How Our",
+    "titleHighlight": "RAG Engine",
+    "titleAfter": "Works",
+    "description": "Transforming your raw data into intelligent answers in milliseconds. Watch the flow from ingestion to generation.",
+    "cards": {
+      "stepOne": "STEP 01",
+      "stepTwo": "STEP 02",
+      "stepThree": "STEP 03",
+      "ingest": {
+        "title": "Ingest",
+        "description": "Connect your knowledge base. Documents slide into our secure ingestion engine where they are parsed and chunked."
+      },
+      "process": {
+        "title": "Process",
+        "description": "Vector Processing. Our neural AI indexes content and retrieves relevant context with high-dimensional precision."
+      },
+      "answer": {
+        "title": "Answer",
+        "description": "Generative Output. The system synthesizes the retrieved data into a coherent, cited answer instantly via chat.",
+        "userQuestion": "How does RAG work?",
+        "assistantAnswer": "RAG combines retrieval with generation to give accurate answers.",
+        "citationOne": "src: docs_v1",
+        "citationTwo": "src: api_ref"
+      }
+    }
+  },
+  "liveDemo": {
+    "eyebrow": "Live Context Engine",
+    "title": "See the reasoning unfold.",
+    "description": "Our AI synthesizes data across multiple files in real-time. Watch how it handles a complex query about Q3 performance.",
+    "sessionId": "SESSION_ID: 8X92_ACTIVE",
+    "question": "Summarize the revenue impact from the new market expansion in Q3.",
+    "scanning": "Scanning 4 documents...",
+    "answerBefore": "Based on the financial breakdown, revenue increased by",
+    "answerHighlight": "15%",
+    "answerAfter": "quarter-over-quarter. This growth is directly attributed to the expansion into the APAC region.",
+    "citationOnePage": "Pg 12",
+    "citationTwoPage": "Row 45",
+    "followUpPlaceholder": "Ask a follow-up question..."
+  },
+  "billing": {
+    "eyebrow": "Billing",
+    "title": "Plans that scale with your teams.",
+    "description": "Connect directly to live billing plans from the backend. Start free, then upgrade when your knowledge operations grow.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "monthSuffix": "/month",
+    "yearSuffix": "/year",
+    "loading": "Loading billing plans...",
+    "error": "Failed to load billing plans. Please try again in a moment.",
+    "mostPopular": "Most Popular",
+    "choosePlan": "Choose {plan}",
+    "unlimited": "Unlimited",
+    "units": {
+      "users": "users",
+      "projects": "projects",
+      "documents": "documents",
+      "storage": "GB storage"
+    }
+  },
+  "cta": {
+    "title": "Ready to centralize your intelligence?",
+    "description": "Join thousands of forward-thinking companies using ICCP to power decision making with verifiable data.",
+    "inputPlaceholder": "Enter your work email",
+    "submit": "Request Access",
+    "submitting": "Submitting...",
+    "footer": "No credit card required for trial.",
+    "invalidEmail": "Please enter a valid work email address.",
+    "submitSuccess": "Request submitted successfully.",
+    "submitSuccessDescription": "Our team will contact you via email.",
+    "submitError": "Failed to submit request access."
+  },
+  "footer": {
+    "copyright": "Copyright 2026 ICCP, Inc. All rights reserved."
+  }
+}

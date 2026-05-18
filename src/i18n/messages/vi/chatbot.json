@@ -1,0 +1,206 @@
+{
+  "header": {
+    "defaultTitle": "Trợ lý AI",
+    "subtitle": "Chọn model, mode và toolset cho tài liệu, web và dữ liệu công việc.",
+    "openSidebar": "Mở thanh bên",
+    "closeSidebar": "Đóng thanh bên",
+    "selectModelPlaceholder": "Chọn mô hình AI",
+    "autoModel": "Tự động (khuyến nghị)"
+  },
+  "modes": {
+    "general": {
+      "label": "Trợ lý thông thường",
+      "description": "Chat trực tiếp với AI, không dùng tài liệu hay tool"
+    },
+    "auto": {
+      "label": "Tự động",
+      "description": "Tự kết hợp tài liệu nội bộ và web khi cần"
+    },
+    "rag": {
+      "label": "Tìm trong tài liệu",
+      "description": "Tìm kiếm trong các tài liệu bạn đã tải lên"
+    },
+    "web": {
+      "label": "Tìm trên web",
+      "description": "Tìm kiếm trên web theo thời gian thực"
+    }
+  },
+  "toolsets": {
+    "auto": {
+      "label": "Tool tự động",
+      "description": "Cho phép dùng toàn bộ tool khi cần"
+    },
+    "none": {
+      "label": "Không dùng tool",
+      "description": "Không gọi tool project, task hay ticket"
+    },
+    "projects": {
+      "label": "Projects",
+      "description": "Chỉ dùng tool tra cứu dự án"
+    },
+    "tasks": {
+      "label": "Tasks",
+      "description": "Chỉ dùng tool liên quan đến task"
+    },
+    "tickets": {
+      "label": "Tickets",
+      "description": "Chỉ dùng tool quy trình ticket"
+    },
+    "documents": {
+      "label": "Documents",
+      "description": "Chỉ dùng tool cây thư mục và danh sách tài liệu"
+    },
+    "organization": {
+      "label": "Organization",
+      "description": "Chỉ dùng tool thông tin tổ chức và thành viên"
+    },
+    "dailyReports": {
+      "label": "Daily reports",
+      "description": "Chỉ dùng tool daily report"
+    }
+  },
+  "emptyState": {
+    "title": "Hôm nay tôi có thể hỗ trợ bạn gì?",
+    "currentlyIn": "Hiện đang ở chế độ",
+    "modeSuffix": "",
+    "startConversation": "Bắt đầu cuộc trò chuyện",
+    "suggestions": {
+      "auto1": "So sánh chính sách nội bộ với best practice hiện tại",
+      "auto2": "Tìm cả tài liệu nội bộ và nguồn web về chủ đề này",
+      "auto3": "Dùng tool phù hợp để kiểm tra dữ liệu công việc của tôi",
+      "rag1": "Tóm tắt báo cáo tài chính quý 4",
+      "rag2": "Các điểm chính trong chính sách nhân sự là gì?",
+      "rag3": "Tìm thông tin về lộ trình sản phẩm",
+      "web1": "Tin tức AI mới nhất là gì?",
+      "web2": "Xu hướng hiện tại trong kỹ thuật phần mềm",
+      "web3": "Các thay đổi gần đây trong quy định thuế"
+    }
+  },
+  "input": {
+    "placeholder": "Hỏi bất kỳ điều gì... (Shift+Enter để xuống dòng)",
+    "stopGeneration": "Dừng tạo câu trả lời",
+    "send": "Gửi",
+    "changeMode": "Đổi cấu hình chat",
+    "editConfig": "Chỉnh sửa cấu hình đang dùng",
+    "searchMode": "Cấu hình chat",
+    "warning": "Câu trả lời AI có thể không chính xác. Hãy kiểm tra lại từ nguồn gốc.",
+    "capabilityPopover": {
+      "title": "Chọn công cụ đang bật",
+      "description": "Bật Internal Tool và External Tool cùng lúc nếu cần, rồi áp dụng một lần.",
+      "internalTool": "Internal Tool",
+      "internalDescription": "Dùng tìm kiếm tài liệu hoặc công cụ dữ liệu nội bộ.",
+      "externalTool": "External Tool",
+      "externalDescription": "Dùng tìm kiếm web bên ngoài."
+    },
+    "internalDialog": {
+      "title": "Cấu hình Internal Tool",
+      "description": "Tái sử dụng cấu hình tìm kiếm tài liệu hoặc tool nội bộ cho cuộc trò chuyện này."
+    },
+    "externalConfig": {
+      "title": "Cấu hình External Tool",
+      "description": "Chọn cách trợ lý truy cập nguồn bên ngoài cho cuộc trò chuyện này.",
+      "webSearch": "Web Search",
+      "off": "Tắt"
+    },
+    "scope": {
+      "organization": "Toàn tổ chức",
+      "project": "Theo dự án",
+      "myDocs": "Tài liệu của tôi",
+      "folder": "Theo thư mục",
+      "document": "Theo tài liệu",
+      "customDocs": "Chọn nhiều tài liệu"
+    },
+    "configDialog": {
+      "title": "Chọn chế độ chat",
+      "description": "Chọn một trong 3 chế độ. Chỉ chế độ bạn chọn mới được kích hoạt.",
+      "modeLabel": "Chế độ chính",
+      "toolsetCategoryLabel": "Công cụ (Tool)",
+      "toolsetCategoryDesc": "Cho phép AI dùng các công cụ như task, ticket, project...",
+      "toolsetLabel": "Nhóm tool được phép dùng",
+      "multiDocumentLabel": "Chọn tài liệu để tìm kiếm",
+      "scopeLabel": "Phạm vi tài liệu nội bộ",
+      "scopeSearchLabel": "Tìm trong danh sách phạm vi",
+      "scopeSelectLabel": "Chọn phạm vi cụ thể",
+      "selectScopePlaceholder": "Chọn một mục",
+      "scopeRequiredHint": "Phần này bắt buộc khi chọn scope Dự án / Thư mục / Tài liệu.",
+      "projectSearchPlaceholder": "Tìm dự án theo tên...",
+      "folderSearchPlaceholder": "Tìm thư mục theo tên...",
+      "documentSearchPlaceholder": "Tìm tài liệu theo tiêu đề...",
+      "loadingOptions": "Đang tải dữ liệu...",
+      "noOptions": "Không có kết quả phù hợp",
+      "scopeOptionsError": "Không tải được dữ liệu từ module documents",
+      "scopeIdRequired": "Vui lòng chọn một mục trong danh sách",
+      "scopeIdLabel": "ID phạm vi",
+      "scopeIdPlaceholder": "Nhập projectId / folderId / documentId",
+      "strictScope": "Khóa chặt theo phạm vi đã chọn",
+      "showAdvanced": "Hiện tùy chọn nâng cao (không bắt buộc)",
+      "hideAdvanced": "Ẩn tùy chọn nâng cao",
+      "includeSubfolders": "Bao gồm thư mục con",
+      "preferOwner": "Ưu tiên tài liệu do tôi sở hữu",
+      "includeSharedDocs": "Bao gồm tài liệu được chia sẻ",
+      "timeRange": "Thời gian",
+      "timeRange7d": "7 ngày gần đây",
+      "timeRange30d": "30 ngày gần đây",
+      "timeRangeAll": "Toàn bộ thời gian",
+      "category": "Danh mục",
+      "categoryPlaceholder": "Ví dụ: policy, hr",
+      "categorySelectPlaceholder": "Chọn danh mục",
+      "noCategories": "Không có danh mục phù hợp",
+      "fileType": "Loại tệp",
+      "fileTypePlaceholder": "Ví dụ: pdf, docx",
+      "fileTypeSelectPlaceholder": "Chọn loại tệp",
+      "noFileTypes": "Không có loại tệp phù hợp",
+      "cancel": "Hủy",
+      "apply": "Áp dụng"
+    }
+  },
+  "quota": {
+    "tooltipMessages": "Hôm nay: {used}/{limit} tin nhắn",
+    "tooltipTokens": "Token ngày: {used} / {limit}",
+    "tooltipTokensUnavailable": "Token ngày: chưa có dữ liệu",
+    "tokensUsedSuffix": "token ngày đã dùng",
+    "todaySuffix": "/ {limit} hôm nay"
+  },
+  "sidebar": {
+    "title": "Cuộc trò chuyện",
+    "new": "Mới",
+    "empty": "Chưa có cuộc trò chuyện nào",
+    "newConversation": "Cuộc trò chuyện mới",
+    "deleteTitle": "Xóa cuộc trò chuyện?",
+    "deleteDescription": "Hành động này không thể hoàn tác. Toàn bộ tin nhắn trong cuộc trò chuyện này sẽ bị xóa vĩnh viễn.",
+    "cancel": "Hủy",
+    "delete": "Xóa"
+  },
+  "messageList": {
+    "thinking": "Đang suy nghĩ...",
+    "sources": "Nguồn ({count})",
+    "webSources": "Nguồn web ({count})",
+    "copyResponse": "Sao chép phản hồi",
+    "pendingAction": {
+      "title": "Cần xác nhận trước khi thực hiện",
+      "requiresConfirmation": "Mình đã chuẩn bị thao tác này. Hãy xác nhận để mình tiếp tục thực hiện.",
+      "confirm": "Xác nhận",
+      "cancel": "Hủy thao tác",
+      "cancelling": "Đang hủy...",
+      "statusPending": "Chờ xác nhận",
+      "statusConfirmed": "Đã gửi xác nhận",
+      "statusCancelled": "Đã hủy",
+      "confirmationMessage": "Xác nhận thực hiện thao tác này.",
+      "cancelledTitle": "Đã hủy thao tác",
+      "cancelledDescription": "Yêu cầu chờ xác nhận này đã được hủy.",
+      "cancelFailedTitle": "Không hủy được thao tác"
+    }
+  },
+  "markdown": {
+    "copy": "Sao chép",
+    "copied": "Đã sao chép!",
+    "code": "Mã"
+  },
+  "errors": {
+    "unknownServer": "Máy chủ trả về lỗi không xác định",
+    "streamError": "Lỗi luồng dữ liệu",
+    "streamFailed": "Phản hồi AI thất bại (HTTP {status})",
+    "streamFailedWithDetail": "Phản hồi AI thất bại (HTTP {status}): {detail}",
+    "responseFailedTitle": "Phản hồi AI thất bại"
+  }
+}

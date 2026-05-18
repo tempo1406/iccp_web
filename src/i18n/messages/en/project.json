@@ -1,0 +1,1069 @@
+{
+  "common": {
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saveChanges": "Save Changes",
+    "close": "Close",
+    "delete": "Delete",
+    "actions": "Actions",
+    "search": "Search",
+    "clear": "Clear",
+    "refresh": "Refresh",
+    "loading": "Loading...",
+    "notAvailable": "N/A",
+    "page": "Page",
+    "selected": "{count} selected",
+    "yes": "Yes",
+    "no": "No",
+    "showMore": "Show more",
+    "showLess": "Show less"
+  },
+  "tabs": {
+    "dashboard": "Dashboard",
+    "board": "Task Board",
+    "teamProgress": "Team Progress",
+    "members": "Members",
+    "roles": "Roles",
+    "documents": "Documents",
+    "kpi": "KPI",
+    "reports": "Report view"
+  },
+  "kpiPage": {
+    "title": "Project KPI",
+    "description": "Review project and member performance metrics.",
+    "breadcrumbs": {
+      "kpi": "KPI"
+    }
+  },
+  "listPage": {
+    "title": "Projects",
+    "description": "Manage and track all your projects and team progress.",
+    "createProject": "New Project",
+    "createProjectHint": "Create a new project",
+    "createProjectNoPermission": "You do not have permission to create a project.",
+    "loadFailed": "Failed to load projects.",
+    "loading": "Loading projects...",
+    "checkingAccess": "Checking project access...",
+    "empty": "No projects found for current filters.",
+    "noDescription": "No description available."
+  },
+  "stats": {
+    "totalProjects": "Total Projects",
+    "active": "Active",
+    "completed": "Completed",
+    "onHold": "On Hold",
+    "archived": "Archived"
+  },
+  "toolbar": {
+    "searchPlaceholder": "Search projects...",
+    "allStatus": "All Status",
+    "gridView": "Grid view",
+    "listView": "List view"
+  },
+  "grid": {
+    "progress": "Progress",
+    "tasksCompleted": "{completed} of {total} tasks completed"
+  },
+  "table": {
+    "project": "Project",
+    "status": "Status",
+    "progress": "Progress",
+    "team": "Team",
+    "dueDate": "Due Date",
+    "viewDetails": "View Details",
+    "viewBoard": "View Board",
+    "editProject": "Edit Project",
+    "delete": "Delete"
+  },
+  "dashboard": {
+    "overallProgress": "Overall Progress",
+    "started": "Started",
+    "due": "Due",
+    "chartOverview": "Chart Overview",
+    "chartPeriod": "Chart period:",
+    "from": "From",
+    "to": "To",
+    "summary": {
+      "totalMembers": {
+        "label": "Total Members",
+        "sublabel": "Project team"
+      },
+      "completedLast7Days": {
+        "label": "Completed",
+        "sublabel": "Last 7 days"
+      },
+      "updatedLast7Days": {
+        "label": "Updated",
+        "sublabel": "Last 7 days"
+      },
+      "createdLast7Days": {
+        "label": "Created",
+        "sublabel": "Last 7 days"
+      },
+      "dueSoonCount": {
+        "label": "Due Soon",
+        "sublabel": "Next 24 hours"
+      }
+    },
+    "statusChart": {
+      "title": "Tasks by Status",
+      "empty": "No tasks found"
+    },
+    "activeTasks": {
+      "title": "Active Tasks",
+      "recent": "(5 most recent)",
+      "empty": "No active tasks"
+    },
+    "priorityChart": {
+      "title": "Tasks by Priority",
+      "empty": "No tasks found",
+      "tasksCount": "{count} tasks"
+    },
+    "typeChart": {
+      "title": "Type of Work",
+      "empty": "No tasks found",
+      "taskSingular": "Task",
+      "taskPlural": "Tasks",
+      "subtaskSingular": "Subtask",
+      "subtaskPlural": "Subtasks"
+    },
+    "workload": {
+      "title": "Team Workload",
+      "unassigned": "{count} unassigned",
+      "empty": "No members found",
+      "taskCount": "{count} task",
+      "taskCountPlural": "{count} tasks",
+      "statusFallback": {
+        "assigned": "Assigned",
+        "done": "Done",
+        "open": "Open"
+      }
+    },
+    "priority": {
+      "urgent": "Urgent",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "dueState": {
+      "overdue": "Overdue",
+      "late": "Late",
+      "upcoming": "Due soon",
+      "on_time": "On time",
+      "no_due_date": "No due date"
+    }
+  },
+  "members": {
+    "permissionDenied": "You do not have permission to view this section.",
+    "title": "Project Members",
+    "searchPlaceholder": "Search member...",
+    "loading": "Loading members...",
+    "table": {
+      "member": "Member",
+      "projectRole": "Project Role",
+      "roleAssignments": "Role Assignments",
+      "allocatedHoursPerDay": "Alloc. Hrs/Day",
+      "joined": "Joined",
+      "actions": "Actions"
+    },
+    "empty": "No member found.",
+    "noRole": "No role",
+    "manageRoles": "Manage Roles",
+    "editAllocatedHoursTitle": "Edit allocated hours per day",
+    "cannotRemoveSelf": "You cannot remove yourself",
+    "pagination": {
+      "summary": "Showing {shown} of {pageItemCount} members on this page - Page {page}",
+      "perPage": "{count} / page"
+    },
+    "manageRolesDialog": {
+      "title": "Manage Member Roles",
+      "description": "Assign or revoke project roles for {member}.",
+      "descriptionFallback": "Assign or revoke project roles for the selected member.",
+      "loading": "Loading role data...",
+      "empty": "No project role available."
+    },
+    "allocatedHoursDialog": {
+      "title": "Edit Allocated Hours / Day",
+      "description": "Update daily allocation for {member}.",
+      "descriptionFallback": "Update the selected member allocation.",
+      "label": "Allocated Hours / Day",
+      "placeholder": "e.g. 8",
+      "hint": "Expected working hours per day for this member on this project."
+    },
+    "toasts": {
+      "loadFailed": "Failed to load project members."
+    }
+  },
+  "roles": {
+    "permissionDenied": "You do not have permission to view this section.",
+    "createTitle": "Create Project Role",
+    "name": "Role Name",
+    "description": "Description",
+    "namePlaceholder": "e.g. qa_lead",
+    "descriptionPlaceholder": "Role description",
+    "permissionsOptional": "Permissions (optional)",
+    "createAction": "Create Role",
+    "title": "Project Roles",
+    "searchPlaceholder": "Search role...",
+    "loading": "Loading roles...",
+    "table": {
+      "role": "Role",
+      "updated": "Updated",
+      "actions": "Actions"
+    },
+    "empty": "No role found.",
+    "detailTitle": "Role Details",
+    "detailDescription": "Update role metadata and permission assignments.",
+    "detailLoading": "Loading role details...",
+    "detailMissing": "The selected role does not exist.",
+    "saveMetadata": "Save metadata",
+    "permissions": "Permissions",
+    "savePermissions": "Save permissions",
+    "toasts": {
+      "loadFailed": "Failed to load project roles.",
+      "roleMissing": "The selected role does not exist."
+    }
+  },
+  "permissionTree": {
+    "empty": "No permission found.",
+    "searchPlaceholder": "Search permission...",
+    "loading": "Loading permissions...",
+    "permissionsCount": "{count} permissions"
+  },
+  "detail": {
+    "noManagersSelected": "No managers selected",
+    "selectedCount": "{count} selected",
+    "toasts": {
+      "projectIdMissing": "Project ID is missing.",
+      "updateFailed": "Failed to update project.",
+      "updated": "Project updated successfully.",
+      "deleteFailed": "Failed to delete project.",
+      "deleted": "Project deleted successfully.",
+      "loadMembersFailed": "Failed to load project members."
+    },
+    "deleteDialog": {
+      "title": "Delete project",
+      "description": "Delete project \"{name}\"? This action cannot be undone."
+    },
+    "breadcrumbs": {
+      "projectCurrent": "{name}"
+    },
+    "actions": {
+      "inviteMember": "Invite Member",
+      "projectSettings": "Project Settings",
+      "editProject": "Edit Project",
+      "deleteProject": "Delete Project"
+    },
+    "editDialog": {
+      "title": "Edit Project",
+      "description": "Update project information and settings.",
+      "name": "Name *",
+      "descriptionLabel": "Description",
+      "status": "Status",
+      "priority": "Priority",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "budgetCurrency": "Budget Currency",
+      "estimatedBudget": "Estimated Budget",
+      "actualBudget": "Actual Budget",
+      "projectManagers": "Project Managers",
+      "loadingMembers": "Loading project members...",
+      "noMembers": "No project members found.",
+      "clearAll": "Clear all ({count})"
+    },
+    "validation": {
+      "nameRequired": "Project name is required.",
+      "endDateAfterStart": "End date must be after start date.",
+      "estimatedBudgetPositive": "Estimated budget must be a positive number.",
+      "actualBudgetPositive": "Actual budget must be a positive number."
+    },
+    "status": {
+      "planning": "Planning",
+      "active": "Active",
+      "on_hold": "On hold",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "critical": "Critical"
+    }
+  },
+  "statusBadge": {
+    "active": "Active",
+    "on-hold": "On Hold",
+    "completed": "Completed",
+    "planning": "Planning"
+  },
+  "priorityBadge": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "critical": "Critical"
+  },
+  "createDialog": {
+    "title": "Create New Project",
+    "description": "Enter project information and submit to create a project via API.",
+    "unknownMember": "Unknown member",
+    "selectedManagers": {
+      "none": "No managers selected",
+      "fallback": "{count} selected"
+    },
+    "fields": {
+      "name": "Project Name *",
+      "description": "Description",
+      "status": "Status",
+      "priority": "Priority",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "budgetCurrency": "Budget Currency",
+      "estimatedBudget": "Estimated Budget",
+      "actualBudget": "Actual Budget",
+      "projectManagers": "Project Managers"
+    },
+    "placeholders": {
+      "name": "ICCP Core Platform",
+      "description": "Describe this project...",
+      "status": "Select status",
+      "priority": "Select priority",
+      "startDate": "Select start date",
+      "endDate": "Select end date",
+      "budgetCurrency": "Select currency",
+      "estimatedBudget": "15000",
+      "actualBudget": "14500"
+    },
+    "members": {
+      "loading": "Loading organization members...",
+      "empty": "No organization members found.",
+      "clearAll": "Clear all ({count})"
+    },
+    "validation": {
+      "currencyInvalid": "Currency must be either USD or VND."
+    },
+    "toasts": {
+      "createFailed": "Failed to create project.",
+      "created": "Project created successfully."
+    },
+    "submit": "Create Project"
+  },
+  "quickCreateDialog": {
+    "title": "Create Project",
+    "description": "Create a real workspace project so it becomes available in the Project scope across the app, including Team Chat.",
+    "fields": {
+      "name": "Project name",
+      "description": "Description",
+      "status": "Status"
+    },
+    "placeholders": {
+      "name": "Website refresh",
+      "description": "Briefly describe what this project is for."
+    },
+    "submit": "Create Project",
+    "submitting": "Creating..."
+  },
+  "inviteMemberDialog": {
+    "title": "Invite Member",
+    "description": "Select one or more members from your current organization to invite into this project.",
+    "fields": {
+      "organizationMembers": "Organization Members *"
+    },
+    "states": {
+      "loading": "Loading organization members...",
+      "allAdded": "All organization members are already in this project.",
+      "selectedCount": "{count} member(s) selected."
+    },
+    "validation": {
+      "required": "Please select at least one member to invite.",
+      "loadFailed": "Failed to load members.",
+      "projectIdMissing": "Project ID is missing."
+    },
+    "toasts": {
+      "sendFailed": "Failed to send project invitation.",
+      "sent": "Sent {count} project invitation(s)."
+    },
+    "submit": "Send Invites"
+  },
+  "dashboardMemberStats": {
+    "title": "Members",
+    "totalMembers": "Total Members",
+    "empty": "No role data"
+  },
+  "detailHeader": {
+    "breadcrumbs": {
+      "dashboard": "Dashboard",
+      "projects": "Projects"
+    },
+    "aria": {
+      "projectActions": "Project actions"
+    },
+    "actions": {
+      "roleManagement": "Role Management",
+      "projectSettings": "Project Settings",
+      "editProject": "Edit Project",
+      "deleteProject": "Delete Project",
+      "inviteMember": "Invite Member"
+    },
+    "summary": {
+      "overallProgress": "Overall Progress",
+      "started": "Started",
+      "due": "Due",
+      "todo": "To Do",
+      "inProgress": "In Progress",
+      "completed": "Completed"
+    },
+    "viewMode": {
+      "board": "Board",
+      "list": "List"
+    },
+    "filters": {
+      "button": "Filter",
+      "title": "Filters",
+      "clearGroup": "Clear {label}",
+      "searchTasks": "Search tasks...",
+      "assignee": {
+        "label": "Assignee",
+        "searchPlaceholder": "Search assignee"
+      },
+      "tags": {
+        "label": "Tags",
+        "searchPlaceholder": "Search tags"
+      },
+      "status": {
+        "label": "Status",
+        "searchPlaceholder": "Search status"
+      },
+      "priority": {
+        "label": "Priority",
+        "searchPlaceholder": "Search priority"
+      },
+      "empty": "No matching option."
+    }
+  },
+  "teamProgress": {
+    "title": "Team Progress",
+    "description": "Review each member's task progress. Use each member's Filter button for due date range, status, and priority.",
+    "searchPlaceholder": "Search member...",
+    "empty": "No team progress data found.",
+    "noRole": "No role",
+    "headers": {
+      "member": "Member",
+      "role": "Role",
+      "assigned": "Assigned",
+      "done": "Done",
+      "open": "Open",
+      "completion": "Completion",
+      "onTime": "On-time",
+      "score": "Score"
+    },
+    "completionSummary": "{rate}% complete",
+    "filterFields": {
+      "dueDate": "Due date",
+      "priority": "Priority",
+      "status": "Status"
+    },
+    "priorityOptions": {
+      "all": "All priorities",
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "dueDateRange": {
+      "default": "Due date range",
+      "range": "{from} - {to}",
+      "from": "From {date}",
+      "until": "Until {date}"
+    },
+    "filter": {
+      "button": "Filter",
+      "searchMore": "Search more filters",
+      "clearSelection": "Clear selection",
+      "allStatuses": "All statuses"
+    },
+    "stats": {
+      "dueSoon": "Due soon",
+      "overdue": "Overdue",
+      "performance": "Performance",
+      "score": "Score {score}",
+      "completionRate": "Completion rate",
+      "onTimeRate": "On-time rate",
+      "doneOnTime": "Done on time",
+      "doneLate": "Done late",
+      "taskDistribution": "Task distribution",
+      "segments": {
+        "done": "Done",
+        "onTrack": "On Track",
+        "dueSoon": "Due Soon",
+        "overdue": "Overdue"
+      }
+    },
+    "custom": "Custom"
+  },
+  "kanban": {
+    "actions": {
+      "moveColumnLeft": "Move column left",
+      "moveColumnRight": "Move column right",
+      "create": "Create",
+      "addColumn": "Add Column",
+      "add": "Add",
+      "automatic": "Automatic"
+    },
+    "fields": {
+      "taskTitlePlaceholder": "What needs to be done?",
+      "dueDate": "Due date",
+      "columnName": "Column name",
+      "tags": "Tags"
+    },
+    "labels": {
+      "unassigned": "Unassigned",
+      "priority": "Priority: {value}",
+      "subtasks": "{count} subtasks",
+      "dropToMove": "Drop here to move to {column}",
+      "createTask": "Create task ({assignee})",
+      "updatingTask": "Updating task...",
+      "movingTask": "Moving task..."
+    },
+    "tagDialog": {
+      "title": "Add tags to {task}",
+      "taskFallback": "task",
+      "description": "Begin typing to find and create tags.",
+      "empty": "No tags selected.",
+      "noMatch": "No matching tags.",
+      "selected": "Selected"
+    },
+    "confirmDeleteColumn": {
+      "title": "Delete column",
+      "description": "Delete column \"{column}\"? Tasks in this column will be moved automatically."
+    }
+  },
+  "taskCreateDialog": {
+    "title": "Create New Task",
+    "description": "Create a task and assign it to a status column.",
+    "fields": {
+      "title": "Task Title *",
+      "description": "Description",
+      "status": "Status *",
+      "priority": "Priority",
+      "assignedTo": "Assigned To (User ID)",
+      "parentTaskId": "Parent Task ID",
+      "dueDate": "Due Date",
+      "storyPoints": "Story Points",
+      "estimatedHours": "Estimated Hours"
+    },
+    "placeholders": {
+      "title": "Design API contract",
+      "description": "Task details...",
+      "status": "Select status",
+      "priority": "Select priority",
+      "assignedTo": "user-uuid",
+      "parentTaskId": "parent-task-uuid",
+      "dueDate": "Select due date",
+      "storyPoints": "e.g. 3",
+      "estimatedHours": "e.g. 4.5"
+    },
+    "emptyStatus": "No status column found. Create a column first.",
+    "validation": {
+      "titleRequired": "Task title is required.",
+      "statusRequired": "Task status is required.",
+      "dueDateInvalid": "Due date is invalid."
+    },
+    "toasts": {
+      "projectIdMissing": "Project ID is missing.",
+      "createFailed": "Failed to create task.",
+      "created": "Task created successfully."
+    },
+    "submit": "Create Task"
+  },
+  "taskWorklog": {
+    "title": "Worklog",
+    "totalLogged": "Total logged: {value}",
+    "filters": {
+      "allMembers": "All members"
+    },
+    "alerts": {
+      "submitted": {
+        "title": "This worklog has already been submitted.",
+        "description": "Backend still allows edits, but this entry is already linked to a daily report."
+      }
+    },
+    "editor": {
+      "editTitle": "Edit worklog",
+      "addTitle": "Add worklog",
+      "cancelEdit": "Cancel edit"
+    },
+    "fields": {
+      "workDate": "Work date",
+      "member": "Member",
+      "selectMember": "Select member",
+      "currentUser": "Current user",
+      "mode": {
+        "duration": "Duration",
+        "timeRange": "Start and end time"
+      },
+      "durationMinutes": "Duration (minutes)",
+      "startTime": "Start time",
+      "endTime": "End time",
+      "progressPercent": "Progress percent",
+      "markAsBlocker": "Mark as blocker",
+      "description": "Description"
+    },
+    "placeholders": {
+      "filterByDate": "Filter by date",
+      "selectWorkDate": "Select work date",
+      "durationMinutes": "e.g. 90",
+      "progressPercent": "0 - 100",
+      "description": "Describe what was done in this work session..."
+    },
+    "actions": {
+      "saveChanges": "Save changes",
+      "addWorklog": "Add worklog"
+    },
+    "list": {
+      "title": "Logged entries",
+      "loading": "Loading worklogs...",
+      "loadFailed": "Failed to load worklogs.",
+      "empty": "No worklogs match the selected filters yet.",
+      "submitted": "Submitted",
+      "blocker": "Blocker",
+      "progress": "{value}% progress",
+      "noDescription": "No description provided."
+    },
+    "confirmDelete": {
+      "title": "Delete worklog",
+      "description": "Delete the {minutes} worklog on {date}?"
+    },
+    "validation": {
+      "workDateRequired": "Work date is required.",
+      "progressPercent": "Progress percent must be between 0 and 100.",
+      "durationMinutes": "Duration must be between 1 and 1440 minutes.",
+      "timeRequired": "Start time and end time are required.",
+      "invalidTimeRange": "The selected time range is invalid.",
+      "endTimeAfterStart": "End time must be after start time."
+    },
+    "toasts": {
+      "deleteFailed": "Failed to delete worklog.",
+      "deleted": "Worklog deleted successfully.",
+      "saveFailed": "Failed to save worklog.",
+      "updated": "Worklog updated successfully.",
+      "added": "Worklog added successfully."
+    }
+  },
+  "boardPage": {
+    "toasts": {
+      "updateTaskStatusFailed": "Failed to update task status.",
+      "createTaskFailed": "Failed to create task.",
+      "taskCreatedButUnassignFailed": "Task was created, but failed to set assignee as unassigned.",
+      "assignTaskFailed": "Failed to assign task.",
+      "renameTaskFailed": "Failed to rename task.",
+      "deleteTaskFailed": "Failed to delete task.",
+      "duplicateTaskFailed": "Failed to duplicate task.",
+      "taskDuplicatedButClearAssigneeFailed": "Task was duplicated, but failed to clear the assignee.",
+      "addTagFailed": "Failed to add tag.",
+      "createStatusFailed": "Failed to create status.",
+      "renameStatusFailed": "Failed to rename status.",
+      "deleteStatusFailed": "Failed to delete status.",
+      "updateTaskFailed": "Failed to update task."
+    }
+  },
+  "taskDetailDialog": {
+    "titleFallback": "Task",
+    "deleteComment": {
+      "title": "Delete comment",
+      "description": "Delete this comment?"
+    },
+    "toasts": {
+      "addCommentFailed": "Failed to add comment.",
+      "commentContentRequired": "Comment content is required.",
+      "updateCommentFailed": "Failed to update comment.",
+      "deleteCommentFailed": "Failed to delete comment.",
+      "toggleThumbsUpFailed": "Failed to toggle thumbs up.",
+      "updateReactionFailed": "Failed to update reaction.",
+      "addTagFailed": "Failed to add tag.",
+      "removeTagFailed": "Failed to remove tag.",
+      "taskTitleRequired": "Task title is required."
+    }
+  },
+  "reportView": {
+    "title": "Report view",
+    "description": "Review and manage daily reports for {project}.",
+    "thisProject": "this project",
+    "filters": {
+      "selectDate": "Select report date",
+      "allMembers": "All members",
+      "allStatuses": "All statuses",
+      "searchPlaceholder": "Search member or content"
+    },
+    "tabs": {
+      "myReport": "My report",
+      "teamReports": "Team reports"
+    },
+    "statuses": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "locked": "Locked"
+    },
+    "loading": {
+      "myReport": "Loading daily report...",
+      "teamReports": "Loading team daily reports...",
+      "comments": "Loading comments..."
+    },
+    "errors": {
+      "loadMyReport": "Failed to load daily report",
+      "loadTeamReports": "Failed to load team daily reports",
+      "unknown": "Unknown error.",
+      "addComment": "Failed to add comment.",
+      "markSeen": "Failed to mark report as seen."
+    },
+    "toasts": {
+      "commentAdded": "Comment added to daily report.",
+      "markedSeen": "Daily report marked as seen.",
+      "saveDraftFailed": "Failed to save daily report draft.",
+      "draftSaved": "Daily report draft saved successfully.",
+      "saveBeforeSubmitFailed": "Failed to save the draft before submission.",
+      "submitFailed": "Failed to submit daily report.",
+      "submitted": "Daily report submitted successfully."
+    },
+    "empty": {
+      "day": "No report is available for the selected day.",
+      "filteredReports": "No reports match the current filters.",
+      "noEmail": "No email",
+      "noSummary": "No summary provided.",
+      "noBlockers": "No blockers reported.",
+      "noPlan": "No plan provided.",
+      "notFilledYet": "Not filled yet.",
+      "comments": "No review comments yet.",
+      "commentsAfterSubmit": "No review comments yet. They will appear here after submission."
+    },
+    "myReport": {
+      "label": "My report",
+      "unknownProject": "Unknown project",
+      "reportDateSummary": "Report date {date} with {count} captured item(s).",
+      "mode": "Mode",
+      "draftMode": "Draft mode. Update the narrative, save when needed, then submit when ready.",
+      "readonlyMode": "Read-only mode. Submitted reports keep the final snapshot from the submission day."
+    },
+    "overview": {
+      "totalLogged": "Total logged",
+      "items": "Items",
+      "itemsCount": "{count, plural, one {# item} other {# items}}",
+      "submittedAt": "Submitted at",
+      "lastUpdated": "Last updated",
+      "loggedTime": "Logged time",
+      "status": "Status"
+    },
+    "narrative": {
+      "title": "Daily summary",
+      "submittedDescription": "Submitted reports keep the final narrative snapshot from the day they were sent.",
+      "draftDescription": "Report items are kept in sync automatically when project worklogs change.",
+      "summary": "Summary",
+      "blockers": "Blockers",
+      "planTomorrow": "Plan tomorrow",
+      "saveDraft": "Save draft",
+      "submit": "Submit",
+      "summaryPlaceholder": "What did you complete today?",
+      "blockersPlaceholder": "Anything slowing you down?",
+      "planTomorrowPlaceholder": "What will you focus on next?"
+    },
+    "review": {
+      "title": "Review",
+      "descriptionDraft": "Review activity will appear here after you submit the report.",
+      "descriptionSubmitted": "Follow PM review status and comments for this report.",
+      "statusTitle": "Review status",
+      "commentsTitle": "Comments",
+      "commentsDescription": "Comments from PMs and reviewers stay attached to this report.",
+      "submitFirst": "Submit the report first to start the review flow.",
+      "notSeenYet": "This report has not been marked as seen yet.",
+      "seenBy": "Seen by {reviewer} at {time}",
+      "reviewerFallback": "a reviewer"
+    },
+    "items": {
+      "title": "Report items",
+      "description": "Items generated from project worklogs for the selected day and shown in a table for quicker scanning.",
+      "detailDescription": "Worklogs and manual entries included in this report."
+    },
+    "team": {
+      "title": "Team reports",
+      "description": "Scan blockers, spot missing drafts, and open any report for full detail.",
+      "matchingReports": "{count} matching reports",
+      "drafts": "Drafts",
+      "submittedLocked": "Submitted / Locked",
+      "reportsWithBlockers": "Reports with blockers",
+      "member": "Member",
+      "status": "Status",
+      "logged": "Logged",
+      "summary": "Summary",
+      "blockers": "Blockers",
+      "lastActivity": "Last activity",
+      "lastActivitySubmitted": "Submitted",
+      "lastActivityUpdated": "Updated",
+      "action": "Action",
+      "planLabel": "Plan",
+      "view": "View",
+      "itemsCount": "{count, plural, one {# item} other {# items}}",
+      "showing": "Showing {start}-{end} of {total} reports across {members} members.",
+      "perPage": "{count} / page",
+      "detailSummary": "{date} - {logged} - {count, plural, one {# item} other {# items}}"
+    },
+    "teamDetail": {
+      "reviewStatus": "Review status",
+      "noReviewerSeen": "No reviewer has marked this report as seen yet.",
+      "reviewActionsHint": "PM review actions are available only for submitted or locked reports from other members.",
+      "seen": "Seen",
+      "markAsSeen": "Mark as seen",
+      "reviewComments": "Review comments",
+      "reviewCommentsDescription": "PM comments stay with the report for follow-up.",
+      "addComment": "Add comment",
+      "addCommentPlaceholder": "Share feedback or follow-up for this report.",
+      "addCommentAction": "Add comment"
+    },
+    "common": {
+      "notAvailable": "Not available"
+    },
+    "actions": {
+      "refreshFromWorklogs": "Refresh from worklogs"
+    }
+  },
+  "settingsDialog": {
+    "title": "Project Settings",
+    "description": "Configure daily reminders, KPI, and bonus settings for this project.",
+    "sections": {
+      "dailyReportReminder": "Daily Report Reminder",
+      "kpiWeights": "KPI Weights",
+      "pointScale": "Point Scale",
+      "bonusSettings": "Bonus Settings"
+    },
+    "states": {
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "notScheduled": "Not scheduled",
+      "noDaysSelected": "No days selected",
+      "organizationOverride": "Organization override",
+      "unlimited": "Unlimited"
+    },
+    "dailyReport": {
+      "description": "Reminder is sent at the configured Vietnam time to members who logged work today but have not submitted their daily report.",
+      "enable": "Enable Daily Report Reminder",
+      "reminderTime": "Reminder Time",
+      "reminderDays": "Reminder Days",
+      "reminderTimeHelp": "Reminder sent at this time ({timezone})."
+    },
+    "kpi": {
+      "description": "Weights used to calculate KPI scores for this project.",
+      "pointCompletion": "Point Completion",
+      "onTimeRate": "On-Time Rate",
+      "otContribution": "OT Contribution",
+      "totalWeight": "Total weight",
+      "totalWeightHint": "The total weight should equal 1 (100%)."
+    },
+    "pointScale": {
+      "maxPointsPerTask": "Max Points per Task",
+      "unlimitedPlaceholder": "∞"
+    },
+    "bonus": {
+      "enable": "Enable Bonus",
+      "onTimeTaskBonus": "On-Time Task Bonus",
+      "earlyCompletionThreshold": "Early Completion Threshold",
+      "earlyTaskBonus": "Early Task Bonus",
+      "zeroOverdueBonus": "Zero Overdue Bonus",
+      "maxBonusCap": "Max Bonus Cap",
+      "otBonusPerEffectiveHour": "OT Bonus / Effective Hour"
+    },
+    "days": {
+      "monShort": "Mon",
+      "tueShort": "Tue",
+      "wedShort": "Wed",
+      "thuShort": "Thu",
+      "friShort": "Fri",
+      "satShort": "Sat",
+      "sunShort": "Sun"
+    },
+    "actions": {
+      "edit": "Edit",
+      "reset": "Reset to organization settings",
+      "cancel": "Cancel",
+      "save": "Save",
+      "saving": "Saving..."
+    },
+    "errors": {
+      "loadFailed": "Failed to load settings.",
+      "dailyTimeRequired": "Reminder time is required when daily report reminder is enabled.",
+      "dailyDaysRequired": "Select at least one day for the daily report reminder."
+    },
+    "toasts": {
+      "saved": "Project settings saved.",
+      "reset": "Reset to organization settings."
+    },
+    "footer": {
+      "editHint": "Click <strong>Edit</strong> to update these settings."
+    },
+    "units": {
+      "hoursShort": "{value}h"
+    }
+  },
+  "kpiWorkspace": {
+    "common": {
+      "priority": {
+        "urgent": "Urgent",
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low"
+      },
+      "period": "Period",
+      "type": "Type",
+      "targetMetrics": "Target metrics",
+      "target": "Target",
+      "actual": "Actual",
+      "noTarget": "No active target resolved.",
+      "recentTasks": "Recent Tasks",
+      "byPriority": "By Priority",
+      "task": "Task",
+      "status": "Status",
+      "priorityLabel": "Priority",
+      "points": "Points",
+      "pointsValue": "{count} pts",
+      "dueDate": "Due Date",
+      "dueState": "Due State",
+      "noRecentTasks": "No recent tasks",
+      "tasksByPriority": "Tasks by Priority",
+      "pointsByPriority": "Points by Priority"
+    },
+    "myDetail": {
+      "title": "My Project KPI",
+      "loadFailed": "Failed to load your project KPI.",
+      "stats": {
+        "performanceScore": "Actual Performance Score",
+        "taskCompletion": "Actual Task Completion",
+        "onTimeRate": "Actual On-Time Rate",
+        "pointKpi": "Actual Point KPI",
+        "tasks": "{count} tasks",
+        "points": "{actual} / {estimated} pts"
+      },
+      "currentTarget": "Current Target",
+      "targetDescription": "These are the targets currently being used to evaluate your project KPI."
+    },
+    "memberDetail": {
+      "back": "Back to Project KPI",
+      "loadFailed": "Failed to load data.",
+      "stats": {
+        "performanceScore": "Actual Performance Score",
+        "taskCompletion": "Actual Task Completion",
+        "onTimeRate": "Actual On-Time Rate",
+        "pointKpi": "Actual Point KPI",
+        "tasks": "{count} tasks",
+        "points": "{actual} / {estimated} pts"
+      },
+      "currentTarget": "Current Target",
+      "targetDescription": "These are the targets currently being used to evaluate this member's project KPI.",
+      "ot": "OT",
+      "totalOtHours": "Total OT Hours",
+      "effectiveHours": "Effective Hours",
+      "approvedTickets": "Approved Tickets"
+    },
+    "membersTable": {
+      "title": "Members",
+      "count": "{count} members",
+      "loadFailed": "Failed to load data.",
+      "headers": {
+        "member": "Member",
+        "actualAssigned": "Actual assigned",
+        "actualCompletion": "Actual completion",
+        "actualOnTime": "Actual on-time",
+        "actualPoint": "Actual point",
+        "actualScore": "Actual score",
+        "target": "Target",
+        "targetAchievement": "Target achievement",
+        "otHours": "OT Hours",
+        "allocatedPerDay": "Allocated/day"
+      },
+      "noTarget": "No target",
+      "details": "Details"
+    },
+    "overviewCards": {
+      "loadFailed": "Failed to load data.",
+      "progress": "Progress",
+      "completionRate": "Completion Rate",
+      "onTimeRate": "On-Time Rate",
+      "pointProgress": "Point Progress",
+      "overdueTasks": "Overdue Tasks",
+      "remaining": "Remaining",
+      "members": "Members",
+      "tasksCompleted": "{completed} / {total} tasks completed",
+      "tasks": "{completed} / {total} tasks",
+      "dueSoon": "{count} due soon",
+      "points": "{actual} / {estimated} pts",
+      "overdueRate": "{rate}% of tasks",
+      "noTasks": "No tasks",
+      "days": "{count} days",
+      "activeMembers": "{count} active members",
+      "active": "{count} active"
+    },
+    "targetAchievement": {
+      "title": "Target Achievement",
+      "noTargetData": "No target data",
+      "noTargetDataDescription": "Achievement data is not available yet.",
+      "exceeded": "Exceeded KPI target",
+      "achieved": "KPI target achieved",
+      "notMet": "KPI target not met",
+      "exceededDescription": "{value} above target based on tracked metrics.",
+      "achievedDescription": "All tracked metrics have reached the current target.",
+      "notMetDescription": "{value} remaining to reach the current target.",
+      "noAchievementData": "No achievement data yet.",
+      "labels": {
+        "score": "Score",
+        "pointCompletion": "Point completion",
+        "onTime": "On-time",
+        "otHours": "OT hours",
+        "completedTasks": "Completed tasks",
+        "maxOverdue": "Max overdue",
+        "overdueRule": "Overdue rule",
+        "requireZero": "Require zero"
+      }
+    }
+  },
+  "inviteAccept": {
+    "errors": {
+      "invalidOrExpired": "This invitation is invalid or has expired.",
+      "expired": "This invitation has expired.",
+      "invalid": "This invitation link is invalid.",
+      "signInRequired": "Please sign in to accept this invitation.",
+      "missingToken": "Invitation token is missing.",
+      "acceptFailed": "Failed to accept project invitation.",
+      "status404": "Invitation not found or no longer available.",
+      "status403": "You do not have permission to accept this invitation.",
+      "status400": "This invitation is invalid or has expired.",
+      "status401": "Please sign in to accept this invitation."
+    },
+    "toasts": {
+      "accepted": "Project invitation accepted successfully.",
+      "alreadyAccepted": "This project invitation has already been accepted."
+    },
+    "success": {
+      "title": "Invitation accepted",
+      "description": "You have joined the project. Redirecting you now.",
+      "badge": "Redirecting to project"
+    },
+    "card": {
+      "signInTitle": "Sign in to accept invitation",
+      "signInDescription": "You need to sign in before joining this project.",
+      "errorTitle": "Unable to accept invitation",
+      "errorDescription": "We could not complete this project invitation.",
+      "processingTitle": "Accepting invitation",
+      "processingDescription": "Please wait while we add you to the project."
+    },
+    "alerts": {
+      "redirectTitle": "Redirecting to sign in",
+      "redirectDescription": "After signing in, you will return here to accept the invitation.",
+      "processingTitle": "Processing invitation",
+      "processingDescription": "We are validating your invitation and updating project access.",
+      "failedTitle": "Invitation failed"
+    },
+    "actions": {
+      "retry": "Try again",
+      "signInAnother": "Sign in"
+    }
+  }
+}
