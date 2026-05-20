@@ -1,0 +1,206 @@
+{
+  "header": {
+    "defaultTitle": "AI Assistant",
+    "subtitle": "Choose a model, mode, and toolset for documents, web, and work data.",
+    "openSidebar": "Open sidebar",
+    "closeSidebar": "Close sidebar",
+    "selectModelPlaceholder": "Select AI model",
+    "autoModel": "Auto (recommended)"
+  },
+  "modes": {
+    "general": {
+      "label": "General assistant",
+      "description": "Direct chat with AI — no documents or tools"
+    },
+    "auto": {
+      "label": "Auto",
+      "description": "Let the assistant combine internal docs and web"
+    },
+    "rag": {
+      "label": "Document search",
+      "description": "Search within your uploaded documents"
+    },
+    "web": {
+      "label": "Web search",
+      "description": "Search the live web"
+    }
+  },
+  "toolsets": {
+    "auto": {
+      "label": "Auto tools",
+      "description": "Allow the full toolset when needed"
+    },
+    "none": {
+      "label": "No tools",
+      "description": "Do not call project or ticket tools"
+    },
+    "projects": {
+      "label": "Projects",
+      "description": "Only project lookup tools"
+    },
+    "tasks": {
+      "label": "Tasks",
+      "description": "Only task-related tools"
+    },
+    "tickets": {
+      "label": "Tickets",
+      "description": "Only ticket workflow tools"
+    },
+    "documents": {
+      "label": "Documents",
+      "description": "Only document tree and list tools"
+    },
+    "organization": {
+      "label": "Organization",
+      "description": "Only organization profile and member tools"
+    },
+    "dailyReports": {
+      "label": "Daily reports",
+      "description": "Only daily report tools"
+    }
+  },
+  "emptyState": {
+    "title": "How can I help you today?",
+    "currentlyIn": "Currently in",
+    "modeSuffix": "mode",
+    "startConversation": "Start a conversation",
+    "suggestions": {
+      "auto1": "Compare our internal policy with current best practices",
+      "auto2": "Find internal docs and recent web sources about this topic",
+      "auto3": "Use the right tool to check my work data",
+      "rag1": "Summarize the Q4 financial report",
+      "rag2": "What are the key points in the HR policy?",
+      "rag3": "Find information about the product roadmap",
+      "web1": "What are the latest AI news?",
+      "web2": "Current trends in software engineering",
+      "web3": "Recent changes in tax regulations"
+    }
+  },
+  "input": {
+    "placeholder": "Ask anything... (Shift+Enter for new line)",
+    "stopGeneration": "Stop generation",
+    "send": "Send",
+    "changeMode": "Change chat configuration",
+    "editConfig": "Edit active configuration",
+    "searchMode": "Chat configuration",
+    "warning": "AI answers may be wrong. Verify with primary sources.",
+    "capabilityPopover": {
+      "title": "Choose active tools",
+      "description": "Turn internal and external capabilities on together, then apply once.",
+      "internalTool": "Internal Tool",
+      "internalDescription": "Use document search or internal work tools.",
+      "externalTool": "External Tool",
+      "externalDescription": "Use external web search."
+    },
+    "internalDialog": {
+      "title": "Configure Internal Tool",
+      "description": "Reuse the existing internal search or internal tool settings for this conversation."
+    },
+    "externalConfig": {
+      "title": "Configure External Tool",
+      "description": "Choose how the assistant can reach outside sources for this conversation.",
+      "webSearch": "Web Search",
+      "off": "Off"
+    },
+    "scope": {
+      "organization": "Organization-wide",
+      "project": "Project",
+      "myDocs": "My documents",
+      "folder": "Folder",
+      "document": "Single document",
+      "customDocs": "Select documents"
+    },
+    "configDialog": {
+      "title": "Choose chat mode",
+      "description": "Pick one of 3 modes. Only the selected mode is activated.",
+      "modeLabel": "Primary mode",
+      "toolsetCategoryLabel": "Tools",
+      "toolsetCategoryDesc": "Let AI use tools like tasks, tickets, projects...",
+      "toolsetLabel": "Allowed toolset",
+      "multiDocumentLabel": "Select documents to search",
+      "scopeLabel": "Internal document scope",
+      "scopeSearchLabel": "Search scope list",
+      "scopeSelectLabel": "Select scope target",
+      "selectScopePlaceholder": "Select an item",
+      "scopeRequiredHint": "This is required when scope is Project / Folder / Document.",
+      "projectSearchPlaceholder": "Search projects by name...",
+      "folderSearchPlaceholder": "Search folders by name...",
+      "documentSearchPlaceholder": "Search documents by title...",
+      "loadingOptions": "Loading data...",
+      "noOptions": "No matching options",
+      "scopeOptionsError": "Failed to load data from documents module",
+      "scopeIdRequired": "Please select one item from the list",
+      "scopeIdLabel": "Scope ID",
+      "scopeIdPlaceholder": "Enter projectId / folderId / documentId",
+      "strictScope": "Strictly limit to selected scope",
+      "showAdvanced": "Show advanced options (optional)",
+      "hideAdvanced": "Hide advanced options",
+      "includeSubfolders": "Include subfolders",
+      "preferOwner": "Prefer documents I own",
+      "includeSharedDocs": "Include shared documents",
+      "timeRange": "Time range",
+      "timeRange7d": "Last 7 days",
+      "timeRange30d": "Last 30 days",
+      "timeRangeAll": "All time",
+      "category": "Category",
+      "categoryPlaceholder": "Example: policy, hr",
+      "categorySelectPlaceholder": "Select category",
+      "noCategories": "No categories found",
+      "fileType": "File type",
+      "fileTypePlaceholder": "Example: pdf, docx",
+      "fileTypeSelectPlaceholder": "Select file type",
+      "noFileTypes": "No file types found",
+      "cancel": "Cancel",
+      "apply": "Apply"
+    }
+  },
+  "quota": {
+    "tooltipMessages": "Today: {used}/{limit} messages",
+    "tooltipTokens": "Daily tokens: {used} / {limit}",
+    "tooltipTokensUnavailable": "Daily tokens: unavailable",
+    "tokensUsedSuffix": "daily tokens used",
+    "todaySuffix": "/ {limit} today"
+  },
+  "sidebar": {
+    "title": "Conversations",
+    "new": "New",
+    "empty": "No conversations yet",
+    "newConversation": "New conversation",
+    "deleteTitle": "Delete conversation?",
+    "deleteDescription": "This action cannot be undone. All messages in this conversation will be permanently deleted.",
+    "cancel": "Cancel",
+    "delete": "Delete"
+  },
+  "messageList": {
+    "thinking": "Thinking...",
+    "sources": "Sources ({count})",
+    "webSources": "Web sources ({count})",
+    "copyResponse": "Copy response",
+    "pendingAction": {
+      "title": "Confirmation required before execution",
+      "requiresConfirmation": "I have prepared this action. Confirm it and I will continue.",
+      "confirm": "Confirm",
+      "cancel": "Cancel action",
+      "cancelling": "Cancelling...",
+      "statusPending": "Awaiting confirmation",
+      "statusConfirmed": "Confirmation sent",
+      "statusCancelled": "Cancelled",
+      "confirmationMessage": "Confirm this action.",
+      "cancelledTitle": "Action cancelled",
+      "cancelledDescription": "This pending confirmation request has been cancelled.",
+      "cancelFailedTitle": "Could not cancel action"
+    }
+  },
+  "markdown": {
+    "copy": "Copy",
+    "copied": "Copied!",
+    "code": "Code"
+  },
+  "errors": {
+    "unknownServer": "Unknown error from server",
+    "streamError": "Stream error",
+    "streamFailed": "AI response failed (HTTP {status})",
+    "streamFailedWithDetail": "AI response failed (HTTP {status}): {detail}",
+    "responseFailedTitle": "AI response failed"
+  }
+}

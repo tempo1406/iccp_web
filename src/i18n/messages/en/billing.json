@@ -1,0 +1,99 @@
+{
+  "header": {
+    "title": "Billing & Subscription",
+    "description": "Manage your subscription plan and billing information.",
+    "dashboardCrumb": "Dashboard",
+    "billingCrumb": "Billing"
+  },
+  "paymentCancel": {
+    "loading": "Cancelling payment...",
+    "title": "Payment Cancelled",
+    "description": "You have cancelled the payment. No charges were made.",
+    "backToBilling": "Back to Billing"
+  },
+  "paymentSuccess": {
+    "loading": "Confirming payment...",
+    "paidTitle": "Payment Successful!",
+    "pendingTitle": "Processing...",
+    "failedTitle": "Payment Failed",
+    "paidDescription": "Your plan has been activated. Thank you for using our service!",
+    "pendingDescription": "Your transaction is being processed. Please wait a moment and check the billing page.",
+    "failedDescription": "The transaction was cancelled or has expired. Please try again.",
+    "backToBilling": "Back to Billing"
+  },
+  "plans": {
+    "title": "Available Plans",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "save20": "Save 20%",
+    "loading": "Loading plans...",
+    "loadFailed": "Failed to load plans. Please refresh the page.",
+    "free": "Free",
+    "currentPlan": "Current Plan",
+    "changePlan": "Change Plan",
+    "upgrade": "Upgrade",
+    "current": "Current",
+    "trialBadge": "{days}-day trial",
+    "tryDaysFree": "Try {days} days free",
+    "monthShort": "mo",
+    "yearShort": "yr",
+    "users": "{count} users",
+    "documents": "{count} documents",
+    "storage": "{count} GB storage",
+    "projects": "{count} projects"
+  },
+  "currentPlan": {
+    "title": "Current Plan",
+    "noPlan": "No Plan",
+    "loading": "Loading...",
+    "loadFailed": "Failed to load subscription",
+    "empty": "You don't have a plan yet. Select one below to get started.",
+    "monthShort": "mo",
+    "yearShort": "yr",
+    "pendingPaymentTitle": "Awaiting payment",
+    "pendingPaymentDescription": "Your subscription has been created but is not yet paid. Please complete the payment to activate it.",
+    "trialRemaining": "{days} days remaining in trial",
+    "trialEndsOn": "Trial ends on {date}. Upgrade to continue using the service after the trial.",
+    "users": "{count} users",
+    "documents": "{count} documents",
+    "storage": "{count} GB storage",
+    "projects": "{count} projects",
+    "start": "Start: {date}",
+    "expires": "Expires: {date}",
+    "cancelSubscription": "Cancel Subscription",
+    "planDetails": "Plan Details",
+    "planDescription": "{name} - {description}",
+    "selectPlanHint": "Select a plan to view details.",
+    "usersLabel": "Users",
+    "documentsLabel": "Documents",
+    "storageLabel": "Storage",
+    "projectsLabel": "Projects",
+    "noInfo": "No information available.",
+    "status": {
+      "active": "Active",
+      "freeTrial": "Free Trial",
+      "pendingPayment": "Pending Payment",
+      "expired": "Expired",
+      "cancelled": "Cancelled"
+    }
+  },
+  "history": {
+    "title": "Billing History",
+    "invoiceCount": "{count} invoices",
+    "loading": "Loading invoices...",
+    "loadFailed": "Failed to load invoices.",
+    "empty": "No invoices yet.",
+    "invoice": "Invoice",
+    "date": "Date",
+    "amount": "Amount",
+    "status": "Status",
+    "action": "Action",
+    "payNow": "Pay Now",
+    "statusLabel": {
+      "paid": "Paid",
+      "pending": "Pending",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "header": {
+    "nav": {
+      "capabilities": "Năng lực",
+      "ragEngine": "RAG Engine",
+      "liveDemo": "Demo trực tiếp",
+      "billing": "Gói giá"
+    },
+    "dashboard": "Vào Dashboard",
+    "login": "Đăng nhập",
+    "getStarted": "Bắt đầu"
+  },
+  "hero": {
+    "badge": "ICCP v2.0 Bộ Máy Ngữ Cảnh Trực Tiếp",
+    "titleBefore": "Trí tuệ nằm ở",
+    "titleHighlight": "Trung tâm",
+    "titleAfter": "dữ liệu của bạn.",
+    "description": "Trải nghiệm AI đầu tiên không chỉ trả lời mà còn trích dẫn nguồn. ICCP tiếp nhận, phân tích và kết nối mọi tài liệu trong hệ sinh thái của bạn với chuỗi xác thực rõ ràng.",
+    "primaryCta": "Bắt đầu dùng thử",
+    "secondaryCta": "Xem demo",
+    "trustedByPrefix": "Được tin dùng bởi",
+    "trustedByValue": "2.000+",
+    "trustedBySuffix": "đội ngũ dữ liệu",
+    "floatingCards": {
+      "hrHub": "TRUNG TÂM NHÂN SỰ",
+      "finance": "TÀI CHÍNH",
+      "itOps": "VẬN HÀNH CNTT",
+      "legalAi": "AI PHÁP LÝ"
+    }
+  },
+  "features": {
+    "eyebrow": "Năng lực",
+    "title": "Lớp vận hành cho tri thức doanh nghiệp đáng tin cậy.",
+    "description": "Mọi câu trả lời, tệp tin và luồng công việc luôn được kết nối để đội ngũ kinh doanh tăng tốc mà vẫn giữ được quản trị.",
+    "cards": {
+      "instantIngestion": {
+        "title": "Nạp dữ liệu tức thì",
+        "description": "Kéo thả PDF, Word và bảng tính. Engine của chúng tôi vector hóa nội dung chỉ trong vài mili giây để sẵn sàng truy vấn ngay."
+      },
+      "contextualAwareness": {
+        "title": "Hiểu ngữ cảnh",
+        "description": "ICCP hiểu mối quan hệ ngữ nghĩa. Hệ thống không chỉ khớp từ khóa mà còn hiểu ý định phía sau các truy vấn phức tạp."
+      },
+      "verifiableCitations": {
+        "title": "Trích dẫn có thể kiểm chứng",
+        "description": "Mọi nhận định được tạo ra đều đi kèm liên kết nguồn có thể nhấp, đưa đội ngũ tới đúng đoạn tài liệu hỗ trợ."
+      }
+    }
+  },
+  "rag": {
+    "badge": "Bộ máy xử lý trực tiếp",
+    "titleBefore": "Cách",
+    "titleHighlight": "RAG Engine",
+    "titleAfter": "của chúng tôi hoạt động",
+    "description": "Biến dữ liệu thô của bạn thành câu trả lời thông minh chỉ trong vài mili giây. Theo dõi luồng từ ingest đến generation.",
+    "cards": {
+      "stepOne": "BƯỚC 01",
+      "stepTwo": "BƯỚC 02",
+      "stepThree": "BƯỚC 03",
+      "ingest": {
+        "title": "Ingest",
+        "description": "Kết nối kho tri thức của bạn. Tài liệu đi vào engine ingest an toàn để được phân tích và chia khối."
+      },
+      "process": {
+        "title": "Xử lý",
+        "description": "Xử lý vector. AI thần kinh của chúng tôi lập chỉ mục nội dung và truy hồi ngữ cảnh liên quan với độ chính xác cao."
+      },
+      "answer": {
+        "title": "Trả lời",
+        "description": "Đầu ra sinh ngữ. Hệ thống tổng hợp dữ liệu truy hồi thành câu trả lời mạch lạc, có trích dẫn ngay trong chat.",
+        "userQuestion": "RAG hoạt động như thế nào?",
+        "assistantAnswer": "RAG kết hợp truy hồi và sinh ngữ để đưa ra câu trả lời chính xác.",
+        "citationOne": "nguồn: docs_v1",
+        "citationTwo": "nguồn: api_ref"
+      }
+    }
+  },
+  "liveDemo": {
+    "eyebrow": "Bộ Máy Ngữ Cảnh Trực Tiếp",
+    "title": "Xem quá trình suy luận diễn ra.",
+    "description": "AI của chúng tôi tổng hợp dữ liệu từ nhiều tệp theo thời gian thực. Quan sát cách nó xử lý truy vấn phức tạp về hiệu suất Q3.",
+    "sessionId": "SESSION_ID: 8X92_ACTIVE",
+    "question": "Tóm tắt tác động doanh thu từ việc mở rộng sang thị trường mới trong Q3.",
+    "scanning": "Đang quét 4 tài liệu...",
+    "answerBefore": "Dựa trên phân tích tài chính, doanh thu đã tăng",
+    "answerHighlight": "15%",
+    "answerAfter": "so với quý trước. Mức tăng trưởng này đến trực tiếp từ việc mở rộng sang khu vực APAC.",
+    "citationOnePage": "Trang 12",
+    "citationTwoPage": "Dòng 45",
+    "followUpPlaceholder": "Đặt câu hỏi tiếp theo..."
+  },
+  "billing": {
+    "eyebrow": "Gói giá",
+    "title": "Các gói tăng trưởng cùng đội ngũ của bạn.",
+    "description": "Kết nối trực tiếp với các gói billing từ backend. Bắt đầu miễn phí rồi nâng cấp khi hoạt động tri thức của bạn mở rộng.",
+    "monthly": "Theo tháng",
+    "yearly": "Theo năm",
+    "monthSuffix": "/tháng",
+    "yearSuffix": "/năm",
+    "loading": "Đang tải gói billing...",
+    "error": "Không thể tải gói billing. Vui lòng thử lại sau ít phút.",
+    "mostPopular": "Phổ biến nhất",
+    "choosePlan": "Chọn {plan}",
+    "unlimited": "Không giới hạn",
+    "units": {
+      "users": "người dùng",
+      "projects": "dự án",
+      "documents": "tài liệu",
+      "storage": "GB lưu trữ"
+    }
+  },
+  "cta": {
+    "title": "Sẵn sàng tập trung hóa tri thức của bạn?",
+    "description": "Tham gia cùng hàng nghìn doanh nghiệp tiên phong đang dùng ICCP để hỗ trợ ra quyết định bằng dữ liệu có thể kiểm chứng.",
+    "inputPlaceholder": "Nhập email công việc của bạn",
+    "submit": "Yêu cầu truy cập",
+    "submitting": "Đang gửi...",
+    "footer": "Không cần thẻ tín dụng cho giai đoạn dùng thử.",
+    "invalidEmail": "Vui lòng nhập email công việc hợp lệ.",
+    "submitSuccess": "Gửi yêu cầu thành công.",
+    "submitSuccessDescription": "Đội ngũ của chúng tôi sẽ liên hệ với bạn qua email.",
+    "submitError": "Gửi yêu cầu truy cập thất bại."
+  },
+  "footer": {
+    "copyright": "Bản quyền 2026 ICCP, Inc. Mọi quyền được bảo lưu."
+  }
+}

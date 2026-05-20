@@ -1,0 +1,151 @@
+{
+  "common": {
+    "accepted": "Accepted",
+    "accept": "Accept",
+    "accepting": "Accepting...",
+    "delete": "Delete",
+    "markAsRead": "Mark as read",
+    "loading": "Loading...",
+    "unknown": "Unknown",
+    "emptyValue": "-"
+  },
+  "status": {
+    "pending": "Pending",
+    "processing": "Processing",
+    "completed": "Completed",
+    "failed": "Failed"
+  },
+  "page": {
+    "title": "Notifications",
+    "description": "Manage your inbox and broadcast campaigns.",
+    "dashboardCrumb": "Dashboard",
+    "notificationsCrumb": "Notifications",
+    "createCampaign": "Create Campaign",
+    "tabs": {
+      "inbox": "Inbox",
+      "campaigns": "Campaigns"
+    },
+    "searchPlaceholder": "Search...",
+    "filters": {
+      "all": "All",
+      "unread": "Unread",
+      "invitation": "Invitation"
+    },
+    "markAllRead": "Mark all read",
+    "newCampaign": "New campaign",
+    "loading": "Loading...",
+    "noNotifications": "No notifications",
+    "noCampaigns": "No campaigns yet",
+    "loadMore": "Load more"
+  },
+  "detailPanel": {
+    "empty": "Select a notification to view",
+    "organizationProfile": "Organization Profile",
+    "acceptInvitation": "Accept Invitation",
+    "acceptProjectInvitation": "Accept Invitation"
+  },
+  "campaignDetail": {
+    "empty": "Select a campaign to view details",
+    "createdAt": "Created {date}",
+    "allMembers": "All members",
+    "specificRoles": "Specific roles",
+    "emailEnabled": "Email enabled",
+    "roleCount": "{count} role",
+    "roleCount_other": "{count} roles",
+    "deliveryProgress": "Delivery progress",
+    "total": "Total",
+    "sent": "Sent",
+    "failed": "Failed"
+  },
+  "createCampaign": {
+    "title": "New Campaign",
+    "titleLabel": "Title *",
+    "titlePlaceholder": "Notification title",
+    "summaryLabel": "Summary *",
+    "summaryPlaceholder": "Short summary shown in notification list",
+    "targetAudience": "Target audience *",
+    "targetAllMembers": "All members",
+    "targetByRole": "By role",
+    "targetSpecificMembers": "Specific members",
+    "rolesLabel": "Roles *",
+    "membersLabel": "Members *",
+    "sendEmail": "Send email",
+    "sendEmailDescription": "Also deliver via email",
+    "contentLabel": "Content *",
+    "contentPlaceholder": "Write your notification content here...",
+    "cancel": "Cancel",
+    "sending": "Sending...",
+    "sendCampaign": "Send Campaign",
+    "validation": {
+      "titleRequired": "Title is required.",
+      "summaryRequired": "Summary message is required.",
+      "contentRequired": "Content is required.",
+      "roleRequired": "Select at least one role.",
+      "memberRequired": "Select at least one member."
+    },
+    "toasts": {
+      "success": "Campaign accepted. Notifications are being sent."
+    }
+  },
+  "memberMultiSelect": {
+    "selectedCount": "{count} selected",
+    "selectMembers": "Select members...",
+    "more": "+{count} more",
+    "searchPlaceholder": "Search by name or email...",
+    "noMembersFound": "No members found",
+    "typeToSearch": "Type to search members",
+    "clearAll": "Clear all ({count})"
+  },
+  "landingLead": {
+    "fullName": "Full name",
+    "email": "Email",
+    "phone": "Phone number",
+    "status": "Status",
+    "pendingConsultation": "Waiting for consultation follow-up",
+    "content": "Content"
+  },
+  "ticketDetail": {
+    "ccMembers": "CC Members",
+    "ticketInfo": "Ticket Request Information",
+    "ticketCode": "Ticket Code",
+    "requestType": "Request Type",
+    "workflow": "Workflow",
+    "status": "Status",
+    "currentStep": "Current Step",
+    "title": "Title",
+    "content": "Content",
+    "reason": "Reason",
+    "reasonDetail": "Reason Detail",
+    "schedule": "Schedule",
+    "participants": "Participants",
+    "requester": "Requester",
+    "approver": "Approver",
+    "loadingDetail": "Loading",
+    "loadingError": "Unable to load full ticket detail right now. Showing available notification data.",
+    "defaults": {
+      "requester": "Requester"
+    },
+    "actorLabels": {
+      "requestedChangesBy": "Requested Changes By",
+      "createdBy": "Created By",
+      "actionBy": "Action By"
+    }
+  },
+  "bell": {
+    "label": "Notifications",
+    "clearAll": "Clear all",
+    "clearing": "Clearing...",
+    "unreadCount": "{count} unread",
+    "tabs": {
+      "all": "All ({count})",
+      "unread": "Unread ({count})"
+    },
+    "loading": "Loading...",
+    "loadFailed": "Failed to load notifications.",
+    "emptyUnread": "No unread notifications.",
+    "emptyAll": "No notifications yet.",
+    "viewAll": "View all notifications",
+    "missingInvitationPayload": "Invitation payload is missing.",
+    "acceptFailedFallback": "Failed to accept invitation."
+  }
+}

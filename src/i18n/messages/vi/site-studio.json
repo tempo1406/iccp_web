@@ -1,0 +1,253 @@
+{
+  "builder": {
+    "title": "Site Studio",
+    "description": "Thiết kế và xuất bản trang giới thiệu công khai của tổ chức.",
+    "permissionDenied": "Bạn không có quyền truy cập Site Studio.",
+    "active": "Đang hoạt động",
+    "activePage": "Trang đang hoạt động",
+    "emptyPage": "Trang trống",
+    "viewLive": "Xem trực tiếp",
+    "newPage": "Trang mới",
+    "pageLibrary": "Thư viện trang",
+    "starterTemplates": "Mẫu khởi đầu",
+    "pickTemplate": "Chọn mẫu để bắt đầu chỉnh sửa nhanh hơn",
+    "startNowTitle": "Bắt đầu ngay",
+    "startNowDescription": "Tạo trang trống hoặc chọn một trong các mẫu khởi đầu bên trên.",
+    "createBlankPage": "Tạo trang trống",
+    "loadMore": "Xem thêm",
+    "publishedUrl": "Liên kết đã xuất bản",
+    "publicUrl": "Liên kết công khai",
+    "publicUrlDescription": "Chia sẻ liên kết này để mọi người có thể xem trang giới thiệu mà không cần đăng nhập.",
+    "openInNewTab": "Mở ở tab mới",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép",
+    "actions": {
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "useTemplate": "Dùng mẫu",
+      "setAsActive": "Đặt làm trang hoạt động"
+    },
+    "toasts": {
+      "activeSetSuccess": "\"{name}\" đã được đặt làm trang hoạt động.",
+      "publishFailed": "Không thể xuất bản trang này.",
+      "pageDeleted": "Đã xóa trang.",
+      "deleteFailed": "Không thể xóa trang.",
+      "templateAdded": "Đã thêm mẫu \"{name}\" vào thư viện của bạn.",
+      "createFromTemplateFailed": "Không thể tạo trang từ mẫu này.",
+      "activeRemoved": "Đã gỡ trang đang hoạt động."
+    },
+    "starterTemplatesList": {
+      "businessflow": {
+        "name": "BusinessFlow",
+        "description": "Mẫu landing page doanh nghiệp hiện đại với hero, dịch vụ, chỉ số và CTA."
+      },
+      "teampulse": {
+        "name": "TeamPulse",
+        "description": "Mẫu quản lý dự án và đội nhóm với bố cục tối giản và điểm nhấn xanh teal."
+      },
+      "analytix": {
+        "name": "Analytix",
+        "description": "Mẫu phân tích dữ liệu với dashboard, thẻ KPI và các section tối ưu chuyển đổi."
+      },
+      "crmpro": {
+        "name": "CRMPro",
+        "description": "Mẫu CRM và quy trình bán hàng tập trung vào pipeline và chuyển đổi lead."
+      },
+      "hrhub": {
+        "name": "HRHub",
+        "description": "Mẫu vận hành nhân sự cho tuyển dụng, lương, chấm công và self-service."
+      },
+      "financeops": {
+        "name": "FinanceOps",
+        "description": "Mẫu tài chính doanh nghiệp cho hóa đơn, ngân sách và báo cáo."
+      }
+    }
+  },
+  "blocksPanel": {
+    "regular": "Khối thường",
+    "symbols": "Biểu tượng",
+    "searchPlaceholder": "Tìm kiếm...",
+    "empty": "Chưa có symbol nào được lưu."
+  },
+  "media": {
+    "title": "Media",
+    "upload": "Tải lên",
+    "empty": "Nhấn để tải ảnh hoặc video lên",
+    "labels": {
+      "image": "Ảnh",
+      "video": "Video"
+    },
+    "toasts": {
+      "unsupportedFileType": "Loại tệp không được hỗ trợ: {name}",
+      "videoTooLarge": "{name} phải nhỏ hơn hoặc bằng 100 MB.",
+      "imageTooLarge": "{name} phải nhỏ hơn hoặc bằng 10 MB.",
+      "uploadedOne": "Đã tải media lên.",
+      "uploadedMany": "Đã tải lên {count} tệp media.",
+      "uploadFailed": "Tải lên thất bại. Vui lòng thử lại.",
+      "inserted": "Đã chèn media."
+    }
+  },
+  "globalStyles": {
+    "sections": {
+      "colors": "Màu sắc",
+      "body": "Thân trang",
+      "heading": "Tiêu đề chính",
+      "subheading": "Tiêu đề phụ",
+      "buttons": "Nút",
+      "links": "Liên kết",
+      "borders": "Viền"
+    },
+    "labels": {
+      "primary": "Chính",
+      "secondary": "Phụ",
+      "accent": "Nhấn",
+      "success": "Thành công",
+      "warning": "Cảnh báo",
+      "error": "Lỗi",
+      "background": "Nền",
+      "color": "Màu chữ",
+      "fontSize": "Cỡ chữ",
+      "lineHeight": "Chiều cao dòng",
+      "fontFamily": "Phông chữ",
+      "borderRadius": "Bo góc",
+      "borderColor": "Màu viền",
+      "decoration": "Trang trí"
+    },
+    "options": {
+      "inherit": "Kế thừa",
+      "none": "Không",
+      "underline": "Gạch chân",
+      "lineThrough": "Gạch ngang",
+      "overline": "Gạch trên",
+      "systemUi": "System UI"
+    }
+  },
+  "editor": {
+    "defaultTemplateName": "Trang chưa đặt tên",
+    "activePage": "Trang đang hoạt động",
+    "aiPlaceholder": "Tôi có thể giúp bạn xây dựng trang như thế nào?",
+    "leftPanels": {
+      "blocks": "Khối",
+      "layers": "Trang và lớp",
+      "globalStyles": "Style tổng thể",
+      "assets": "Tài nguyên",
+      "ai": "AI Assistant"
+    },
+    "rightTabs": {
+      "styles": "Kiểu dáng",
+      "properties": "Thuộc tính"
+    },
+    "topbar": {
+      "back": "Quay lại",
+      "code": "Mã nguồn",
+      "renameHint": "Nhấp đúp để đổi tên",
+      "desktop": "Desktop",
+      "tablet": "Tablet",
+      "mobile": "Mobile",
+      "outlines": "Viền khối",
+      "preview": "Xem trước",
+      "fullscreen": "Toàn màn hình",
+      "undo": "Hoàn tác",
+      "redo": "Làm lại",
+      "save": "Lưu",
+      "publish": "Xuất bản",
+      "publishing": "Đang xuất bản..."
+    },
+    "saveDialog": {
+      "title": "Đặt tên trang",
+      "description": "Chọn tên trang tối đa 30 ký tự.",
+      "saving": "Đang lưu..."
+    },
+    "pagesPanel": {
+      "title": "Trang",
+      "addPage": "Thêm trang",
+      "removePage": "Xóa trang",
+      "untitledPage": "Trang chưa đặt tên",
+      "generatedName": "Trang {number}"
+    },
+    "layers": {
+      "title": "Lớp",
+      "empty": "Chưa có thành phần nào.",
+      "hide": "Ẩn",
+      "show": "Hiện"
+    },
+    "codeEditor": {
+      "title": "Trình sửa mã",
+      "switchToSplitView": "Chuyển sang chế độ tách HTML + CSS",
+      "switchToFullView": "Chuyển sang chế độ tài liệu HTML đầy đủ",
+      "splitView": "Chế độ tách",
+      "fullHtml": "HTML đầy đủ",
+      "applyChanges": "Áp dụng thay đổi",
+      "fullHtmlLabel": "HTML đầy đủ",
+      "html": "HTML",
+      "css": "CSS"
+    },
+    "ai": {
+      "emptyTitle": "AI Assistant",
+      "emptyDescription": "Chọn một gợi ý nhanh bên dưới hoặc nhập trực tiếp vào ô chat.",
+      "quickPrompts": {
+        "hero": "Tạo một hero section với headline nổi bật",
+        "features": "Thêm lưới tính năng gồm 4 thẻ",
+        "contact": "Tạo một section form liên hệ",
+        "testimonials": "Thêm một section đánh giá khách hàng"
+      },
+      "labels": {
+        "you": "Bạn",
+        "assistant": "AI Assistant",
+        "thinking": "Đang nghĩ"
+      },
+      "actions": {
+        "applyToCanvas": "Áp dụng vào canvas",
+        "openPanel": "Mở bảng AI",
+        "voiceInput": "Nhập giọng nói",
+        "stopGeneration": "Dừng tạo nội dung",
+        "send": "Gửi"
+      },
+      "apiKeyPlaceholder": "Gemini API key của bạn (không bắt buộc)",
+      "toggleApiKey": {
+        "show": "Dùng Gemini API key của bạn",
+        "hide": "Ẩn API key"
+      },
+      "dataSourcesSoon": "Nguồn dữ liệu sẽ sớm có.",
+      "messages": {
+        "multiBlockSameParent": "Chỉnh sửa AI nhiều khối hiện chỉ hoạt động khi các khối được chọn có cùng phần tử cha.",
+        "selectionMissing": "Khối đang chọn không còn tồn tại trên canvas.",
+        "modelStopped": "Mô hình AI dường như đã dừng trước khi trả về bản nháp dùng được. Vui lòng thử lại.",
+        "generationStoppedInvalid": "Quá trình tạo đã dừng trước khi AI tạo ra bản nháp hợp lệ.",
+        "missingRenderablePage": "Bản nháp AI không chứa nội dung trang có thể hiển thị.",
+        "missingRenderableBlock": "Bản nháp AI không chứa nội dung khối có thể hiển thị.",
+        "multiBlockUpdateSameParent": "Cập nhật AI nhiều khối hiện yêu cầu các khối được chọn có cùng phần tử cha.",
+        "completion": {
+          "targetPartial": "Đã dừng sớm. Bản nháp một phần cho {label} đã sẵn sàng. Nhấn Áp dụng vào canvas nếu bạn muốn dùng.",
+          "targetDone": "Bản nháp cập nhật cho {label} đã sẵn sàng. Nhấn Áp dụng vào canvas khi bạn muốn dùng.",
+          "modifyPartial": "Đã dừng sớm. Bản nháp redesign một phần đã sẵn sàng. Nhấn Áp dụng vào canvas nếu bạn muốn dùng.",
+          "modifyDone": "Bản nháp redesign trang giới thiệu đã sẵn sàng. Nhấn Áp dụng vào canvas khi bạn muốn dùng.",
+          "generatePartial": "Đã dừng sớm. Bản nháp trang giới thiệu một phần đã sẵn sàng. Nhấn Áp dụng vào canvas nếu bạn muốn dùng.",
+          "generateDone": "Bản nháp trang giới thiệu mới đã sẵn sàng. Nhấn Áp dụng vào canvas khi bạn muốn dùng."
+        },
+        "applied": {
+          "targetPartial": "Đã dừng sớm và áp dụng bản cập nhật AI một phần cho {label}.",
+          "targetDone": "Đã áp dụng bản cập nhật AI cho {label}.",
+          "modifyPartial": "Đã dừng sớm và áp dụng bản redesign một phần vào canvas.",
+          "modifyDone": "Đã áp dụng bản redesign trang giới thiệu vào canvas.",
+          "generatePartial": "Đã dừng sớm và áp dụng bản trang giới thiệu một phần vào canvas.",
+          "generateDone": "Đã áp dụng bản trang giới thiệu mới vào canvas."
+        }
+      }
+    },
+    "toasts": {
+      "draftTooLarge": "Bản nháp trang giới thiệu quá lớn để tự lưu lúc này. Yêu cầu đã được bỏ qua để tránh làm treo trình chỉnh sửa.",
+      "saveTooLarge": "Trang giới thiệu này quá lớn để lưu lúc này. Hãy giảm nội dung lặp hoặc tài nguyên nhúng quá nặng trước.",
+      "publishTooLarge": "Trang giới thiệu này quá lớn để xuất bản lúc này. Hãy giảm nội dung lặp hoặc tài nguyên nhúng quá nặng trước.",
+      "saved": "Đã lưu!",
+      "saveFailed": "Lưu thất bại.",
+      "newPageCreated": "Đã tạo trang mới!",
+      "createPageFailed": "Tạo trang thất bại.",
+      "renameSuccess": "Đã cập nhật tên trang!",
+      "renameFailed": "Cập nhật tên trang thất bại.",
+      "publishSuccess": "Đã xuất bản trang!",
+      "publishFailed": "Xuất bản thất bại.",
+      "codeApplied": "Đã áp dụng mã nguồn."
+    }
+  }
+}

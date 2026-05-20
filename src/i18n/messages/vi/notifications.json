@@ -1,0 +1,150 @@
+{
+  "common": {
+    "accepted": "Đã chấp nhận",
+    "accept": "Chấp nhận",
+    "accepting": "Đang chấp nhận...",
+    "delete": "Xóa",
+    "markAsRead": "Đánh dấu đã đọc",
+    "loading": "Đang tải...",
+    "unknown": "Không xác định",
+    "emptyValue": "-"
+  },
+  "status": {
+    "pending": "Chờ xử lý",
+    "processing": "Đang xử lý",
+    "completed": "Hoàn tất",
+    "failed": "Thất bại"
+  },
+  "page": {
+    "title": "Thông báo",
+    "description": "Quản lý hộp thư thông báo và các chiến dịch phát thông báo.",
+    "dashboardCrumb": "Dashboard",
+    "notificationsCrumb": "Thông báo",
+    "createCampaign": "Tạo chiến dịch",
+    "tabs": {
+      "inbox": "Hộp thư",
+      "campaigns": "Chiến dịch"
+    },
+    "searchPlaceholder": "Tìm kiếm...",
+    "filters": {
+      "all": "Tất cả",
+      "unread": "Chưa đọc",
+      "invitation": "Lời mời"
+    },
+    "markAllRead": "Đánh dấu đọc tất cả",
+    "newCampaign": "Chiến dịch mới",
+    "loading": "Đang tải...",
+    "noNotifications": "Không có thông báo",
+    "noCampaigns": "Chưa có chiến dịch nào",
+    "loadMore": "Tải thêm"
+  },
+  "detailPanel": {
+    "empty": "Chọn một thông báo để xem",
+    "organizationProfile": "Hồ sơ tổ chức",
+    "acceptInvitation": "Chấp nhận lời mời",
+    "acceptProjectInvitation": "Chấp nhận lời mời"
+  },
+  "campaignDetail": {
+    "empty": "Chọn một chiến dịch để xem chi tiết",
+    "createdAt": "Tạo lúc {date}",
+    "allMembers": "Tất cả thành viên",
+    "specificRoles": "Theo vai trò",
+    "emailEnabled": "Đã bật email",
+    "roleCount": "{count} vai trò",
+    "deliveryProgress": "Tiến độ gửi",
+    "total": "Tổng",
+    "sent": "Đã gửi",
+    "failed": "Thất bại"
+  },
+  "createCampaign": {
+    "title": "Chiến dịch mới",
+    "titleLabel": "Tiêu đề *",
+    "titlePlaceholder": "Tiêu đề thông báo",
+    "summaryLabel": "Tóm tắt *",
+    "summaryPlaceholder": "Mô tả ngắn hiển thị trong danh sách thông báo",
+    "targetAudience": "Đối tượng nhận *",
+    "targetAllMembers": "Tất cả thành viên",
+    "targetByRole": "Theo vai trò",
+    "targetSpecificMembers": "Thành viên cụ thể",
+    "rolesLabel": "Vai trò *",
+    "membersLabel": "Thành viên *",
+    "sendEmail": "Gửi email",
+    "sendEmailDescription": "Đồng thời gửi qua email",
+    "contentLabel": "Nội dung *",
+    "contentPlaceholder": "Viết nội dung thông báo tại đây...",
+    "cancel": "Hủy",
+    "sending": "Đang gửi...",
+    "sendCampaign": "Gửi chiến dịch",
+    "validation": {
+      "titleRequired": "Tiêu đề là bắt buộc.",
+      "summaryRequired": "Thông điệp tóm tắt là bắt buộc.",
+      "contentRequired": "Nội dung là bắt buộc.",
+      "roleRequired": "Hãy chọn ít nhất một vai trò.",
+      "memberRequired": "Hãy chọn ít nhất một thành viên."
+    },
+    "toasts": {
+      "success": "Chiến dịch đã được ghi nhận. Thông báo đang được gửi đi."
+    }
+  },
+  "memberMultiSelect": {
+    "selectedCount": "Đã chọn {count}",
+    "selectMembers": "Chọn thành viên...",
+    "more": "+{count} nữa",
+    "searchPlaceholder": "Tìm theo tên hoặc email...",
+    "noMembersFound": "Không tìm thấy thành viên",
+    "typeToSearch": "Nhập để tìm thành viên",
+    "clearAll": "Bỏ chọn tất cả ({count})"
+  },
+  "landingLead": {
+    "fullName": "Họ và tên",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "status": "Trạng thái",
+    "pendingConsultation": "Chờ liên hệ tư vấn",
+    "content": "Nội dung"
+  },
+  "ticketDetail": {
+    "ccMembers": "Thành viên nhận kèm",
+    "ticketInfo": "Thông tin yêu cầu phiếu",
+    "ticketCode": "Mã phiếu",
+    "requestType": "Loại yêu cầu",
+    "workflow": "Quy trình",
+    "status": "Trạng thái",
+    "currentStep": "Bước hiện tại",
+    "title": "Tiêu đề",
+    "content": "Nội dung",
+    "reason": "Lý do",
+    "reasonDetail": "Chi tiết lý do",
+    "schedule": "Lịch trình",
+    "participants": "Thành phần tham gia",
+    "requester": "Người yêu cầu",
+    "approver": "Người duyệt",
+    "loadingDetail": "Đang tải",
+    "loadingError": "Chưa thể tải đầy đủ chi tiết phiếu lúc này. Đang hiển thị dữ liệu sẵn có từ thông báo.",
+    "defaults": {
+      "requester": "Người yêu cầu"
+    },
+    "actorLabels": {
+      "requestedChangesBy": "Người yêu cầu chỉnh sửa",
+      "createdBy": "Người tạo",
+      "actionBy": "Người thực hiện"
+    }
+  },
+  "bell": {
+    "label": "Thông báo",
+    "clearAll": "Xóa tất cả",
+    "clearing": "Đang xóa...",
+    "unreadCount": "{count} chưa đọc",
+    "tabs": {
+      "all": "Tất cả ({count})",
+      "unread": "Chưa đọc ({count})"
+    },
+    "loading": "Đang tải...",
+    "loadFailed": "Tải thông báo thất bại.",
+    "emptyUnread": "Không có thông báo chưa đọc.",
+    "emptyAll": "Chưa có thông báo nào.",
+    "viewAll": "Xem tất cả thông báo",
+    "missingInvitationPayload": "Thiếu dữ liệu lời mời.",
+    "acceptFailedFallback": "Chấp nhận lời mời thất bại."
+  }
+}

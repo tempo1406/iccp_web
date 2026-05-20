@@ -1,0 +1,34 @@
+{
+  "sidebar": {
+    "items": {
+      "dashboard": "Dashboard",
+      "notifications": "Notifications",
+      "chatbot": "Chatbot",
+      "teamChat": "Team Chat",
+      "ticket": "Ticket",
+      "ticketList": "Ticket List",
+      "createRequest": "Create Request",
+      "organizationManagement": "Organization Management",
+      "inviteMembers": "Invite Members",
+      "members": "Members",
+      "rolesPermissions": "Roles & Permissions",
+      "siteStudio": "Site Studio",
+      "documents": "Documents",
+      "projects": "Projects",
+      "analytics": "Analytics",
+      "aiAnalytics": "AI Analytics",
+      "kpi": "KPI",
+      "periodicReports": "Periodic Reports",
+      "myKpi": "My KPI",
+      "billing": "Billing",
+      "settings": "Settings",
+      "general": "General",
+      "organizationSettings": "Organization Settings",
+      "workingTime": "Working Time"
+    },
+    "expandToViewMenu": "Expand to view menu",
+    "dailyTokenLimit": "Daily Token Limit",
+    "usedToday": "{used} / {limit} used today ({percentage}%)",
+    "quotaUnavailable": "Quota not available"
+  }
+}

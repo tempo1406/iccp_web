@@ -1,0 +1,2472 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+ * GrapesJS Studio — Full Light Theme (matching reference exactly)
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+@import 'grapesjs/dist/css/grapes.min.css';
+
+/* ─── CSS Variables ──────────────────────────────────────────────────────────── */
+:root {
+  --gjs-studio-bg: #f4f4f6;
+  --gjs-studio-surface: #ffffff;
+  --gjs-studio-border: #e5e5ea;
+  --gjs-studio-border-light: #f0f0f3;
+  --gjs-studio-text: #111111;
+  --gjs-studio-text-2: #333333;
+  --gjs-studio-text-3: #666666;
+  --gjs-studio-accent: #7c5cfc;
+  --gjs-studio-accent-light: #ede9fe;
+  --gjs-studio-topbar-h: 48px;
+  --gjs-studio-sidebar-w: 48px;
+  --gjs-studio-panel-w: 284px;
+  --gjs-studio-right-w: 272px;
+}
+
+.gjs-studio-root {
+  --gjs-main-color: #f3f4f6;
+  --gjs-primary-color: #ffffff;
+  --gjs-secondary-color: #111111;
+  --gjs-font-color: #111111;
+  --gjs-font-color-active: #7c5cfc;
+  --gjs-secondary-light-color: #111111;
+  --gjs-main-dark-color: rgba(208, 213, 221, 0.95);
+  --gjs-secondary-dark-color: #f5f7fb;
+  --gjs-main-light-color: rgba(255, 255, 255, 0.92);
+  --gjs-soft-light-color: rgba(17, 17, 17, 0.04);
+  --gjs-arrow-color: #111111;
+}
+
+/* ─── Global input override (GrapesJS uses placeholder to display current CSS values) ── */
+/* Must be declared AFTER @import so it wins over grapes.min.css dark-theme rules.        */
+.gjs-studio-root
+  input:not([type='checkbox']):not([type='radio']):not([type='color']):not(
+    [type='range']
+  ),
+.gjs-studio-root select,
+.gjs-studio-root textarea {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  caret-color: #222 !important;
+  opacity: 1 !important;
+}
+.gjs-studio-root
+  input:not([type='checkbox']):not([type='radio']):not([type='color']):not(
+    [type='range']
+  )::placeholder,
+.gjs-studio-root textarea::placeholder {
+  color: #333 !important;
+  -webkit-text-fill-color: #333 !important;
+  opacity: 1 !important;
+}
+
+/* ─── Spinner ────────────────────────────────────────────────────────────────── */
+.gjs-spin {
+  animation: gjsSpin 0.75s linear infinite;
+}
+@keyframes gjsSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes gjs-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ═══════════════════ ROOT ═══════════════════ */
+
+.gjs-studio-root {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  background: var(--gjs-studio-bg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  font-size: 13px;
+  color: var(--gjs-studio-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ═══════════════════ TOP BAR ═══════════════════ */
+
+.gjs-topbar {
+  display: flex;
+  align-items: center;
+  height: var(--gjs-studio-topbar-h);
+  background: var(--gjs-studio-surface);
+  border-bottom: 1px solid var(--gjs-studio-border);
+  flex-shrink: 0;
+}
+
+.gjs-topbar__left {
+  display: flex;
+  align-items: center;
+  padding-left: calc(var(--gjs-studio-sidebar-w) + 12px);
+  padding-right: 12px;
+  gap: 8px;
+  min-width: 0;
+}
+
+.gjs-topbar__code-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+  padding: 0 12px;
+  border: 1px solid var(--gjs-studio-border);
+  border-radius: 6px;
+  background: var(--gjs-studio-surface);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gjs-studio-text-2);
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background 0.12s,
+    border-color 0.12s;
+}
+.gjs-topbar__code-btn:hover {
+  background: var(--gjs-studio-bg);
+  border-color: #ccc;
+}
+
+.gjs-topbar__page-name {
+  font-size: 12px;
+  color: var(--gjs-studio-text-3);
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.gjs-topbar__page-name--editable {
+  cursor: text;
+  user-select: none;
+}
+.gjs-topbar__page-name-input {
+  height: 30px;
+  width: min(220px, 100%);
+  padding: 0 10px;
+  border: 1px solid var(--gjs-studio-border);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--gjs-studio-text-1);
+  font-size: 12px;
+}
+
+.gjs-template-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  background: rgba(15, 23, 42, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.gjs-template-dialog {
+  width: min(420px, 100%);
+  padding: 18px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.gjs-template-dialog__header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #0f172a;
+}
+.gjs-template-dialog__header p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: #64748b;
+}
+.gjs-template-dialog__input {
+  height: 42px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: #fff;
+  color: #0f172a;
+  font-size: 14px;
+}
+.gjs-template-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.gjs-topbar__center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gjs-device-dropdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 12px;
+  border: 1px solid var(--gjs-studio-border);
+  border-radius: 6px;
+  background: var(--gjs-studio-surface);
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--gjs-studio-text-2);
+  position: relative;
+  user-select: none;
+}
+.gjs-device-dropdown:hover {
+  background: var(--gjs-studio-bg);
+}
+
+.gjs-device-dropdown__menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 156px;
+  background: var(--gjs-studio-surface);
+  border: 1px solid var(--gjs-studio-border);
+  border-radius: 10px;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.1),
+    0 2px 6px rgba(0, 0, 0, 0.06);
+  z-index: 100;
+  padding: 4px;
+}
+.gjs-device-dropdown__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 7px 10px;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--gjs-studio-text-2);
+  transition: background 0.1s;
+}
+.gjs-device-dropdown__item:hover {
+  background: var(--gjs-studio-bg);
+}
+.gjs-device-dropdown__item-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.gjs-device-dropdown__check {
+  color: var(--gjs-studio-accent);
+}
+
+.gjs-topbar__right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 1px;
+}
+
+.gjs-topbar__actions {
+  display: flex;
+  align-items: center;
+  padding-right: 6px;
+}
+
+.gjs-topbar__icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  border-radius: 7px;
+  color: var(--gjs-studio-text-3);
+  cursor: pointer;
+  transition:
+    background 0.12s,
+    color 0.12s;
+}
+.gjs-topbar__icon-btn:hover {
+  background: var(--gjs-studio-bg);
+  color: var(--gjs-studio-text);
+}
+.gjs-topbar__icon-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.gjs-topbar__divider {
+  width: 1px;
+  height: 20px;
+  background: var(--gjs-studio-border);
+  margin: 0 4px;
+}
+
+.gjs-topbar__publish-btn {
+  height: 32px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 7px;
+  background: var(--gjs-studio-accent);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.gjs-topbar__publish-btn:hover {
+  background: #6d28d9;
+}
+.gjs-topbar__publish-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.gjs-topbar__tabs {
+  display: flex;
+  height: 100%;
+  border-left: 1px solid var(--gjs-studio-border);
+}
+.gjs-topbar__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  height: 100%;
+  border: none;
+  background: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gjs-studio-text-3);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+.gjs-topbar__tab:hover {
+  color: var(--gjs-studio-text-2);
+}
+.gjs-topbar__tab--active {
+  color: var(--gjs-studio-accent);
+  border-bottom-color: var(--gjs-studio-accent);
+}
+
+/* ═══════════════════ MAIN LAYOUT ═══════════════════ */
+
+.gjs-main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* ─── Left icon sidebar ──────────────────────────────────────────────────────── */
+
+.gjs-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: var(--gjs-studio-sidebar-w);
+  background: var(--gjs-studio-surface);
+  border-right: 1px solid var(--gjs-studio-border);
+  flex-shrink: 0;
+  z-index: 20;
+}
+.gjs-sidebar__top,
+.gjs-sidebar__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: 6px 4px;
+}
+.gjs-sidebar__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  color: var(--gjs-studio-text-3);
+  cursor: pointer;
+  transition:
+    background 0.12s,
+    color 0.12s;
+}
+.gjs-sidebar__btn:hover {
+  background: var(--gjs-studio-bg);
+  color: var(--gjs-studio-text-2);
+}
+.gjs-sidebar__btn--active {
+  background: var(--gjs-studio-accent-light);
+  color: var(--gjs-studio-accent);
+}
+
+/* ─── Left slide-out panel ───────────────────────────────────────────────────── */
+
+.gjs-left-panel {
+  width: var(--gjs-studio-panel-w);
+  flex-shrink: 0;
+  background: var(--gjs-studio-surface);
+  border-right: 1px solid var(--gjs-studio-border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 15;
+}
+.gjs-left-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--gjs-studio-border);
+  flex-shrink: 0;
+}
+.gjs-left-panel__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gjs-studio-text);
+}
+.gjs-left-panel__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  color: var(--gjs-studio-text-3);
+  cursor: pointer;
+}
+.gjs-left-panel__close:hover {
+  background: var(--gjs-studio-bg);
+  color: var(--gjs-studio-text-2);
+}
+
+.gjs-left-panel__body {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--gjs-studio-surface);
+}
+.gjs-left-panel__placeholder {
+  padding: 28px 16px;
+  font-size: 12px;
+  color: var(--gjs-studio-text-3);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ─── Canvas area ────────────────────────────────────────────────────────────── */
+
+.gjs-canvas-area {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  background-color: #e8e8ed;
+  background-image: radial-gradient(circle, #c8c8ce 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.gjs-selection-ai-composer {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  z-index: 30;
+  width: min(340px, calc(100% - 36px));
+  padding: 12px 14px 10px;
+  border: 1px solid rgba(148, 163, 184, 0.32);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.16);
+  backdrop-filter: blur(10px);
+}
+.gjs-selection-ai-composer__target {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.gjs-selection-ai-composer__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: calc(100% - 32px);
+  padding: 6px 10px;
+  border: none;
+  border-radius: 999px;
+  background: #4f9df8;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.gjs-selection-ai-composer__chip span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.gjs-selection-ai-composer__dismiss {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.18);
+  color: #475569;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.gjs-selection-ai-composer__input {
+  width: 100%;
+  min-height: 92px;
+  resize: none;
+  border: none;
+  background: transparent;
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.55;
+  outline: none;
+}
+.gjs-selection-ai-composer__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+.gjs-selection-ai-composer__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.gjs-selection-ai-composer__icon {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  color: #0f172a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.gjs-selection-ai-composer__icon:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.gjs-selection-ai-composer__send {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c4b5fd, #a78bfa);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(167, 139, 250, 0.32);
+}
+.gjs-selection-ai-composer__send:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.gjs-selection-ai-composer__send--stop {
+  background: #ef4444;
+  box-shadow: none;
+}
+.gjs-canvas-loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8e8ed;
+  z-index: 10;
+}
+
+/* ─── Right panel ────────────────────────────────────────────────────────────── */
+
+.gjs-right-panel {
+  width: var(--gjs-studio-right-w);
+  flex-shrink: 0;
+  background: var(--gjs-studio-surface);
+  border-left: 1px solid var(--gjs-studio-border);
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+/* Selection area (top of Styles tab) */
+.gjs-right-panel__selection {
+  padding: 10px 12px 8px;
+  border-bottom: 1px solid var(--gjs-studio-border);
+  background: var(--gjs-studio-surface);
+  flex-shrink: 0;
+}
+.gjs-right-panel__selection-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.gjs-right-panel__selector-mount {
+  min-height: 14px;
+}
+
+.gjs-right-panel__selector-mount > :not(:last-child) {
+  display: none !important;
+}
+
+.gjs-right-panel__styles-mount {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: visible;
+  position: relative;
+}
+
+.gjs-right-panel__styles-mount .gjs-sm-properties > .gjs-clm-tags {
+  display: none !important;
+}
+.gjs-right-panel__traits-mount {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Properties tab — hide redundant "Properties" header (tab already shows it) */
+.gjs-right-panel__traits-header {
+  display: none !important;
+}
+
+/* ════════════════════════════════════════════════════════
+   GRAPESJS — FULL LIGHT OVERRIDE
+   ════════════════════════════════════════════════════════ */
+
+/* Hide default GrapesJS chrome */
+.gjs-custom-editor .gjs-pn-panels,
+.gjs-custom-editor .gjs-pn-views-container {
+  display: none !important;
+}
+
+/* Editor bg */
+.gjs-editor {
+  background: #e8e8ed !important;
+  color: var(--gjs-studio-text) !important;
+}
+
+/* Canvas frame */
+.gjs-custom-editor .gjs-cv-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  background: transparent !important;
+}
+.gjs-custom-editor .gjs-frame-wrapper {
+  height: 100% !important;
+}
+.gjs-custom-editor .gjs-cv-canvas__frames {
+  background: transparent !important;
+}
+.gjs-custom-editor .gjs-frame {
+  background: #fff !important;
+  box-shadow:
+    0 4px 32px rgba(0, 0, 0, 0.14),
+    0 1px 6px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Selection + hover */
+.gjs-custom-editor .gjs-selected {
+  outline: 2px solid var(--gjs-studio-accent) !important;
+  outline-offset: -1px;
+}
+.gjs-custom-editor .gjs-hovered {
+  outline: 1px dashed rgba(124, 92, 252, 0.45) !important;
+}
+
+/* Component toolbar */
+.gjs-custom-editor .gjs-toolbar {
+  border-radius: 7px !important;
+  background: var(--gjs-studio-accent) !important;
+  box-shadow: 0 3px 12px rgba(124, 92, 252, 0.35) !important;
+  padding: 1px !important;
+}
+.gjs-custom-editor .gjs-toolbar .gjs-toolbar-item {
+  color: #fff !important;
+  padding: 5px 7px !important;
+  border-radius: 5px !important;
+}
+.gjs-custom-editor .gjs-toolbar .gjs-toolbar-item:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Drop placeholder */
+.gjs-custom-editor .gjs-placeholder {
+  background: rgba(124, 92, 252, 0.06) !important;
+  border: 2px dashed rgba(124, 92, 252, 0.4) !important;
+  border-radius: 4px !important;
+}
+
+/* Badge */
+.gjs-badge {
+  background: var(--gjs-studio-accent) !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+  font-size: 10px !important;
+  padding: 2px 5px !important;
+}
+
+/* Resizer */
+.gjs-resizer-h {
+  border-color: var(--gjs-studio-accent) !important;
+}
+
+/* ════════════════ BLOCK MANAGER — 2 COLUMN GRID ════════════════ */
+
+.gjs-blocks-panel {
+  display: flex;
+  flex-direction: column;
+}
+.gjs-blocks-toolbar {
+  padding: 8px 10px 6px;
+  border-bottom: 1px solid var(--gjs-studio-border-light);
+  background: var(--gjs-studio-surface);
+  flex-shrink: 0;
+}
+.gjs-blocks-tabs {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+.gjs-blocks-tab {
+  flex: 1;
+  height: 28px;
+  border: 1px solid var(--gjs-studio-border);
+  border-radius: 6px;
+  background: var(--gjs-studio-surface);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gjs-studio-text-3);
+  cursor: pointer;
+  transition:
+    background 0.1s,
+    color 0.1s;
+}
+.gjs-blocks-tab:hover {
+  color: var(--gjs-studio-text-2);
+  background: var(--gjs-studio-bg);
+}
+.gjs-blocks-tab.active {
+  background: var(--gjs-studio-accent-light);
+  border-color: transparent;
+  color: var(--gjs-studio-accent);
+}
+.gjs-blocks-search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--gjs-studio-bg);
+  border: 1px solid var(--gjs-studio-border);
+  border-radius: 7px;
+  padding: 0 8px;
+  height: 30px;
+}
+.gjs-blocks-search__icon {
+  color: var(--gjs-studio-text-3);
+  flex-shrink: 0;
+}
+.gjs-blocks-search__input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 12px;
+  color: var(--gjs-studio-text);
+}
+.gjs-blocks-search__input::placeholder {
+  color: var(--gjs-studio-text-3);
+}
+.gjs-blocks-search__clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  color: var(--gjs-studio-text-3);
+  cursor: pointer;
+  padding: 0;
+}
+.gjs-blocks-search__clear:hover {
+  color: var(--gjs-studio-text-2);
+}
+
+/* Force 2-column grid for blocks */
+.gjs-blocks-c {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 6px !important;
+  padding: 8px !important;
+  background: var(--gjs-studio-surface) !important;
+}
+
+/* Block category container */
+.gjs-block-categories {
+  padding: 0 !important;
+  background: var(--gjs-studio-surface) !important;
+}
+.gjs-block-category {
+  width: 100% !important;
+  background: var(--gjs-studio-surface) !important;
+  border-bottom: none !important;
+}
+
+/* The blocks inside a category: 2 column grid */
+.gjs-block-category .gjs-blocks-c {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 6px !important;
+  padding: 6px 8px 10px !important;
+}
+
+/* Category title */
+.gjs-title {
+  background: var(--gjs-studio-surface) !important;
+  border-bottom: 1px solid var(--gjs-studio-border-light) !important;
+  color: var(--gjs-studio-text-2) !important;
+  font-weight: 700 !important;
+  font-size: 10px !important;
+  padding: 10px 10px 6px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  cursor: pointer !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  width: 100% !important;
+}
+.gjs-title:hover {
+  color: var(--gjs-studio-text) !important;
+}
+.gjs-title__arrow,
+.gjs-caret-icon {
+  color: var(--gjs-studio-text-3) !important;
+}
+
+/* Individual block */
+.gjs-block {
+  width: auto !important;
+  min-height: 64px !important;
+  padding: 10px 6px 8px !important;
+  border: 1px solid var(--gjs-studio-border) !important;
+  border-radius: 9px !important;
+  background: var(--gjs-studio-surface) !important;
+  color: var(--gjs-studio-text-2) !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  cursor: grab !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  transition:
+    border-color 0.12s,
+    box-shadow 0.12s,
+    background 0.12s !important;
+}
+.gjs-block:hover {
+  border-color: rgba(124, 92, 252, 0.4) !important;
+  box-shadow: 0 2px 8px rgba(124, 92, 252, 0.08) !important;
+  background: #faf8ff !important;
+}
+.gjs-block svg {
+  fill: #555 !important;
+  width: 22px !important;
+  height: 22px !important;
+}
+.gjs-block .gjs-block-label {
+  color: var(--gjs-studio-text-2) !important;
+  font-size: 11px !important;
+}
+
+/* ════════════════ STYLE MANAGER — minimal light theme ════════════════ */
+
+.gjs-sm-sectors,
+.gjs-sm-sector {
+  background: #fff !important;
+}
+
+/* Ensure ALL values (inputs, selects, custom spans) in the style manager are black */
+.gjs-sm-properties .gjs-field,
+.gjs-sm-properties .gjs-field *,
+.gjs-sm-properties .gjs-sm-field,
+.gjs-sm-properties .gjs-sm-field *,
+.gjs-sm-sector .gjs-field,
+.gjs-sm-sector .gjs-field *,
+.gjs-sm-sector .gjs-sm-field,
+.gjs-sm-sector .gjs-sm-field * {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  opacity: 1 !important;
+}
+
+.gjs-sm-sectors.gjs-two-color,
+.gjs-sm-sectors .gjs-two-color,
+.gjs-sm-sectors .gjs-color-main,
+.gjs-sm-sectors .gjs-color-active,
+.gjs-sm-sectors .gjs-one-color,
+.gjs-sm-sectors .gjs-three-color,
+.gjs-sm-sectors .gjs-four-color {
+  color: #111 !important;
+  fill: currentColor !important;
+}
+
+.gjs-sm-sectors svg,
+.gjs-sm-sectors svg * {
+  fill: currentColor !important;
+}
+.gjs-sm-sector {
+  border-bottom: 1px solid #e8e8ec !important;
+}
+
+/* Sector title — keep GrapesJS flex layout, only override colors */
+.gjs-sm-sector-title,
+.gjs-sm-sector .gjs-sm-sector-title {
+  background: #f4f4f7 !important;
+  color: #111 !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  border-bottom: none !important;
+}
+.gjs-sm-sector-title:hover,
+.gjs-sm-sector .gjs-sm-sector-title:hover {
+  background: #ebebef !important;
+}
+.gjs-sm-sector.gjs-sm-open .gjs-sm-sector-title {
+  border-bottom: 1px solid #e8e8ec !important;
+}
+
+/* Properties container — DO NOT override display/flex (breaks composite layout) */
+.gjs-sm-properties,
+.gjs-sm-sector .gjs-sm-properties {
+  background: #fff !important;
+}
+
+/* Property labels — black */
+.gjs-sm-label,
+.gjs-sm-property .gjs-sm-label,
+.gjs-sm-composite .gjs-sm-label {
+  color: #111 !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+}
+
+/* Property rows */
+.gjs-sm-property {
+  color: #111 !important;
+}
+
+.gjs-sm-field {
+  width: 100%;
+  position: relative;
+}
+
+.gjs-sm-field input,
+.gjs-sm-field select,
+.gjs-sm-field textarea {
+  background: transparent !important;
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  width: 100% !important;
+}
+
+.gjs-sm-field.gjs-sm-color,
+.gjs-sm-field.gjs-sm-input,
+.gjs-sm-field.gjs-sm-integer,
+.gjs-sm-field.gjs-sm-list,
+.gjs-sm-field.gjs-sm-select {
+  background: #fff !important;
+  border: 1px solid #d0d5dd !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  color: #111 !important;
+}
+
+.gjs-sm-field.gjs-sm-composite {
+  background: #f8fafc !important;
+  border: 1px solid #d0d5dd !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+
+.gjs-sm-field.gjs-sm-select select {
+  height: 30px !important;
+  padding: 0 28px 0 8px !important;
+}
+
+.gjs-sm-field.gjs-sm-integer input,
+.gjs-sm-field.gjs-sm-color input,
+.gjs-sm-field.gjs-sm-input input,
+.gjs-sm-field.gjs-sm-composite input,
+.gjs-sm-field.gjs-sm-composite select,
+.gjs-sm-field.gjs-sm-composite textarea {
+  padding: 5px 8px !important;
+}
+
+.gjs-sm-field .gjs-sm-unit,
+.gjs-sm-field .gjs-sm-d-arrow,
+.gjs-sm-field .gjs-sm-u-arrow,
+.gjs-sm-field .gjs-sm-sel-arrow,
+.gjs-sm-field .gjs-clm-sel-arrow,
+.gjs-sm-field .gjs-clm-d-s-arrow {
+  color: #111 !important;
+}
+
+.gjs-sm-field .gjs-sm-unit {
+  color: #111 !important;
+  font-size: 10px !important;
+}
+
+.gjs-sm-field .gjs-sm-u-arrow {
+  border-bottom-color: #111 !important;
+}
+
+.gjs-sm-field .gjs-sm-d-arrow,
+.gjs-sm-field .gjs-sm-d-s-arrow,
+.gjs-sm-field .gjs-clm-d-s-arrow {
+  border-top-color: #111 !important;
+}
+
+.gjs-sm-field .gjs-sm-u-arrow:hover {
+  border-bottom-color: var(--gjs-studio-accent) !important;
+}
+
+.gjs-sm-field .gjs-sm-d-arrow:hover,
+.gjs-sm-field .gjs-sm-d-s-arrow:hover,
+.gjs-sm-field .gjs-clm-d-s-arrow:hover {
+  border-top-color: var(--gjs-studio-accent) !important;
+}
+
+/* Radio buttons */
+.gjs-field-radio {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  min-height: 0 !important;
+}
+
+.gjs-radio-items {
+  display: flex !important;
+  gap: 0 !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  border: 1px solid #d8d8e0 !important;
+  border-radius: 8px !important;
+  background: #fff !important;
+}
+
+.gjs-radio-item {
+  position: relative !important;
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+}
+
+.gjs-radio-item + .gjs-radio-item {
+  border-left: 1px solid #e5e7eb !important;
+}
+
+.gjs-radio-item input[type='radio'] {
+  position: absolute !important;
+  inset: 0 !important;
+  opacity: 0 !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  z-index: 2 !important;
+}
+
+.gjs-radio-item label {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-height: 32px !important;
+  box-sizing: border-box !important;
+  color: #111 !important;
+  background: #fff !important;
+  border: none !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  transition:
+    background 0.1s,
+    border-color 0.1s,
+    box-shadow 0.1s !important;
+}
+.gjs-radio-item .gjs-radio-item-label,
+.gjs-sm-properties .gjs-radio-item-label {
+  color: #111 !important;
+}
+.gjs-radio-item label svg,
+.gjs-radio-item .gjs-radio-item-label svg,
+.gjs-sm-properties .gjs-radio-item-label svg {
+  display: block;
+  margin: 0 auto;
+  fill: currentColor !important;
+}
+.gjs-radio-item:hover label {
+  background: #f4f4f8 !important;
+}
+.gjs-radio-item:focus-within label,
+.gjs-radio-item[data-gjs-checked='true'] label,
+.gjs-radio-item[data-gjs-checked='true'] .gjs-radio-item-label {
+  box-shadow: inset 0 0 0 2px rgba(124, 92, 252, 0.22) !important;
+}
+.gjs-radio-item input:checked + label {
+  background: var(--gjs-studio-accent-light) !important;
+  color: var(--gjs-studio-accent) !important;
+}
+
+/* Select dropdowns */
+.gjs-sm-select select,
+.gjs-field-select select {
+  background: #fff !important;
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  border: 1px solid #d0d5dd !important;
+  border-radius: 6px !important;
+  font-size: 11px !important;
+}
+.gjs-sm-select select:focus,
+.gjs-field-select select:focus {
+  border-color: var(--gjs-studio-accent) !important;
+  box-shadow: 0 0 0 2px rgba(124, 92, 252, 0.12) !important;
+  outline: none !important;
+}
+
+/* Range slider */
+.gjs-field-range input[type='range'] {
+  accent-color: var(--gjs-studio-accent) !important;
+}
+
+/* ════════════════ FORM FIELDS ════════════════ */
+
+/* Field wrapper: border + white bg */
+.gjs-field,
+.gjs-input,
+.gjs-select {
+  background: #fff !important;
+  color: #111 !important;
+  border: 1px solid #d0d5dd !important;
+  border-radius: 6px !important;
+  font-size: 11px !important;
+}
+
+.gjs-field-select,
+.gjs-field-integer {
+  background: #fff !important;
+  color: #111 !important;
+  border: 1px solid #d0d5dd !important;
+  border-radius: 6px !important;
+  font-size: 11px !important;
+  box-shadow: none !important;
+  min-height: 30px !important;
+}
+
+.gjs-field-select,
+.gjs-field-integer {
+  display: flex !important;
+  align-items: stretch !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+.gjs-field:focus-within,
+.gjs-field-select:focus-within,
+.gjs-field-integer:focus-within {
+  border-color: var(--gjs-studio-accent) !important;
+  box-shadow: 0 0 0 2px rgba(124, 92, 252, 0.12) !important;
+}
+
+/* ── Direct GrapesJS style-manager input override ───────────────────────────
+ * GrapesJS sets .gjs-sm-field input { color: hsla(0,0%,100%,.7) }
+ * (white-70% → nearly invisible on white bg).  Override that directly.        */
+.gjs-sm-field input,
+.gjs-sm-field select,
+.gjs-sm-field textarea,
+.gjs-clm-field input,
+.gjs-clm-field select,
+.gjs-clm-select input,
+.gjs-clm-select select {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  caret-color: #222 !important;
+  opacity: 1 !important;
+}
+.gjs-sm-field input::placeholder,
+.gjs-sm-field textarea::placeholder,
+.gjs-clm-field input::placeholder,
+.gjs-clm-select input::placeholder {
+  color: #444 !important;
+  -webkit-text-fill-color: #444 !important;
+  opacity: 1 !important;
+}
+
+/* Inputs INSIDE .gjs-field wrapper: transparent + NO border → avoids double-border */
+.gjs-field input,
+.gjs-field select,
+.gjs-field textarea {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 11px !important;
+}
+
+.gjs-field select,
+.gjs-sm-field select,
+.gjs-sm-select select,
+.gjs-field-select select,
+.gjs-clm-select select,
+.gjs-trt-trait select {
+  background: #fff !important;
+  background-color: #fff !important;
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  opacity: 1 !important;
+  font-weight: 500 !important;
+}
+
+.gjs-field-select select {
+  padding: 0 28px 0 8px !important;
+}
+
+.gjs-field-integer input {
+  padding: 5px 8px !important;
+}
+
+.gjs-field input:not([type='checkbox']):not([type='radio']):not([type='range']),
+.gjs-field textarea,
+.gjs-field select {
+  width: 100% !important;
+  min-height: 30px !important;
+  line-height: 1.35 !important;
+  padding: 5px 8px !important;
+}
+
+.gjs-field select {
+  padding-right: 28px !important;
+}
+
+.gjs-field select option,
+.gjs-sm-field select option,
+.gjs-sm-select select option,
+.gjs-field-select select option,
+.gjs-clm-select select option,
+.gjs-trt-trait select option {
+  color: #111 !important;
+  background: #fff !important;
+}
+.gjs-field input::placeholder,
+.gjs-field textarea::placeholder,
+.gjs-sm-field input::placeholder,
+.gjs-sm-field textarea::placeholder {
+  color: #444 !important;
+  -webkit-text-fill-color: #444 !important;
+  opacity: 1 !important;
+}
+
+.gjs-studio-root .gjs-field input[data-gjs-has-value],
+.gjs-studio-root .gjs-field textarea[data-gjs-has-value],
+.gjs-studio-root .gjs-sm-field input[data-gjs-has-value],
+.gjs-studio-root .gjs-sm-field textarea[data-gjs-has-value],
+.gjs-studio-root .gjs-clm-field input[data-gjs-has-value],
+.gjs-studio-root .gjs-trt-trait input[data-gjs-has-value],
+.gjs-studio-root .gjs-trt-trait textarea[data-gjs-has-value] {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
+.gjs-studio-root .gjs-field input[data-gjs-has-value]::placeholder,
+.gjs-studio-root .gjs-field textarea[data-gjs-has-value]::placeholder,
+.gjs-studio-root .gjs-sm-field input[data-gjs-has-value]::placeholder,
+.gjs-studio-root .gjs-sm-field textarea[data-gjs-has-value]::placeholder,
+.gjs-studio-root .gjs-clm-field input[data-gjs-has-value]::placeholder,
+.gjs-studio-root .gjs-trt-trait input[data-gjs-has-value]::placeholder,
+.gjs-studio-root .gjs-trt-trait textarea[data-gjs-has-value]::placeholder {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.gjs-sm-properties .gjs-field,
+.gjs-sm-properties .gjs-input,
+.gjs-sm-properties .gjs-select,
+.gjs-sm-properties .gjs-field-colorp {
+  color: #111 !important;
+}
+
+.gjs-sm-properties .gjs-color-main,
+.gjs-sm-properties .gjs-color-active,
+.gjs-sm-properties .gjs-color-warn,
+.gjs-sm-properties .gjs-color-hl,
+.gjs-sm-properties .gjs-one-color,
+.gjs-sm-properties .gjs-two-color,
+.gjs-sm-properties .gjs-three-color,
+.gjs-sm-properties .gjs-four-color,
+.gjs-sm-properties .gjs-four-color-h,
+.gjs-sm-properties .gjs-field-unit,
+.gjs-sm-properties .gjs-input-unit,
+.gjs-sm-properties .gjs-field-arrows,
+.gjs-sm-properties .gjs-sel-arrow,
+.gjs-sm-properties .gjs-d-s-arrow {
+  color: #111 !important;
+  fill: currentColor !important;
+}
+
+.gjs-sm-properties .gjs-field input,
+.gjs-sm-properties .gjs-field select,
+.gjs-sm-properties .gjs-field textarea,
+.gjs-sm-properties input:not([type='checkbox']):not([type='radio']),
+.gjs-sm-properties select,
+.gjs-sm-properties textarea {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  caret-color: #111 !important;
+  opacity: 1 !important;
+}
+.gjs-sm-properties .gjs-field input::placeholder,
+.gjs-sm-properties .gjs-field textarea::placeholder,
+.gjs-sm-properties input:not([type='checkbox']):not([type='radio'])::placeholder,
+.gjs-sm-properties textarea::placeholder {
+  color: #333 !important;
+  -webkit-text-fill-color: #333 !important;
+  opacity: 1 !important;
+}
+
+/* Unit label next to number */
+.gjs-field-integer .gjs-input-unit {
+  min-width: 36px !important;
+  flex: 0 0 36px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: stretch !important;
+  white-space: nowrap !important;
+  color: #111 !important;
+  font-size: 10px !important;
+  background: #fff !important;
+  border-left: 1px solid #e8e8ec !important;
+  padding: 0 6px !important;
+}
+
+/* Arrow up/down on number field */
+.gjs-field-arrows {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  align-self: stretch !important;
+  flex: 0 0 18px !important;
+  min-width: 18px !important;
+  color: #111 !important;
+  border-left: 1px solid #e8e8ec !important;
+}
+.gjs-field-arrows .gjs-field-arrow-u,
+.gjs-field-arrows .gjs-field-arrow-d {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  cursor: pointer !important;
+}
+.gjs-sm-properties .gjs-field-arrow-u {
+  border-bottom-color: #111 !important;
+}
+.gjs-sm-properties .gjs-field-arrow-d {
+  border-top-color: #111 !important;
+}
+.gjs-sm-properties .gjs-d-s-arrow {
+  border-top-color: #111 !important;
+}
+.gjs-field-arrows .gjs-field-arrow-u:hover,
+.gjs-field-arrows .gjs-field-arrow-d:hover {
+  color: var(--gjs-studio-accent) !important;
+}
+.gjs-sm-properties .gjs-field-arrow-u:hover {
+  border-bottom-color: var(--gjs-studio-accent) !important;
+}
+.gjs-sm-properties .gjs-field-arrow-d:hover {
+  border-top-color: var(--gjs-studio-accent) !important;
+}
+.gjs-sm-properties .gjs-d-s-arrow:hover {
+  border-top-color: var(--gjs-studio-accent) !important;
+}
+
+/* ════════════════ SELECTOR MANAGER ════════════════ */
+
+.gjs-clm-tags {
+  background: transparent !important;
+}
+.gjs-clm-tags .gjs-clm-tag {
+  background: var(--gjs-studio-accent-light) !important;
+  color: var(--gjs-studio-accent) !important;
+  border-radius: 5px !important;
+  font-size: 11px !important;
+  padding: 2px 8px !important;
+  margin: 2px !important;
+  border: none !important;
+}
+
+.gjs-clm-tags .gjs-clm-tag.iccp-selector-ghost-tag {
+  background: rgba(124, 92, 252, 0.12) !important;
+  color: var(--gjs-studio-accent) !important;
+  border: 1px solid rgba(124, 92, 252, 0.15) !important;
+}
+.gjs-clm-tags .gjs-clm-tag .gjs-clm-tag-close {
+  color: var(--gjs-studio-accent) !important;
+}
+.gjs-clm-tags input,
+.gjs-clm-tags .gjs-field-select select {
+  background: var(--gjs-studio-surface) !important;
+  color: #000 !important;
+  border: 1px solid var(--gjs-studio-border) !important;
+  border-radius: 5px !important;
+  font-size: 11px !important;
+}
+/* Selector manager label */
+.gjs-clm-sels-info,
+.gjs-clm-label {
+  color: #000 !important;
+}
+
+/* ════════════════ LAYER MANAGER ════════════════ */
+
+.gjs-layers-section-label {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gjs-studio-text);
+  border-bottom: 1px solid var(--gjs-studio-border-light);
+  background: var(--gjs-studio-surface);
+}
+
+.gjs-layers,
+.gjs-layer,
+.gjs-layer-item,
+.gjs-layers .gjs-layer {
+  background: #fff !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid var(--gjs-studio-border-light) !important;
+  color: #000 !important;
+  font-size: 12px !important;
+}
+.gjs-layer:hover,
+.gjs-layer-item:hover {
+  background: #f7f7f9 !important;
+  background-color: #f7f7f9 !important;
+}
+.gjs-layer.gjs-selected,
+.gjs-layer--selected,
+.gjs-layer.gjs-selected .gjs-layer-title,
+.gjs-layer--selected .gjs-layer-title {
+  background: var(--gjs-studio-accent-light) !important;
+  background-color: var(--gjs-studio-accent-light) !important;
+  color: var(--gjs-studio-accent) !important;
+}
+
+/* Layer title row (contains name, eye icon, etc.) */
+.gjs-layer-title,
+.gjs-layer .gjs-layer-title {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #000 !important;
+}
+.gjs-layer-title:hover {
+  background: transparent !important;
+}
+
+/* Layer name text */
+.gjs-layer-name,
+.gjs-layer__name,
+.gjs-layer .gjs-layer-name,
+.gjs-layer .gjs-layer-title-inner {
+  color: #000 !important;
+}
+
+/* Layer visibility icon (eye) */
+.gjs-layer-vis,
+.gjs-layer .gjs-layer-vis {
+  color: #999 !important;
+}
+.gjs-layer-vis:hover {
+  color: var(--gjs-studio-accent) !important;
+}
+
+/* Layer caret (expand/collapse) */
+.gjs-layer-caret,
+.gjs-layer__caret,
+.gjs-layer .gjs-layer-caret {
+  color: #999 !important;
+}
+
+/* Layer children container */
+.gjs-layer-children,
+.gjs-layer .gjs-layer-children {
+  background: #fff !important;
+  background-color: #fff !important;
+}
+
+/* Layer count badge */
+.gjs-layer-count,
+.gjs-layer .gjs-layer-count {
+  color: #999 !important;
+  background: transparent !important;
+}
+
+/* Layer move icon */
+.gjs-layer-move,
+.gjs-layer .gjs-layer-move {
+  color: #999 !important;
+}
+
+/* Ensure no dark bg leaks from anywhere */
+.gjs-layer *,
+.gjs-layers * {
+  background-color: transparent !important;
+}
+.gjs-layers,
+.gjs-layer,
+.gjs-layer-children {
+  background-color: #fff !important;
+}
+
+/* ════════════════ TRAIT MANAGER (Properties tab) ════════════════ */
+
+.gjs-trt-traits {
+  background: #fff !important;
+  padding: 4px 0 !important;
+}
+
+.gjs-trt-trait {
+  background: #fff !important;
+  border-bottom: 1px solid #f0f0f4 !important;
+  padding: 9px 12px !important;
+}
+.gjs-trt-trait:last-child {
+  border-bottom: none !important;
+}
+
+/* Labels: black, bold */
+.gjs-trt-trait .gjs-label,
+.gjs-trt-trait__label,
+.gjs-trt-trait .gjs-trt-trait__label,
+.gjs-trt-trait .gjs-label-wrp label {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  margin-bottom: 4px !important;
+  display: block !important;
+}
+
+/* ── FIX DOUBLE BORDER ──
+   Strategy: .gjs-field gets the visible border (container).
+   Inputs INSIDE .gjs-field get no border (transparent, no outline).
+   Result: exactly 1 border visible. */
+
+.gjs-trt-trait .gjs-field {
+  background: #fff !important;
+  border: 1.5px solid #d0d5dd !important;
+  border-radius: 7px !important;
+  overflow: hidden !important;
+  /* DO NOT set padding/margin here — let GrapesJS control layout */
+}
+.gjs-trt-trait .gjs-field:focus-within {
+  border-color: var(--gjs-studio-accent) !important;
+  box-shadow: 0 0 0 2px rgba(124, 92, 252, 0.12) !important;
+}
+
+/* Inputs inside .gjs-field wrapper: remove own border */
+.gjs-trt-trait .gjs-field input,
+.gjs-trt-trait .gjs-field select,
+.gjs-trt-trait .gjs-field textarea {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  caret-color: #111 !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 12px !important;
+  padding: 5px 8px !important;
+}
+.gjs-trt-trait .gjs-field input::placeholder,
+.gjs-trt-trait .gjs-field textarea::placeholder {
+  color: #222 !important;
+  -webkit-text-fill-color: #222 !important;
+}
+
+/* Standalone inputs NOT wrapped in .gjs-field */
+.gjs-trt-traits input:not([type='checkbox']):not([type='radio']),
+.gjs-trt-traits select,
+.gjs-trt-traits textarea {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  caret-color: #111 !important;
+  opacity: 1 !important;
+  background: #fff !important;
+  border: 1.5px solid #d0d5dd !important;
+  border-radius: 7px !important;
+  font-size: 12px !important;
+  padding: 5px 8px !important;
+  width: 100% !important;
+  outline: none !important;
+}
+.gjs-trt-traits input:not([type='checkbox']):not([type='radio'])::placeholder,
+.gjs-trt-traits textarea::placeholder {
+  color: #222 !important;
+  -webkit-text-fill-color: #222 !important;
+  opacity: 1 !important;
+}
+
+/* Checkbox */
+.gjs-trt-trait input[type='checkbox'] {
+  width: 16px !important;
+  height: 16px !important;
+  accent-color: var(--gjs-studio-accent) !important;
+  cursor: pointer !important;
+}
+
+/* Select — restore native arrow */
+.gjs-trt-trait select {
+  cursor: pointer !important;
+}
+
+/* Attributes section header */
+.gjs-trt-traits__header {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  color: #888 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  padding: 10px 12px 6px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+.gjs-trt-traits__header button {
+  color: var(--gjs-studio-accent) !important;
+  background: none !important;
+  border: none !important;
+  font-size: 18px !important;
+  cursor: pointer !important;
+}
+
+/* Stack items (custom attributes key=value rows) */
+.gjs-trt-traits .gjs-trt-stack__item,
+.gjs-trt-trait .gjs-stack-content,
+.gjs-trt-trait .gjs-trt-stack__item {
+  background: #f5f5f8 !important;
+  border: 1px solid #e2e2e7 !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+  margin-bottom: 4px !important;
+  color: #111 !important;
+  font-size: 11px !important;
+}
+.gjs-trt-traits .gjs-trt-stack__item input {
+  border: none !important;
+  background: transparent !important;
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  font-size: 11px !important;
+}
+.gjs-trt-traits .gjs-trt-stack__item button,
+.gjs-trt-trait .gjs-stack-content button {
+  color: #bbb !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+.gjs-trt-traits .gjs-trt-stack__item button:hover {
+  color: #e53e3e !important;
+}
+
+/* Empty state */
+.gjs-trt-empty {
+  font-size: 12px !important;
+  color: #bbb !important;
+  text-align: center !important;
+  padding: 24px 14px !important;
+}
+
+/* ════════════════ MODAL ════════════════ */
+
+.gjs-mdl-dialog {
+  border-radius: 12px !important;
+  background: var(--gjs-studio-surface) !important;
+  border: 1px solid var(--gjs-studio-border) !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12) !important;
+  color: #000 !important;
+}
+.gjs-mdl-header {
+  border-bottom: 1px solid var(--gjs-studio-border) !important;
+  padding: 14px 18px !important;
+  background: var(--gjs-studio-surface) !important;
+}
+.gjs-mdl-title {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #000 !important;
+}
+.gjs-mdl-content {
+  padding: 18px !important;
+  background: var(--gjs-studio-surface) !important;
+  color: #000 !important;
+}
+.gjs-mdl-btn-close {
+  color: var(--gjs-studio-text-3) !important;
+  background: none !important;
+  border: none !important;
+}
+.gjs-mdl-btn-close:hover {
+  color: var(--gjs-studio-text) !important;
+}
+.gjs-btn-prim {
+  background: var(--gjs-studio-accent) !important;
+  color: #fff !important;
+  border-radius: 7px !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  padding: 8px 18px !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+.gjs-btn-prim:hover {
+  background: #6d28d9 !important;
+}
+
+/* ════════════════ TOOLTIP ════════════════ */
+
+.gjs-tooltip {
+  background: rgba(28, 28, 30, 0.9) !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+  font-size: 11px !important;
+  padding: 4px 8px !important;
+}
+
+/* ════════════════ COLOR PICKER ════════════════ */
+
+.gjs-field-colorp,
+.gjs-field-color-picker,
+.sp-container,
+.sp-picker-container {
+  background: var(--gjs-studio-surface) !important;
+  border-color: var(--gjs-studio-border) !important;
+  color: #000 !important;
+}
+.sp-container {
+  position: fixed !important;
+  z-index: 2147483647 !important;
+  overflow: visible !important;
+}
+.sp-picker-container,
+.sp-palette-container {
+  overflow: visible !important;
+}
+.sp-input {
+  background: var(--gjs-studio-surface) !important;
+  color: #000 !important;
+  border-color: var(--gjs-studio-border) !important;
+}
+.sp-button-container .sp-choose {
+  background: var(--gjs-studio-accent) !important;
+  border-color: var(--gjs-studio-accent) !important;
+}
+.sp-cancel {
+  color: var(--gjs-studio-text-3) !important;
+}
+
+/* Color swatch in style manager */
+.gjs-field-colorp-c {
+  border-radius: 4px !important;
+}
+.gjs-sm-colorp-c {
+  background: #fff !important;
+  border-left: 1px solid #d0d5dd !important;
+  border-radius: 4px !important;
+}
+
+.gjs-sm-colorp-c .gjs-field-colorp-c,
+.gjs-sm-colorp-c .gjs-checker-bg {
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 4px !important;
+}
+
+.gjs-sm-color-picker {
+  background-color: #111 !important;
+  cursor: pointer !important;
+  height: 16px !important;
+  width: 100% !important;
+  margin-top: -16px !important;
+  box-shadow: 0 0 0 1px #d0d5dd inset !important;
+  border-radius: 4px !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.gjs-sm-field.gjs-sm-color {
+  overflow: visible !important;
+  z-index: 5 !important;
+}
+
+.gjs-sm-properties .gjs-field-color,
+.gjs-sm-properties .gjs-field-color input {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+}
+
+.gjs-sm-properties .gjs-field-color {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 6px 8px !important;
+}
+
+.gjs-sm-properties .gjs-field-color > input:not([data-iccp-native-color='true']) {
+  box-sizing: border-box !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  padding-right: 12px !important;
+  font-weight: 600 !important;
+}
+
+.gjs-native-color-input {
+  flex: 0 0 24px !important;
+  width: 24px !important;
+  min-width: 24px !important;
+  height: 24px !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 6px !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
+}
+
+.gjs-native-color-input::-webkit-color-swatch-wrapper {
+  padding: 0 !important;
+}
+
+.gjs-native-color-input::-webkit-color-swatch {
+  border: 1px solid rgba(15, 23, 42, 0.14) !important;
+  border-radius: 6px !important;
+}
+
+.gjs-native-color-input::-moz-color-swatch {
+  border: 1px solid rgba(15, 23, 42, 0.14) !important;
+  border-radius: 6px !important;
+}
+
+.gjs-sm-properties .gjs-field-colorp {
+  display: none !important;
+}
+
+.gjs-sm-properties .gjs-field-colorp,
+.gjs-sm-properties .gjs-field-colorp-c,
+.gjs-sm-properties .gjs-field-color-picker,
+.gjs-sm-properties .gjs-field-colorp .sp-replacer,
+.gjs-sm-properties .gjs-field-colorp .sp-preview {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+}
+
+.gjs-sm-properties .gjs-field-colorp .gjs-checker-bg,
+.gjs-sm-properties .gjs-field-colorp .gjs-field-colorp-c {
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 4px !important;
+}
+
+.gjs-sm-properties .gjs-field-colorp-c {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+/* Only position the Spectrum replacer (clickable trigger), not the original input */
+.gjs-sm-properties .gjs-field-colorp .sp-replacer {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  border-radius: 4px !important;
+  display: block !important;
+}
+
+/* The original color-picker input wrapper should be interactive */
+.gjs-sm-properties .gjs-field-color-picker {
+  pointer-events: auto !important;
+}
+
+.gjs-sm-properties .gjs-field-colorp .sp-replacer {
+  padding: 0 !important;
+  border: 1px solid rgba(15, 23, 42, 0.12) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.gjs-sm-properties .gjs-field-colorp .sp-preview {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.gjs-sm-properties .gjs-field-colorp .sp-preview-inner {
+  border-radius: 5px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.gjs-sm-properties .gjs-field-colorp .sp-dd {
+  display: none !important;
+}
+
+.gjs-sm-properties .gjs-field-colorp .gjs-field-color-picker,
+.gjs-sm-properties .gjs-field-colorp .gjs-field-colorp-c {
+  border-radius: 4px !important;
+}
+
+/* ════════════════ SCROLLBARS ════════════════ */
+
+.gjs-left-panel__body::-webkit-scrollbar,
+.gjs-right-panel::-webkit-scrollbar,
+.gjs-layers::-webkit-scrollbar {
+  width: 4px;
+}
+.gjs-left-panel__body::-webkit-scrollbar-track,
+.gjs-right-panel::-webkit-scrollbar-track,
+.gjs-layers::-webkit-scrollbar-track {
+  background: transparent;
+}
+.gjs-left-panel__body::-webkit-scrollbar-thumb,
+.gjs-right-panel::-webkit-scrollbar-thumb,
+.gjs-layers::-webkit-scrollbar-thumb {
+  background: #d1d1d6;
+  border-radius: 4px;
+}
+.gjs-left-panel__body::-webkit-scrollbar-thumb:hover,
+.gjs-right-panel::-webkit-scrollbar-thumb:hover {
+  background: #b0b0b8;
+}
+
+/* ════════════════ PAGES PANEL ════════════════ */
+
+.gjs-pages-panel {
+  border-bottom: 1px solid var(--gjs-studio-border);
+  background: var(--gjs-studio-surface);
+}
+.gjs-pages-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--gjs-studio-border-light);
+}
+.gjs-pages-panel__header span {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gjs-studio-text);
+}
+.gjs-pages-panel__add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--gjs-studio-border);
+  border-radius: 5px;
+  background: none;
+  color: var(--gjs-studio-text-3);
+  cursor: pointer;
+}
+.gjs-pages-panel__add:hover {
+  background: var(--gjs-studio-bg);
+  color: var(--gjs-studio-accent);
+  border-color: var(--gjs-studio-accent);
+}
+.gjs-pages-panel__list {
+  padding: 4px;
+}
+.gjs-pages-panel__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #000;
+  font-weight: 500;
+}
+.gjs-pages-panel__item:hover {
+  background: var(--gjs-studio-bg);
+}
+.gjs-pages-panel__item.active {
+  background: var(--gjs-studio-accent-light);
+  color: var(--gjs-studio-accent);
+}
+.gjs-pages-panel__delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: none;
+  color: var(--gjs-studio-text-3);
+  cursor: pointer;
+  border-radius: 4px;
+  opacity: 0;
+  padding: 0;
+}
+.gjs-pages-panel__item:hover .gjs-pages-panel__delete {
+  opacity: 1;
+}
+.gjs-pages-panel__delete:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+/* ════════════════ CUSTOM LAYERS TREE ════════════════ */
+
+.gjs-custom-layers {
+  display: flex;
+  flex-direction: column;
+}
+.gjs-cl-empty {
+  padding: 20px 14px;
+  font-size: 12px;
+  color: var(--gjs-studio-text-3);
+  text-align: center;
+}
+
+.gjs-cl-item {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding-right: 6px;
+  transition: background 0.08s;
+  user-select: none;
+}
+.gjs-cl-item:hover {
+  background: var(--gjs-studio-bg);
+}
+.gjs-cl-item--selected {
+  background: var(--gjs-studio-accent-light) !important;
+}
+
+.gjs-cl-eye {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  color: var(--gjs-studio-text-3);
+  cursor: pointer;
+}
+.gjs-cl-eye:hover {
+  color: var(--gjs-studio-text);
+}
+
+.gjs-cl-chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: none;
+  color: var(--gjs-studio-text-3);
+  cursor: pointer;
+}
+.gjs-cl-chevron--empty {
+  visibility: hidden;
+}
+
+.gjs-cl-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 2px;
+}
+.gjs-cl-name {
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gjs-cl-count {
+  font-size: 10px;
+  color: var(--gjs-studio-text-3);
+  background: var(--gjs-studio-bg);
+  padding: 0 5px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.gjs-cl-drag {
+  display: flex;
+  align-items: center;
+  color: var(--gjs-studio-text-3);
+  opacity: 0;
+  flex-shrink: 0;
+  margin-left: 2px;
+}
+.gjs-cl-item:hover .gjs-cl-drag {
+  opacity: 1;
+}
+
+/* ════════════════ GLOBAL STYLES PANEL ════════════════ */
+
+.gjs-global-styles {
+  padding: 4px 0 16px;
+}
+.gjs-gs-section {
+  border-bottom: 1px solid var(--gjs-studio-border-light);
+}
+.gjs-gs-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gjs-studio-text);
+  padding: 9px 14px 9px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+.gjs-gs-section-title:hover {
+  background: var(--gjs-studio-bg);
+}
+.gjs-gs-section-body {
+  padding-bottom: 6px;
+}
+.gjs-gs-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 14px;
+  gap: 8px;
+}
+.gjs-gs-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gjs-studio-text-2);
+  flex-shrink: 0;
+  min-width: 82px;
+}
+
+.gjs-gs-color-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  justify-content: flex-end;
+}
+.gjs-gs-swatch {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  border: 1px solid var(--gjs-studio-border);
+  cursor: pointer;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.gjs-gs-native-color {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+}
+.gjs-gs-hex-input {
+  width: 90px;
+  height: 28px;
+  border: 1px solid var(--gjs-studio-border);
+  border-radius: 5px;
+  background: var(--gjs-studio-surface);
+  color: #000;
+  -webkit-text-fill-color: #000;
+  caret-color: #000;
+  opacity: 1;
+  font-size: 12px;
+  font-family: inherit;
+  padding: 0 8px;
+}
+.gjs-gs-hex-input:focus {
+  outline: none;
+  border-color: var(--gjs-studio-accent);
+}
+.gjs-gs-select {
+  height: 28px;
+  border: 1px solid var(--gjs-studio-border);
+  border-radius: 5px;
+  background: var(--gjs-studio-surface);
+  color: #000;
+  -webkit-text-fill-color: #000;
+  caret-color: #000;
+  opacity: 1;
+  font-size: 12px;
+  padding: 0 6px;
+  cursor: pointer;
+  flex: 1;
+}
+.gjs-gs-select:focus {
+  outline: none;
+  border-color: var(--gjs-studio-accent);
+}
+.gjs-gs-inline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.gjs-gs-number-input {
+  width: 56px;
+  height: 28px;
+  border: 1px solid var(--gjs-studio-border);
+  border-radius: 5px;
+  background: var(--gjs-studio-surface);
+  color: #000;
+  -webkit-text-fill-color: #000;
+  caret-color: #000;
+  opacity: 1;
+  font-size: 12px;
+  padding: 0 6px;
+  text-align: center;
+}
+.gjs-gs-number-input:focus {
+  outline: none;
+  border-color: var(--gjs-studio-accent);
+}
+.gjs-gs-unit {
+  font-size: 11px;
+  color: var(--gjs-studio-text-3);
+}
+
+/* ════════════════ CODE EDITOR — BOTTOM DRAWER ════════════════ */
+
+.gjs-code-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 11000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.gjs-code-root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #1e1e2e;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 -8px 48px rgba(0, 0, 0, 0.45);
+}
+
+.gjs-code-drag-handle {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #16161e;
+  cursor: row-resize;
+  flex-shrink: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  user-select: none;
+}
+.gjs-code-drag-handle::before {
+  content: '';
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.gjs-code-drag-handle:hover::before {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.gjs-code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  padding: 0 16px;
+  background: #16161e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+.gjs-code-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #a9b1d6;
+  font-size: 13px;
+  font-weight: 600;
+}
+.gjs-code-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.gjs-code-cancel {
+  height: 30px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  background: none;
+  color: #a9b1d6;
+  font-size: 12px;
+  cursor: pointer;
+}
+.gjs-code-cancel:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+.gjs-code-apply {
+  height: 30px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 6px;
+  background: var(--gjs-studio-accent);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.gjs-code-apply:hover {
+  background: #6d28d9;
+}
+
+.gjs-code-body {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  overflow: hidden;
+}
+.gjs-code-pane {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+.gjs-code-pane-label {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  background: #16161e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  color: #565f89;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.gjs-code-pane .cm-editor {
+  height: 100%;
+  font-family: 'Cascadia Code', 'Fira Code', 'JetBrains Mono', 'Consolas', monospace;
+  font-size: 13px;
+}
+.gjs-code-pane .cm-scroller {
+  overflow: auto;
+}
+.gjs-code-pane .cm-gutters {
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.gjs-code-divider {
+  width: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: col-resize;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+.gjs-code-divider:hover,
+.gjs-code-divider:active {
+  background: var(--gjs-studio-accent);
+}
+
+/* Prevent browser autofill styling from leaking into GrapesJS control panels. */
+.gjs-studio-root .gjs-sm-field input:-webkit-autofill,
+.gjs-studio-root .gjs-sm-field textarea:-webkit-autofill,
+.gjs-studio-root .gjs-clm-field input:-webkit-autofill,
+.gjs-studio-root .gjs-clm-select input:-webkit-autofill,
+.gjs-studio-root .gjs-trt-trait input:-webkit-autofill,
+.gjs-studio-root .gjs-field input:-webkit-autofill {
+  -webkit-text-fill-color: #111 !important;
+  caret-color: #111 !important;
+  box-shadow: 0 0 0 1000px #fff inset !important;
+  transition: background-color 99999s ease-in-out 0s !important;
+}

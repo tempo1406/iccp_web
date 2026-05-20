@@ -1,0 +1,34 @@
+{
+  "sidebar": {
+    "items": {
+      "dashboard": "Bảng điều khiển",
+      "notifications": "Thông báo",
+      "chatbot": "Chatbot",
+      "teamChat": "Trò chuyện nhóm",
+      "ticket": "Yêu cầu",
+      "ticketList": "Danh sách yêu cầu",
+      "createRequest": "Tạo yêu cầu",
+      "organizationManagement": "Quản lý tổ chức",
+      "inviteMembers": "Mời thành viên",
+      "members": "Thành viên",
+      "rolesPermissions": "Vai trò & quyền hạn",
+      "siteStudio": "Trang giới thiệu",
+      "documents": "Tài liệu",
+      "projects": "Dự án",
+      "analytics": "Phân tích",
+      "aiAnalytics": "Phân tích AI",
+      "kpi": "KPI",
+      "periodicReports": "Báo cáo định kỳ",
+      "myKpi": "KPI của tôi",
+      "billing": "Thanh toán",
+      "settings": "Cài đặt",
+      "general": "Tổng quan",
+      "organizationSettings": "Cài đặt tổ chức",
+      "workingTime": "Thời gian làm việc"
+    },
+    "expandToViewMenu": "Mở rộng để xem menu",
+    "dailyTokenLimit": "Giới hạn token ngày",
+    "usedToday": "Đã dùng {used} / {limit} hôm nay ({percentage}%)",
+    "quotaUnavailable": "Chưa có dữ liệu hạn mức"
+  }
+}

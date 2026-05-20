@@ -1,0 +1,340 @@
+{
+  "common": {
+    "dashboard": "Bảng điều khiển",
+    "organizationManagement": "Quản lý tổ chức",
+    "unknownUser": "Người dùng không xác định",
+    "unknownOrganization": "Tổ chức không xác định",
+    "unknownError": "Lỗi không xác định.",
+    "notAvailable": "-",
+    "active": "Đang hoạt động",
+    "inactive": "Ngưng hoạt động",
+    "protected": "Được bảo vệ",
+    "custom": "Tùy chỉnh",
+    "yes": "Có",
+    "no": "Không",
+    "cancel": "Hủy",
+    "close": "Đóng",
+    "remove": "Xóa",
+    "add": "Thêm",
+    "status": "Trạng thái"
+  },
+  "inviteMembers": {
+    "status": {
+      "pending": "Chờ phản hồi",
+      "accepted": "Đã chấp nhận",
+      "expired": "Hết hạn",
+      "cancelled": "Đã hủy"
+    },
+    "page": {
+      "title": "Mời thành viên",
+      "description": "Gửi lời mời và quản lý toàn bộ vòng đời lời mời bằng dữ liệu backend trực tiếp.",
+      "accessDeniedTitle": "Bạn không có quyền truy cập trang này.",
+      "accessDeniedDescription": "Quyền bắt buộc: {permission}",
+      "remindPendingInPage": "Nhắc lại lời mời chờ phản hồi trong trang ({count})"
+    },
+    "stats": {
+      "totalInvitations": "Tổng số lời mời",
+      "pendingAcceptance": "Đang chờ chấp nhận",
+      "acceptedInvitations": "Lời mời đã chấp nhận",
+      "needsAttention": "Cần chú ý"
+    },
+    "form": {
+      "title": "Gửi lời mời mới",
+      "description": "Nhập nhiều email, phân tách bằng dấu phẩy, khoảng trắng hoặc xuống dòng. Backend chấp nhận tối đa 50 email mỗi lần gửi.",
+      "addEmail": "Thêm email",
+      "emailPlaceholder": "name@example.com",
+      "emailList": "Danh sách email",
+      "emptyEmails": "Các email đã thêm sẽ xuất hiện ở đây dưới dạng thẻ.",
+      "removeEmail": "Xóa {email}",
+      "invitationNote": "Ghi chú lời mời",
+      "notePlaceholder": "Chào cả đội, chào mừng đến với nơi làm việc của chúng tôi...",
+      "noteHint": "Không bắt buộc. Ghi chú này sẽ được đưa vào email mời và dùng lại cho các lần gửi nhắc sau. {count}/2000 ký tự văn bản",
+      "footerHint": "Việc gán vai trò sẽ được thực hiện sau khi thành viên tham gia tổ chức.",
+      "sendInvitation": "Gửi lời mời"
+    },
+    "registry": {
+      "title": "Danh sách lời mời",
+      "description": "Theo dõi trạng thái lời mời và thực hiện thao tác gửi lại hoặc hủy.",
+      "searchPlaceholder": "Tìm theo email, người mời, mã lời mời...",
+      "allStatus": "Tất cả trạng thái",
+      "loadFailed": "Không thể tải danh sách lời mời",
+      "summary": "Tổng {total} lời mời • Trang {page} / {totalPages}",
+      "perPage": "{count} / trang"
+    },
+    "table": {
+      "headers": {
+        "email": "Email",
+        "status": "Trạng thái",
+        "invitedBy": "Người mời",
+        "createdAt": "Tạo lúc",
+        "expiresAt": "Hết hạn lúc",
+        "acceptedAt": "Chấp nhận lúc"
+      },
+      "empty": "Không tìm thấy lời mời nào với bộ lọc hiện tại.",
+      "viewDetails": "Xem chi tiết",
+      "resendInvitation": "Gửi lại lời mời",
+      "cancelInvitation": "Hủy lời mời"
+    },
+    "details": {
+      "title": "Chi tiết lời mời",
+      "description": "Xem metadata của lời mời và thực hiện các thao tác được hỗ trợ.",
+      "unavailable": "Không có thông tin chi tiết lời mời.",
+      "organization": "Tổ chức",
+      "invitedBy": "Người mời",
+      "invitationNote": "Ghi chú lời mời",
+      "createdAt": "Tạo lúc",
+      "expiresAt": "Hết hạn lúc",
+      "acceptedAt": "Chấp nhận lúc",
+      "isExpired": "Đã hết hạn",
+      "resendInvitation": "Gửi lại lời mời",
+      "cancelInvitation": "Hủy lời mời"
+    },
+    "errors": {
+      "noResendPermission": "Bạn không có quyền gửi lại lời mời.",
+      "noCancelPermission": "Bạn không có quyền hủy lời mời.",
+      "noCreatePermission": "Bạn không có quyền tạo lời mời.",
+      "enterAtLeastOneEmail": "Vui lòng nhập ít nhất một địa chỉ email hợp lệ.",
+      "maxEmailsPerRequest": "Bạn chỉ có thể mời tối đa 50 địa chỉ email cho mỗi lần gửi.",
+      "invalidEmails": "Email không hợp lệ: {preview}",
+      "noteTooLong": "Ghi chú lời mời phải có tối đa 2000 ký tự văn bản.",
+      "markupTooLong": "Phần định dạng của ghi chú quá dài. Vui lòng đơn giản hóa nội dung.",
+      "failedToSend": "Không thể gửi lời mời.",
+      "enterEmailBeforeAdding": "Vui lòng nhập ít nhất một địa chỉ email hợp lệ trước khi thêm.",
+      "allEmailsAlreadyAdded": "Tất cả email hợp lệ trong ô này đã được thêm.",
+      "maxEmailsForTags": "Bạn chỉ có thể thêm tối đa 50 địa chỉ email cho mỗi lần gửi.",
+      "someEmailsSkipped": "Một số mục đã bị bỏ qua vì không hợp lệ: {preview}",
+      "noPendingInPage": "Không có lời mời chờ phản hồi nào để gửi lại trong trang này.",
+      "failedToResendPending": "Không thể gửi lại các lời mời đang chờ."
+    },
+    "toasts": {
+      "sentCount": "Đã gửi {count} lời mời.",
+      "resentSuccess": "Đã gửi lại lời mời thành công.",
+      "cancelled": "Đã hủy lời mời.",
+      "failedToResend": "Không thể gửi lại lời mời.",
+      "failedToCancel": "Không thể hủy lời mời.",
+      "resentPendingAll": "Đã gửi lại {count} lời mời.",
+      "resentPendingPartial": "Đã gửi lại {successCount}, thất bại {failedCount}."
+    }
+  },
+  "members": {
+    "page": {
+      "title": "Thành viên tổ chức",
+      "description": "Quản lý thành viên tổ chức và xem chi tiết trạng thái tham gia.",
+      "accessDeniedTitle": "Bạn không có quyền truy cập trang này.",
+      "accessDeniedDescription": "Quyền bắt buộc: {permission}"
+    },
+    "filters": {
+      "searchPlaceholder": "Tìm theo tên, email, mã người dùng...",
+      "allStatus": "Tất cả trạng thái",
+      "active": "Đang hoạt động",
+      "inactive": "Ngưng hoạt động"
+    },
+    "content": {
+      "loadFailed": "Không thể tải danh sách thành viên tổ chức"
+    },
+    "table": {
+      "headers": {
+        "member": "Thành viên",
+        "status": "Trạng thái",
+        "joinedAt": "Tham gia lúc",
+        "invitationAccepted": "Chấp nhận lời mời",
+        "invitedBy": "Người mời"
+      },
+      "empty": "Không tìm thấy thành viên nào với bộ lọc hiện tại.",
+      "unknown": "Không xác định",
+      "viewDetails": "Xem chi tiết",
+      "setInactive": "Chuyển sang ngưng hoạt động",
+      "setActive": "Chuyển sang hoạt động",
+      "removeMember": "Xóa thành viên"
+    },
+    "details": {
+      "title": "Chi tiết thành viên",
+      "loadFailed": "Không thể tải chi tiết thành viên.",
+      "owner": "Chủ sở hữu",
+      "tabs": {
+        "overview": "Tổng quan",
+        "rolesPermissions": "Vai trò & quyền hạn"
+      },
+      "contactInformation": "Thông tin liên hệ",
+      "emailAddress": "Địa chỉ email",
+      "phoneNumber": "Số điện thoại",
+      "dateOfBirth": "Ngày sinh",
+      "address": "Địa chỉ",
+      "organizationContext": "Thông tin trong tổ chức",
+      "memberStatus": "Trạng thái thành viên",
+      "invitedBy": "Người mời",
+      "joinDate": "Ngày tham gia",
+      "acceptedInvite": "Đã chấp nhận lời mời",
+      "leftAt": "Rời lúc",
+      "assign": "Gán",
+      "role": "Vai trò",
+      "description": "Mô tả",
+      "noRolesAssigned": "Chưa có vai trò nào được gán."
+    },
+    "removeDialog": {
+      "title": "Xóa thành viên",
+      "description": "Thao tác này sẽ xóa {target} khỏi tổ chức và thu hồi các vai trò phạm vi tổ chức.",
+      "fallbackTarget": "người dùng này",
+      "removing": "Đang xóa...",
+      "confirm": "Xóa thành viên"
+    },
+    "toasts": {
+      "memberRemoved": "Đã xóa thành viên khỏi tổ chức.",
+      "memberActivated": "Đã kích hoạt thành viên thành công.",
+      "memberDeactivated": "Đã vô hiệu hóa thành viên thành công.",
+      "failedToRemove": "Không thể xóa thành viên khỏi tổ chức.",
+      "failedToUpdateStatus": "Không thể cập nhật trạng thái thành viên."
+    }
+  },
+  "rolesPermissions": {
+    "page": {
+      "title": "Vai trò & quyền hạn",
+      "description": "Tạo vai trò tùy chỉnh, quản lý quyền của vai trò và gán vai trò cho thành viên tổ chức.",
+      "accessDeniedTitle": "Bạn không có quyền truy cập trang này.",
+      "accessDeniedDescription": "Quyền bắt buộc: {permission}"
+    },
+    "stats": {
+      "totalRoles": "Tổng số vai trò",
+      "customRoles": "Vai trò tùy chỉnh",
+      "protectedRoles": "Vai trò được bảo vệ"
+    },
+    "registry": {
+      "title": "Danh sách vai trò",
+      "description": "Tạo vai trò tùy chỉnh và quản lý các vai trò hiện có. Nhấn vào vai trò để xem chi tiết và quyền.",
+      "createNewRole": "Tạo vai trò mới",
+      "roleName": "Tên vai trò",
+      "roleNamePlaceholder": "ví dụ: project_manager",
+      "roleDescription": "Mô tả",
+      "roleDescriptionPlaceholder": "Mô tả ngắn về vai trò",
+      "createRole": "Tạo vai trò",
+      "loadFailed": "Không thể tải danh sách vai trò",
+      "empty": "Chưa có vai trò nào. Hãy tạo vai trò đầu tiên ở phía trên.",
+      "headers": {
+        "role": "Vai trò",
+        "type": "Loại",
+        "created": "Tạo lúc",
+        "lastUpdated": "Cập nhật lần cuối",
+        "actions": "Thao tác"
+      }
+    },
+    "memberAssignment": {
+      "title": "Gán vai trò cho thành viên",
+      "description": "Gán hoặc thu hồi vai trò cho thành viên tổ chức. Các vai trò được bảo vệ không thể gán từ giao diện này.",
+      "member": "Thành viên",
+      "memberPlaceholder": "Chọn thành viên...",
+      "roles": "Vai trò",
+      "assignRoles": "Gán vai trò",
+      "noMembersFound": "Không tìm thấy thành viên.",
+      "loadFailed": "Không thể tải vai trò của thành viên",
+      "viewRestrictedTitle": "Xem vai trò thành viên đang bị giới hạn",
+      "viewRestrictedDescription": "Quyền bắt buộc: {permission}",
+      "headers": {
+        "role": "Vai trò",
+        "type": "Loại",
+        "scope": "Phạm vi",
+        "assignedAt": "Gán lúc",
+        "action": "Thao tác"
+      },
+      "empty": "Thành viên này chưa có vai trò nào được gán.",
+      "scopeProject": "Dự án: {name}",
+      "scopeProjectFallback": "Dự án",
+      "scopeOrganization": "Tổ chức"
+    },
+    "typeBadge": {
+      "protected": "Được bảo vệ",
+      "custom": "Tùy chỉnh"
+    },
+    "dialogs": {
+      "view": {
+        "title": "Chi tiết vai trò",
+        "description": "Xem metadata của vai trò và các quyền đã được gán.",
+        "loadFailed": "Không thể tải chi tiết vai trò",
+        "roleInfo": "Thông tin vai trò",
+        "roleName": "Tên vai trò",
+        "roleDescription": "Mô tả",
+        "createdAt": "Tạo lúc",
+        "updatedAt": "Cập nhật lúc",
+        "assignedPermissions": "Quyền đã gán",
+        "filterPermissions": "Lọc quyền...",
+        "noPermissionsFound": "Không tìm thấy quyền nào."
+      },
+      "edit": {
+        "titleUpdateSystemRole": "Cập nhật vai trò hệ thống",
+        "titleUpdateRole": "Cập nhật vai trò",
+        "description": "Chỉnh sửa metadata của vai trò và mã quyền.",
+        "loadFailed": "Không thể tải chi tiết vai trò",
+        "roleInfo": "Thông tin vai trò",
+        "protectedTitle": "Vai trò được bảo vệ",
+        "protectedDescription": "Vai trò này được bảo vệ bởi chính sách tổ chức. Không thể chỉnh sửa hoặc thay đổi quyền.",
+        "roleName": "Tên vai trò",
+        "roleDescription": "Mô tả",
+        "selectedPermissions": "Các quyền đã chọn",
+        "noPermissionsSelected": "Chưa chọn quyền nào.",
+        "permissionCodes": "Mã quyền",
+        "items": "{count} mục",
+        "filterPermissions": "Lọc quyền...",
+        "noPermissionsFound": "Không tìm thấy quyền nào với bộ lọc hiện tại.",
+        "updateRole": "Cập nhật vai trò"
+      },
+      "delete": {
+        "title": "Xóa vai trò",
+        "description": "Thao tác này sẽ xóa vĩnh viễn vai trò {roleName} và thu hồi toàn bộ các gán liên quan.",
+        "fallbackRole": "-"
+      }
+    },
+    "roleAssignment": {
+      "selectRoles": "Chọn vai trò để gán",
+      "noRolesFound": "Không tìm thấy vai trò."
+    },
+    "toasts": {
+      "roleCreated": "Đã tạo vai trò thành công.",
+      "failedToCreateRole": "Không thể tạo vai trò.",
+      "roleUpdated": "Đã cập nhật vai trò thành công.",
+      "failedToUpdateRole": "Không thể cập nhật vai trò.",
+      "roleDeleted": "Đã xóa vai trò thành công.",
+      "failedToDeleteRole": "Không thể xóa vai trò.",
+      "permissionsAssigned": "Đã gán quyền thành công.",
+      "failedToAssignPermissions": "Không thể gán quyền.",
+      "permissionsRevoked": "Đã thu hồi quyền thành công.",
+      "failedToRevokePermissions": "Không thể thu hồi quyền.",
+      "memberRoleAssigned": "Đã gán vai trò cho thành viên thành công.",
+      "failedToAssignMemberRole": "Không thể gán vai trò cho thành viên.",
+      "memberRoleRevoked": "Đã thu hồi vai trò khỏi thành viên thành công.",
+      "failedToRevokeMemberRole": "Không thể thu hồi vai trò khỏi thành viên."
+    }
+  },
+  "invitationAccept": {
+    "errors": {
+      "missingToken": "Thiếu mã lời mời.",
+      "invalidOrExpired": "Mã lời mời không hợp lệ hoặc đã hết hạn.",
+      "expired": "Mã lời mời này đã hết hạn. Hãy nhờ quản trị viên gửi lại lời mời mới.",
+      "invalid": "Mã lời mời này không hợp lệ. Vui lòng kiểm tra lại liên kết lời mời.",
+      "unknown": "Lỗi không xác định"
+    },
+    "toasts": {
+      "accepted": "Chấp nhận lời mời thành công.",
+      "acceptFailed": "Không thể chấp nhận lời mời.",
+      "alreadyAccepted": "Lời mời này đã được chấp nhận trước đó."
+    },
+    "success": {
+      "title": "Đã chấp nhận lời mời vào tổ chức",
+      "description": "Đang chuyển bạn tới bảng điều khiển...",
+      "badge": "Đang chuyển hướng"
+    },
+    "card": {
+      "processingTitle": "Đang chấp nhận lời mời",
+      "processingDescription": "Chúng tôi đang xác thực mã và thêm bạn vào tổ chức.",
+      "errorTitle": "Không thể chấp nhận lời mời",
+      "errorDescription": "Vui lòng kiểm tra lại liên kết lời mời hoặc nhờ quản trị viên gửi lời mời mới."
+    },
+    "alerts": {
+      "processingTitle": "Đang xử lý lời mời",
+      "processingDescription": "Vui lòng chờ trong giây lát. Bạn sẽ được chuyển hướng tự động sau khi chấp nhận lời mời.",
+      "failedTitle": "Chấp nhận lời mời thất bại"
+    },
+    "actions": {
+      "retry": "Thử lại",
+      "signInAnother": "Đăng nhập bằng tài khoản khác"
+    }
+  }
+}

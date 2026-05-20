@@ -1,0 +1,46 @@
+{
+  "loading": {
+    "data": "Loading data",
+    "generic": "Loading..."
+  },
+  "language": {
+    "label": "Language",
+    "ariaLabel": "Select language",
+    "syncFailedTitle": "Could not sync language preference",
+    "syncFailedDescription": "Your language changed on this device, but we could not save it to your account yet.",
+    "options": {
+      "en": "English",
+      "vi": "Vietnamese"
+    }
+  },
+  "header": {
+    "searchPlaceholder": "Search documents, users, queries...",
+    "toggleTheme": "Toggle theme"
+  },
+  "userMenu": {
+    "unknownUser": "Unknown User",
+    "profile": "Profile & Preferences",
+    "dashboard": "Dashboard",
+    "help": "Help & Support",
+    "logout": "Log out"
+  },
+  "httpStatus": {
+    "checkingAccess": "Checking access...",
+    "forbidden": {
+      "badge": "Access denied",
+      "title": "You do not have permission to view this page.",
+      "description": "Your current role does not include access to this resource. Request additional privileges if this action is required.",
+      "hint": "Need urgent access? Contact your organization administrator.",
+      "backHome": "Back to Home",
+      "signInAnother": "Sign in with another account"
+    },
+    "notFound": {
+      "badge": "Not found",
+      "title": "The page you are looking for does not exist.",
+      "description": "The URL may be outdated, moved, or entered incorrectly. Try navigating back from the homepage.",
+      "hint": "If this keeps happening, please verify the link source or contact your workspace administrator.",
+      "backHome": "Back to Home",
+      "goToLogin": "Go to Login"
+    }
+  }
+}
